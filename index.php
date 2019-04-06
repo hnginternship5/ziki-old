@@ -1,5 +1,7 @@
 <?php
 
 return [
-  "message" => "application entry point"
+  [
+    "message" => "application entry point"
+  ]
 ];
