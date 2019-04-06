@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-   <a href="/login.php">Login/Signup</a> 
+   <a href="/Authentication/login.php">Login/Signup</a> 
 </body>
 </html>
