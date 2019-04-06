@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 require_once 'config.php';
 require_once 'functions/Post.php';
@@ -7,35 +6,11 @@ require_once 'functions/Post.php';
 if (!isset($_SESSION['loggedUserId'])) {
     $response = array("error" => true, "message" => "you are not authorized in here");
     die(json_encode($response));
+}elseif(!isset($_POST['title']) || !isset($_POST['body']) || !isset($_POST['image'])){
+    header("Location: index.php");
 }
 
-$data = file_get_contents("posts.json");
-$posts = json_decode($data, true);
-$getAllPosts = Post::fetchAllPosts($posts);
-var_dump($getAllPosts);
-$posts = array();
-if (!empty($getAllPosts)) {
-    foreach ($getAllPosts as $blog) {
-        $postId = $blog->getId();
-        $postTitle = $blog->getStoryTitle();
-        $postBody = $blog->getStoryBody();
-        $postPic = $blog->getStoryImage();
-        $postTimestamp = $blog->getTimePosted();
-        $post['id'] = $postId;
-        $post['title'] = $postTitle;
-        $post['body'] = $postBody;
-        $post['post_image'] = $postPic;
-        $post['post_timestamp'] = $postTimestamp;
-        array_push($posts, $post);
-    }
-    $result['error'] = false;
-    $result['result'] = $posts;
-}
-else{
-    $result['error'] = true;
-    $result['message'] = 'internal server error';
-}
-echo(json_encode($result));
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $title = isset($_POST['title']) ? trim($_POST['title']) : null;
@@ -49,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $response['message'] = 'Please make sure you uploading your image';
     }
     else{
-        $target_file = SITE_ROOT.'/uploads/'.$new_file_name;
+        $target_file = SITE_ROOT.'/'.$new_file_name;
         if ($file['error'] === 0) {
             $upload = move_uploaded_file($file['tmp_name'], $target_file);
             if ($upload) {
@@ -60,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $newPost->setStoryImage($target_file);
                 if ($newPost->savePost()) {
                     $response = array('error' => false, 'message' => 'post published successfully');
+                    die(json_encode($response));
                 } else {
                     $response = array('error' => true, 'message' => 'error occured while posting');
                 }
@@ -74,5 +50,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $response['message'] = 'Error, please select an image';
         }
     }
-    die(json_encode($response));
 }

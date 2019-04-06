@@ -72,17 +72,44 @@ class Post {
             foreach ($postJson as $row) {
                 $post = new Post();
                 $post->id = $row['id'];
-                $post->userId = $row['userid'];
-                $post->storyTitle = $row['title'];
-                $post->storyBody = $row['body'];
-                $post->postTimestamp = $row['image'];
-                $post->image = $row['time'];
+                $post->userId = $row['user_id'];
+                $post->image = $row['post_image'];
+                $post->postTimestamp = $row['post_timestamp'];
 
                 $result[] = $post;
             }
         }
 
         return $result;
+    }
+
+    public function savePost() {
+
+        if ($this->id == -1) {
+
+            //Saving new post 
+            $filename = md5($this->userId.$this->storyTitle).date("Y-m-d h:i:sa");
+            $postfile = fopen(SITE_ROOT."/markdowns/me.md", "w") or die("failed while creating file");
+            $result = fwrite($postfile, $this->storyTitle.$this->storyBody);
+            fclose($postfile);
+            if ($result == true) {
+                $id = $this->id = (mt_rand(100001,999999));
+                $file = $filename;
+                $img = $this->image;
+                $time = date("Y-m-d h:i:sa");
+                $posts[] = array('id'=> $id, 'user_id'=>$_SESSION['loggedUserId'], 'file_url'=> $file, 'post_image' => $img, 'post_timestamp' => $time);
+                $fp = fopen('posts.json', 'w') or die("post DB not found");
+                fwrite($fp, json_encode($posts));
+                fclose($fp);
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+
+        return false;
     }
 
 }
