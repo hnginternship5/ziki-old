@@ -1,6 +1,6 @@
 <?php
-require './facebookinit.php';
-require './googleinit.php';
+require './auth/facebookinit.php';
+require './auth/googleinit.php';
 
 session_destroy();
 

@@ -10,7 +10,7 @@ $fb = new Facebook\Facebook([
 ]);
 
 $helper = $fb->getRedirectLoginHelper();
-$login_url = $helper->getLoginUrl('http://localhost/login.php');
+$login_url = $helper->getLoginUrl('https://ziki.hng.tech/login.php');
 
 try{
   $access_token = $helper->getAccessToken();

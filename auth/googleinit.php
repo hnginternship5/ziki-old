@@ -4,7 +4,7 @@ require ("vendor/autoload.php");
 $g_client = new Google_Client();
 $g_client->setClientId("2070310808-dfavj133e4eda2ueprv1tfqemspcb3vb.apps.googleusercontent.com");
 $g_client->setClientSecret("DBsnKq_qekAhT7sMWxEHs1sB");
-$g_client->setRedirectUri('http://localhost/authentication/login.php');
+$g_client->setRedirectUri('https://ziki.hng.tech/login.php');
 $g_client->setScopes("email");
 
 //function to save access token to json file
