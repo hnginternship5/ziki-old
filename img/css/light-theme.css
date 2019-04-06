@@ -1,0 +1,256 @@
+/** mylo carson 2019 */
+
+html,body{
+	margin:0;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: #fff;
+}
+ul,p,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.header-img{
+	width: 100%;
+	min-height: 340px;
+}
+
+.profile-section{
+	background: rgba(243, 243, 243, 0.62);
+}
+
+.profile-img-wrapper{
+	position: absolute;
+	top: -120px;
+	margin-bottom: -120px;
+}
+.profile-img{
+	/*position: absolute;
+    top: -113px;
+    margin-bottom: 113px;*/
+
+
+    border-radius: 50%;
+    max-width: 230px;
+    height: 230px;
+}
+
+
+.profile-main{
+	margin-top: 100px;
+}
+
+.profile-name{
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: Open Sans;*/
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36.25px;
+	line-height: normal;
+	text-align: center;
+	letter-spacing: -0.04em;
+	margin-bottom: 6px
+}
+
+.profile-technologies {
+	font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: normal;
+text-align: center;
+margin-top: 6px;
+margin-bottom: 16px;
+
+color: #000000;
+}
+.profile-motto{
+	font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: normal;
+text-align: center;
+margin-top: 16px;
+margin-bottom: 24px;
+
+color: #000000;
+}
+
+.profile-social-wrapper{
+margin-top: 24px;
+
+}
+
+.profile-social-icon{
+	margin: 0 12px;
+}
+.profile-social-icon:first-child{
+	margin-left: 0;
+}
+
+.profile-social-icon:last-child{
+	margin-right:  0;
+}
+
+.menu-wrapper{
+ 	margin:68px 0;
+}
+
+.menu-item{
+	margin: 15px 0;
+}
+
+.line{
+	width: 50%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.blog-item-wrapper{
+	margin: 10px 0;
+}
+.blog-item-wrapper:first-child{
+	margin-top: 32px;
+}
+.blog-item{
+	width: 100%;
+}
+
+.blog-item-main{
+	background: #F8F8F8;
+box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+border-radius: 11px;
+}
+
+.blog-item-main-content{
+	margin-left: 40px;
+	margin-right: 20px;
+}
+
+.blog-item-img{
+	border-radius: 11px;
+	width: inherit;
+	height: 165px;
+}
+
+.blog-item-img-wrapper{
+	width: 230px;
+	margin: 22px 24px;
+}
+
+.blog-item-header{
+	font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: normal;
+margin-top: 15px;
+color: #000000;
+}
+
+.blog-item-author{
+font-family: 'Open Sans', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: normal;
+text-align: center;
+
+color: #3667E7;
+
+}
+.blog-item-author-avatar-wrapper{
+	max-width: 50px;
+}
+.blog-item-author-avatar{
+	border-radius: 50%;
+	max-width: 50px;
+	height: 40px;
+	margin-right:  10px ; 
+	border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+.blog-item-content{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: normal;
+margin-bottom: 6px;
+
+color: #000000;
+}
+
+.blog-item-tag-wrapper{
+	background: #AECDEE;
+border-radius: 5px;
+margin: 6px 6px;
+padding: 5px 17px;
+
+}
+.blog-item-tag-wrapper:first-child{
+	margin-left: 0;
+}
+
+.blog-item-tag-wrapper:last-child{
+
+}
+
+.blog-item-tag{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: normal;
+text-align: center;
+margin: 0;
+
+color: #000000;
+
+}
+
+.blog-item-more_action{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: normal;
+text-align: center;
+text-decoration-line: underline;
+
+color: #3667E7;
+
+}
+
+.blog-item-date{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: normal;
+margin-top: 6px 0;
+
+color: #000000;
+}
+
+.blog-item-action{
+	margin: 0 15px;
+}
+.blog-item-action:first-child{
+	margin-left: 0;
+}
+.blog-item-action:last-child{
+	margin-right: 0;
+}
+
