@@ -1,0 +1,46 @@
+.landing-page-head{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: normal;
+text-decoration-line: underline;
+
+color: #3667E7;
+margin-top: 30px;
+margin-bottom: 60px;
+}
+
+.landing-page-greeting{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: normal;
+
+color: #3667E7;
+margin-top: 60px;
+}
+
+.landing-page-main-header{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 144px;
+line-height: normal;
+
+color: #3667E7;
+margin-bottom: 9px;
+}
+
+.landing-page-info{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: normal;
+
+color: #3667E7;
+margin-top: 9px;
+
+}

@@ -1,0 +1,89 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="blog-task\css">
+    </head>
+
+    <body>
+        <div class="container-box rotated">
+            <button type="button" class="btn btn-info btn-lg turned-button" data-toggle="modal" data-target="#myModal">Get in Touch</button>
+            </div>
+            
+            
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+            
+             
+            <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title" ><b>Get in Touch</b></h4>
+            </div>
+            <div class="modal-body">
+            
+                    <form role="form" method="post" id="reused_form" >
+                    <p class="how">
+                        How can we help you? We'll love to hear from you
+                    </p>
+                    <div class="form-group">
+                        <label for="name">
+                            </label>
+                        <input type="text" class="form-control"
+                        id="name" name="blank"   required maxlength="50" >
+            
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="name">
+                            </label>
+                        <input type="text" class="form-control"
+                        id="name" name="name"   required maxlength="50" placeholder="Subject">
+            
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            </label>
+                        <input type="email" class="form-control"
+                        id="email" name="email" required maxlength="50" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">
+                            </label>
+                        <textarea class="form-control" type="textarea" name="message"
+                        id="message" placeholder="Your Message Here"
+                        maxlength="6000" rows="7"></textarea>
+                    </div>
+            
+            
+            
+            
+            
+                    <button type="submit" class="btn btn-lg btn-primary btn-block" id="btnContactUs">Send →</button>
+            
+                </form>
+                <div id="success_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Sent your message successfully!</h3>
+                </div>
+                <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+            
+                </div>
+            </div>
+            
+            </div>
+            
+             </div>
+            </div>
+    </body>
+</html>    
