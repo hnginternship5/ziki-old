@@ -1,4 +1,4 @@
-# HNGBlogCms
+# Ziki
 
 Each team is to come up with 2 different themes for the site. The teams will have to collaborate to create the following:
   - The blogging experience
