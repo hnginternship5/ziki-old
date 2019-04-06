@@ -1,7 +1,3 @@
 <?php
 
-return [
-  [
-    "message" => "application entry point"
-  ]
-];
+echo "It Works!";
