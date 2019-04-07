@@ -1,1 +1,0 @@
-Adroit WddfdjAll still to be fixed
