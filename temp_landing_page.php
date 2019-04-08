@@ -1,5 +1,5 @@
 <?php
-require_once './auth/googleinit.php';
+require_once 'Authentication/auth/googleinit.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
