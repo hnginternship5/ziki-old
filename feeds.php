@@ -29,7 +29,7 @@
             
               <li class="">
               <a class="sub_cat active">
-                <i class="fas fa-circle" style="color:#B12A1F"></i> Nigerian
+              <img src="assets/img/Ellipse-red.svg" >  Nigerian
                 News
                 </a>
               </li>
@@ -37,21 +37,21 @@
            
               <li class="">
               <a class="sub_cat">
-                <i class="fas fa-circle" style="color:#61e540"></i> Chelsea News
+<img src="assets/img/Ellipse-green.svg" > Chelsea News
                 </a
             >
               </li>
             
               <li class="">
               <a class="sub_cat">
-                <i class="fas fa-circle" style="color:#B53577"></i>Dave Talks
+              <img src="assets/img/Ellipse-purple.svg" > Dave Talks
                 </a>
               </li>
            
             
               <li class="">
               <a class="sub_cat">
-                <i class="fas fa-circle" style="color:#B12A1F"></i> Vox
+              <img src="assets/img/Ellipse-red.svg" >  Vox
                 </a
             >
               </li>

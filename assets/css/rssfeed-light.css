@@ -87,6 +87,11 @@ aside i.fa {
     display: flex;
 }
 
+.sub_cat img {
+    margin-right: 10px;
+    margin-left: 4%;
+}
+
 .sub_cat i {
     margin-right: 10px;
 }
