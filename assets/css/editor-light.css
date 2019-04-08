@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.main-content {
+  width: 85%;
+  margin: auto;
+}
+.fr-wrapper {
+  /*main froala editor*/
+  height: 45vh;
+}
+.submit-btn {
+  cursor: pointer;
+  color: #ffffff;
+  background: #3667e7;
+  border: 1px solid #3667e7;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.cancel-btn {
+  cursor: pointer;
+  color: #ffffff;
+  background: #07223e;
+  border: 1px solid #07223e;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.action-btns {
+  display: flex;
+  justify-content: flex-end;
+}
+/* toggle dark mode class for body with JS */
+.dark {
+  color: #ffffff;
+  background: #04274c;
+}
