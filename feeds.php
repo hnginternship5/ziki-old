@@ -70,48 +70,48 @@
         <div class="bottom">
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i> Choke me Daddy: Murder or Suicide?
+            <img src="assets/img/Ellipse-small.svg" >   Choke me Daddy: Murder or Suicide?
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i> Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >   Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
