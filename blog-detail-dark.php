@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="assets/css/theme1.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/landing-page.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -135,6 +134,8 @@
             border: none;
             outline: none;
             color: #ffffff;
+            display: flex;
+            align-items: center;
         }
 
 
@@ -245,7 +246,7 @@
             <div class="d-flex">
                 <button class="margin-right-1">
                     <span class="margin-right-h">             
-                        <svg width="26" height="21" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="20" height="15" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M35.0404 5.96919C33.3265 2.34788 29.7317 0 25.8442 0C21.9567 0 19.4486 1.63158 17.9856 3.38254C16.5226 1.63158 14.0145 0 10.1271 0C6.23958 0 2.64471 2.34788 0.930872 5.96919C-0.824763 9.74968 -0.0723506 13.9281 2.97911 17.1912C10.2943 25.0308 16.7734 30.5623 16.857 30.6021C17.1914 30.8806 17.5676 31 17.9856 31C18.4036 31 18.7798 30.8806 19.1142 30.6021C19.1978 30.5623 25.6352 24.991 32.9921 17.1912C36.0854 13.9281 36.8378 9.74968 35.0404 5.96919Z" fill="#F14336"/>
                         </svg>   
                     </span>
@@ -263,7 +264,11 @@
 
             <button>
                 <span class="margin-right-h">Subscribe </span>
-                <i class=" fa fa-rss" aria-hidden="true"></i>
+                <span>
+                    <svg width="15" height="15" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.14863 27.4256C9.14863 29.9519 7.10064 31.9999 4.57428 31.9999C2.04793 31.9999 0 29.9519 0 27.4256C0 24.8992 2.048 22.8512 4.57435 22.8512C7.10071 22.8512 9.14863 24.8993 9.14863 27.4256ZM21.6958 30.8006C21.0991 19.7578 12.254 10.9016 1.19936 10.3042C0.546857 10.2689 0 10.7932 0 11.4466V14.8801C0 15.4812 0.463571 15.9853 1.06336 16.0243C9.05135 16.5445 15.4543 22.9315 15.9756 30.9365C16.0147 31.5363 16.5188 31.9999 17.1198 31.9999H20.5533C21.2068 31.9999 21.7311 31.4531 21.6958 30.8006ZM31.9993 30.8211C31.3997 14.1198 17.9618 0.60324 1.17878 0.000742082C0.533785 -0.0224007 0 0.498669 0 1.14402V4.57744C0 5.19351 0.488214 5.69494 1.10378 5.72022C14.7594 6.28015 25.72 17.2428 26.2798 30.8962C26.305 31.5118 26.8065 32 27.4226 32H30.856C31.5013 31.9999 32.0224 31.4661 31.9993 30.8211Z" fill="white"/>
+                    </svg>
+                </span>
             </button>
         </div>
 
