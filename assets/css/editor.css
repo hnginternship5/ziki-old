@@ -50,11 +50,6 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-/* toggle dark mode class for body with JS */
-.dark {
-  color: #ffffff;
-  background: #04274c;
-}
 
 /* responsive media queries */
 @media screen and (max-width: 768px) {
@@ -80,4 +75,59 @@ body {
     font-size: 1.7rem;
     padding: 0.8rem;
   }
+}
+
+/*==============READ THIS===============*/
+
+/* in case no need for 2 css files, i'll be indicating
+    which files properties need to change below with 
+    "need to change" they can just be added to the main css and the class be toggled for the element
+*/
+body.dark {
+  /*need to change*/
+  color: #ffffff;
+  background: #07223e;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+/*all these need to change*/
+.fr-wrapper.dark {
+  /*main froala editor*/
+  height: 45vh;
+  background: #04274c !important;
+  color: #ffffff !important;
+}
+.fr-element.dark {
+  color: #ffffff !important;
+}
+.fr-toolbar.dark {
+  color: #ffffff;
+  background: #04274c;
+}
+.fr-command.dark {
+  transition-duration: 0.3s;
+  background: #04274c;
+  color: #ffffff;
+}
+.fr-command.dark:hover {
+  transition: 0.3s;
+  background: #07223e !important;
+}
+.fr-btn.dark {
+  color: #ffffff !important;
+}
+/*stop here*/
+
+.cancel-btn.dark {
+  /*need to change*/
+  cursor: pointer;
+  color: #f14336;
+  background: transparent;
+  border: 1px solid #f14336;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  margin-top: 20px;
 }

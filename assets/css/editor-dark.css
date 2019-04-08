@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 body {
+  /*need to change*/
+  color: #ffffff;
+  background: #07223e;
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
@@ -11,6 +14,9 @@ body {
   margin: 7vh auto 0;
 }
 .post-title {
+  /*need to change*/
+  color: #ffffff;
+  background: #04274c;
   font-size: 1.2rem;
   padding: 0.6rem;
   width: 100%;
@@ -21,10 +27,33 @@ body {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px 1px rgba(0, 0, 0, 0.16);
 }
+/*all these need to change*/
 .fr-wrapper {
   /*main froala editor*/
   height: 45vh;
+  background: #04274c !important;
+  color: #ffffff !important;
 }
+.fr-element {
+  color: #ffffff !important;
+}
+.fr-toolbar {
+  color: #ffffff;
+  background: #04274c;
+}
+.fr-command {
+  transition-duration: 0.3s;
+  background: #04274c;
+  color: #ffffff;
+}
+.fr-command:hover {
+  transition: 0.3s;
+  background: #07223e !important;
+}
+.fr-btn {
+  color: #ffffff !important;
+}
+/*stop here*/
 .submit-btn {
   cursor: pointer;
   color: #ffffff;
@@ -37,10 +66,11 @@ body {
   margin-top: 20px;
 }
 .cancel-btn {
+  /*need to change*/
   cursor: pointer;
-  color: #ffffff;
-  background: #07223e;
-  border: 1px solid #07223e;
+  color: #f14336;
+  background: transparent;
+  border: 1px solid #f14336;
   padding: 0.8rem 1rem;
   border-radius: 4px;
   font-size: 1.2rem;
@@ -49,11 +79,6 @@ body {
 .action-btns {
   display: flex;
   justify-content: flex-end;
-}
-/* toggle dark mode class for body with JS */
-.dark {
-  color: #ffffff;
-  background: #04274c;
 }
 
 /* responsive media queries */
