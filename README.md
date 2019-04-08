@@ -14,7 +14,7 @@ To design their themes, each team will need a designer - and not all designers r
 
 ## Installation
  **This project works with PHP**
-* `git clone https://github.com/hng5-blog-task/blog-task.git`
+* `git clone https://github.com/hnginternship5/ziki`
 * cd into the folder or directory
 #Step 1
 * ```php -S localhost:8000```
