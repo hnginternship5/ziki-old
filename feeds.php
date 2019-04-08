@@ -22,31 +22,39 @@
   <body>
     <main>
       <aside>
-        <h1>Homepage</h1>
+        <h1>The Platform</h1>
         <!--This represents the sidebar and contained in it are icon sets from font-awesome-->
         <div class="news_category">
           <ul>
-            <a class="sub_cat active">
-              <li class="sub_cat active">
-                <i class="fas fa-circle" style="color:#B12A1F"></i> Nigerian
+            
+              <li class="">
+              <a class="sub_cat active">
+              <img src="assets/img/Ellipse-red.svg" >  Nigerian
                 News
+                </a>
               </li>
-            </a>
-            <a class="sub_cat">
-              <li class="sub_cat">
-                <i class="fas fa-circle" style="color:#61e540"></i> Chelsea News
-              </li></a
+            
+           
+              <li class="">
+              <a class="sub_cat">
+<img src="assets/img/Ellipse-green.svg" > Chelsea News
+                </a
             >
-            <a class="sub_cat">
-              <li class="sub_cat">
-                <i class="fas fa-circle" style="color:#B53577"></i>Dave Talks
               </li>
-            </a>
-            <a class="sub_cat">
-              <li class="sub_cat">
-                <i class="fas fa-circle" style="color:#B12A1F"></i> Vox
-              </li></a
+            
+              <li class="">
+              <a class="sub_cat">
+              <img src="assets/img/Ellipse-purple.svg" > Dave Talks
+                </a>
+              </li>
+           
+            
+              <li class="">
+              <a class="sub_cat">
+              <img src="assets/img/Ellipse-red.svg" >  Vox
+                </a
             >
+              </li>
           </ul>
         </div>
       </aside>
@@ -62,48 +70,48 @@
         <div class="bottom">
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i> Choke me Daddy: Murder or Suicide?
+            <img src="assets/img/Ellipse-small.svg" >   Choke me Daddy: Murder or Suicide?
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i>Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >  Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
           </div>
           <div class="the_news">
             <p>
-              <i class="fas fa-circle"></i> Dummy content in UI design: How to
+            <img src="assets/img/Ellipse-small.svg" >   Dummy content in UI design: How to
               make it work like a pro.
             </p>
             <p class="time">2h ago</p>
