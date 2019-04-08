@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/landing-page.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -25,7 +25,7 @@
                 <h5 class="landing-page-greeting">Hello Mark Essien,</h5>
                 <div class="d-flex flex-row">
                     <h1 class="landing-page-main-header">Welcome to<br/>The Platform </h1>
-                    <button class="landing-page-btn align-self-end"><a href="/auth.php">Join Now</a></button>
+                    <a href="/auth.php" class="landing-page-btn align-self-end">Join Now</a>
                 </div>
                 <p class="col-md-4 mr-auto landing-page-info">Welcome to the Utopian future, you no longer need to sign up to enjoy your favourite news sources, Just Join us now to have access and your details will be automatically generated. </p>
             </div>
