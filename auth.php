@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once './authentication/auth/googleinit.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +40,9 @@ session_start();
                         </defs>
                     </svg>
 
-                    <span>Google</span>
+                    <span><a href="<?php echo $glogin_url;?>">Google</a></span>
+                    
+                    
                 </button>
 
                 <p class="demarcation-or">or</p>
