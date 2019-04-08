@@ -133,12 +133,6 @@ a {
     margin: 15px 0;
 }
 
-.line {
-    width: 50%;
-    height: 0.1px;
-    background-color: white;
-}
-
 .blog-item-wrapper {
     margin: 10px 0;
 }
@@ -157,22 +151,18 @@ a {
     border-radius: 11px;
     margin-right: 30px;
     margin-left: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    display: block;
 }
 
 .blog-item-main-content {
     margin-left: 40px;
     margin-right: 20px;
-}
-
-.blog-item-img {
-    border-radius: 11px;
-    width: inherit;
-    height: 165px;
-}
-
-.blog-item-img-wrapper {
-    width: 230px;
-    margin: 22px 24px;
+    text-align: center;
+    width: 100%;
+    display: block;
 }
 
 .blog-item-header {
@@ -189,89 +179,16 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 24px;
     line-height: normal;
     text-align: center;
     color: #3667E7;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.blog-item-author-avatar-wrapper {
-    max-width: 50px;
-}
-
-.blog-item-author-avatar {
-    border-radius: 50%;
-    max-width: 50px;
-    height: 50px;
-    margin-right: 17px;
-    border: 0.5px solid rgba(0, 0, 0, 0.5);
-}
-
-.blog-item-content {
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: normal;
-    margin-bottom: 6px;
-    margin-top: 6px;
-    color: white;
-}
-
-.blog-item-tag-wrapper {
-    background: #AECDEE;
-    border-radius: 5px;
-    margin: 6px 6px;
-    padding: 5px 17px;
-}
-
-.blog-item-tag-wrapper:first-child {
-    margin-left: 0;
-}
-
-.blog-item-tag {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: normal;
-    text-align: center;
-    margin: 0;
-    color: #000000;
-}
-
-.blog-item-more_action {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: normal;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #3667E7;
-    margin-left: 10px;
-}
-
-.blog-item-date {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 9px;
-    line-height: normal;
-    margin-top: 6px 0;
-    color: white;
-}
-
-.blog-item-action {
-    margin: 0 15px;
-}
-
-.blog-item-action:first-child {
-    margin-left: 0;
-}
-
-.blog-item-action:last-child {
-    margin-right: 0;
+.contact-form-con {
+    align-items: center;
 }
 
 .post-section {
@@ -285,67 +202,35 @@ a {
 }
 
 .post-input {
-    background-color: transparent;
+    background-color: white;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: normal;
+    width: 100%;
     outline: 0;
     border: 0;
-    padding: 5px;
-    color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    color: black;
     resize: none;
+    display: block;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
 }
 
 .publish-btn {
     background: #3869DF;
-    border-radius: 5px;
-    height: 37px;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+    height: 42px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 14px;
     line-height: normal;
     text-align: center;
     color: #FFFFFF;
-    border-radius: 5px;
-}
-
-.post-action-right .post-action-item {
-    margin: 0 11px;
-}
-
-.post-action-right .post-action-item:first-child {
-    margin-left: 0;
-}
-
-.post-action-right .post-action-item:last-child {
-    margin-right: 0;
-}
-
-.post-action-left .post-action-item {
-    margin: 0 11px;
-}
-
-.post-action-left .post-action-item:first-child {
-    margin-left: 0;
-}
-
-.post-action-left .post-action-item:last-child {
-    margin-right: 0;
-}
-
-.post-filter {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: normal;
-    letter-spacing: -0.05em;
-    color: white;
-}
-
-.post-filter-title {
-    font-weight: normal;
+    border: 0;
+    width: 100%;
+    margin-bottom: 100px;
 }

@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Blog Task</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/light-theme.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
 </head>
-<body>
+<body class="">
     <div class="container-fluid">
-      <p><button class="toggle-theme" type="button">Toggle theme</button></p>
-
-
         <div class="row">
-            <img class="header-img" src="assets/img/header.png">
+            <img class="header-img" src="assets/img/header.png" >
         </div>
 
         <div class="row">
@@ -28,7 +24,7 @@
                     <img class="profile-img" src="assets/img/profile.png">
                 </div>
                 <div class="profile-main">
-                    <h1 class="profile-name">Paul Jephtah</h1>
+                    <h3 class="profile-name">Paul Jephtah</h3>
                     <p class="profile-technologies"><span>UX Designer</span> | <span>Product Designer</span> | <span>Frontend Newbie </span></p>
                     <p class="profile-motto">I’m kinda weird in a very good way.... I design for survival</p>
                 </div>
@@ -74,17 +70,17 @@
 
                         <div class="row mx-0 d-flex flex-row mt-auto justify-content-between">
                             <div class="post-action-right">
-                                <a class="post-action-item" href="#css"><img src="assets/img/text.svg"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/italic.svg"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/link-in.svg"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/underline.svg"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/bold.svg"></a>
+                                <a class="post-action-item" href="#css"><img src="assets/img/text.svg" width="15"></a>
+                                <a class="post-action-item" href="#css"><img src="assets/img/italic.svg" width="15"></a>
+                                <a class="post-action-item" href="#css"><img src="assets/img/link-in.svg" width="15"></a>
+                                <a class="post-action-item" href="#css"><img src="assets/img/underline.svg" width="15"></a>
+                                <a class="post-action-item" href="#css"><img src="assets/img/bold.svg" width="10"></a>
                             </div>
 
                             <div class="post-action-left">
-                                <a class="post-action-item" href="#css"><img src="assets/img/attachment.svg"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/mic.svg"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/link.svg"></a>
+                                <a class="post-action-item" href="#css"><img src="assets/img/attachment.svg" width="15"></a>
+                                <a class="post-action-item" href="#css"><img src="assets/img/mic.svg" width="15"></a>
+                                <a class="post-action-item" href="#css"><img src="assets/img/link.svg" width="15"></a>
                                 <button class="btn publish-btn post-action-item">Publish</button>
                             </div>
 
@@ -102,7 +98,50 @@
                     <div class="row mx-0 mt-md-4 blog-item-wrapper first-child">
                         <div class="d-flex flex-row px-0 blog-item">
                             <div class="blog-item-author-avatar-wrapper">
-                                <img class="blog-item-author-avatar" src="assets/img/avatar-2.jpeg">
+                                <img class="blog-item-author-avatar" src="assets/img/naomi.png">
+                            </div>
+                            <div class="blog-item-main d-flex flex-row">
+                                <div class="blog-item-img-wrapper">
+                                    <img class="blog-item-img" src="assets/img/wall.jpg">
+                                </div>
+                                <div class="d-flex flex-column blog-item-main-content">
+                                     <div class="d-flex flex-row justify-content-between">
+                                         <h2 class="blog-item-header text-left">This is my first Post</h2>
+                                         <img src="assets/img/star.svg">
+                                     </div>
+                                     <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
+                                     <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
+                                     <div class="row d-flex flex-row align-items-center justify-content-between mx-0">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <div class="blog-item-tag-wrapper">
+                                                <p class="blog-item-tag text-center">Javascript</p>
+                                            </div>
+                                            <div class="blog-item-tag-wrapper">
+                                                <p class="blog-item-tag text-center">Tech</p>
+                                            </div>
+                                            <div class="blog-item-tag-wrapper">
+                                                <p class="blog-item-tag text-center">Hotels</p>
+                                            </div>
+                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center">
+                                            <img class="blog-item-action" src="assets/img/heart-filled.svg">
+                                            <img class="blog-item-action" src="assets/img/comment.svg">
+                                        </div>
+                                    </div>
+                                    <p class="blog-item-date">3rd, April 2019 </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="row mx-0 blog-item-wrapper">
+                        <div class="d-flex flex-row px-0 blog-item">
+                            <div class="blog-item-author-avatar-wrapper">
+                                <img class="blog-item-author-avatar" src="assets/img/naomi.png">
                             </div>
                             <div class="blog-item-main d-flex flex-row">
                                 <div class="blog-item-img-wrapper">
@@ -110,7 +149,7 @@
                                 </div>
                                 <div class="d-flex flex-column blog-item-main-content">
                                      <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">This is my first Post</h2>
+                                         <h2 class="blog-item-header text-left">C.Ronaldo vs Messi</h2>
                                          <img src="assets/img/star.svg">
                                      </div>
                                      <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
@@ -153,50 +192,7 @@
                                 </div>
                                 <div class="d-flex flex-column blog-item-main-content">
                                      <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                         <img src="assets/img/star.svg">
-                                     </div>
-                                     <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
-                                     <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
-                                     <div class="row d-flex flex-row align-items-center justify-content-between mx-0">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Javascript</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Tech</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Hotels</p>
-                                            </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center">
-                                            <img class="blog-item-action" src="assets/img/heart-filled.svg">
-                                            <img class="blog-item-action" src="assets/img/comment.svg">
-                                        </div>
-                                    </div>
-                                    <p class="blog-item-date">3rd, April 2019 </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="row mx-0 blog-item-wrapper">
-                        <div class="d-flex flex-row px-0 blog-item">
-                            <div class="blog-item-author-avatar-wrapper">
-                                <img class="blog-item-author-avatar" src="assets/img/avatar-2.jpeg">
-                            </div>
-                            <div class="blog-item-main d-flex flex-row">
-                                <div class="blog-item-img-wrapper">
-                                    <img class="blog-item-img" src="assets/img/image-1.png">
-                                </div>
-                                <div class="d-flex flex-column blog-item-main-content">
-                                     <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">This is my first Post</h2>
+                                         <h2 class="blog-item-header text-left">The effect of culture on design trends</h2>
                                          <img src="assets/img/star.svg">
                                      </div>
                                      <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
@@ -355,6 +351,7 @@
 
                     </div>
                 <!-- </div> -->
+                <h6 class="text-center" style="margin-top:27px;margin-bottom:27px">Load More<h5>
             </div>
         </div>
 
