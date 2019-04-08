@@ -1,0 +1,351 @@
+/** mylo carson 2019 */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #06223D;
+    color: white;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+p {
+    font-size: 12px;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.header-img {
+    width: 100%;
+    min-height: 200px;
+    height: 33%;
+}
+
+.profile-section {
+    background: #04284A;
+}
+
+.profile-img-wrapper {
+    position: absolute;
+    top: -120px;
+    margin-bottom: -120px;
+}
+
+.profile-img {
+    /*position: absolute;
+    top: -113px;
+    margin-bottom: 113px;*/
+    border-radius: 50%;
+    max-width: 230px;
+    height: 230px;
+}
+
+.profile-main {
+    margin-top: 100px;
+}
+
+.profile-name {
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Open Sans;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin-bottom: 6px
+}
+
+.profile-technologies {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.profile-motto {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: normal;
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.profile-social-wrapper {
+    margin-top: 24px;
+    color: white;
+}
+
+.profile-social-icon {
+    margin: 0 12px;
+    color: white;
+}
+
+.profile-social-icon:first-child {
+    margin-left: 0;
+}
+
+.profile-social-icon:last-child {
+    margin-right: 0;
+}
+
+.menu-wrapper {
+    margin: 68px 0;
+}
+
+.menu-item {
+    margin: 15px 0;
+}
+
+.line {
+    width: 50%;
+    height: 0.1px;
+    background-color: white;
+}
+
+.blog-item-wrapper {
+    margin: 10px 0;
+}
+
+.blog-item-wrapper:first-child {
+    margin-top: 32px;
+}
+
+.blog-item {
+    width: 100%;
+}
+
+.blog-item-main {
+    background: #04284A;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+    border-radius: 11px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.blog-item-main-content {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.blog-item-img {
+    border-radius: 11px;
+    width: inherit;
+    height: 165px;
+}
+
+.blog-item-img-wrapper {
+    width: 230px;
+    margin: 22px 24px;
+}
+
+.blog-item-header {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: normal;
+    margin-top: 15px;
+    color: white;
+}
+
+.blog-item-author {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+    color: #3667E7;
+}
+
+.blog-item-author-avatar-wrapper {
+    max-width: 50px;
+}
+
+.blog-item-author-avatar {
+    border-radius: 50%;
+    max-width: 50px;
+    height: 50px;
+    margin-right: 17px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.blog-item-content {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: white;
+}
+
+.blog-item-tag-wrapper {
+    background: #AECDEE;
+    border-radius: 5px;
+    margin: 6px 6px;
+    padding: 5px 17px;
+}
+
+.blog-item-tag-wrapper:first-child {
+    margin-left: 0;
+}
+
+.blog-item-tag {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    color: #000000;
+}
+
+.blog-item-more_action {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #3667E7;
+    margin-left: 10px;
+}
+
+.blog-item-date {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: normal;
+    margin-top: 6px 0;
+    color: white;
+}
+
+.blog-item-action {
+    margin: 0 15px;
+}
+
+.blog-item-action:first-child {
+    margin-left: 0;
+}
+
+.blog-item-action:last-child {
+    margin-right: 0;
+}
+
+.post-section {
+    min-height: 160px;
+    background: #04284A;
+    padding: 18px 30px;
+    margin-top: 47px;
+    margin-left: 48px;
+    margin-right: 45px;
+    margin-bottom: 22px;
+}
+
+.post-input {
+    background-color: transparent;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    outline: 0;
+    border: 0;
+    padding: 5px;
+    color: white;
+    resize: none;
+}
+
+.publish-btn {
+    background: #3869DF;
+    border-radius: 5px;
+    height: 37px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.post-action-right .post-action-item {
+    margin: 0 11px;
+}
+
+.post-action-right .post-action-item:first-child {
+    margin-left: 0;
+}
+
+.post-action-right .post-action-item:last-child {
+    margin-right: 0;
+}
+
+.post-action-left .post-action-item {
+    margin: 0 11px;
+}
+
+.post-action-left .post-action-item:first-child {
+    margin-left: 0;
+}
+
+.post-action-left .post-action-item:last-child {
+    margin-right: 0;
+}
+
+.post-filter {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: -0.05em;
+    color: white;
+}
+
+.post-filter-title {
+    font-weight: normal;
+}
