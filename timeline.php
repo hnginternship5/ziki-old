@@ -14,6 +14,7 @@
 </head>
 <body>
     <div class="container-fluid">
+      <p><button class="toggle-theme" type="button">Toggle theme</button></p>
 
 
         <div class="row">
@@ -358,5 +359,10 @@
         </div>
 
     </div>
+
+    <script>
+    const toggleThemeBtn = document.querySelector('.toggle-theme');
+    toggleThemeBtn.addEventListener('click', e => document.querySelector('body').classList.toggle('dark'));
+    </script>
 </body>
 </html>
