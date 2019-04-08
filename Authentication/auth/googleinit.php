@@ -21,7 +21,7 @@ $code = isset($_GET['code']) ? $_GET['code'] : NULL;
 //Fetch access token
 if(isset($code)) {
   try {
- 
+
       $_SESSION['accesstoken'] = $g_client->fetchAccessTokenWithAuthCode($code);
        //= $gaccess_token;
       $g_client->setAccessToken($_SESSION['accesstoken']);
@@ -49,4 +49,3 @@ if(isset($code)) {
   $user = null;
 }
 ?>
-
