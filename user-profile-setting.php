@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="assets/css/profile-user-setting.css">
 </head>
 <body>
-    <main class="motuns-main-container">
-        <section class="motuns-side-bar">
+    <main class="motuns-main-containe">
+        <section class="motuns-side-ba">
             <h3>
                 Homepage
             </h3>
             <ul>
-                <li class="list-1">
+                <li class="list">
                     Profile
                 </li>
                 <li>
@@ -26,11 +26,11 @@
                 </li>
             </ul>
         </section>
-        <section class="motuns-content-container">
+        <section class="motuns-content-containe">
             <h2>
                 Settings
             </h2>
-            <div class="d-flx">
+            <div class="d-fl">
                 <form action="/action_page.php">
                     First name:<br>
                     <input type="text" name="firstname" value="Dragon">
@@ -45,9 +45,9 @@
                     <input type="text" name="lastname">
                     
                 </form> 
-                <div class="d-grid">
+                <div class="d-grd">
                     <img src="/assets/img/avatar-2.jpeg" alt="" class="avatar">
-                    <button class="upcase">
+                    <button class="up-case">
                         update
                     </button>
                     <p>
@@ -58,11 +58,11 @@
                     </p>
                 </div>
             </div>
-            <div class="d-flx">
-                <span class="co-red">
+            <div class="d-fl">
+                <span class="co.red">
                     Delete my account
                 </span>
-                <button  class="capitalize">
+                <button  class="capital">
                     Save changes
                 </button>
             </div>

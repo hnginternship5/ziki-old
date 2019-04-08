@@ -23,29 +23,29 @@ button {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.motuns-main-container {
+.motuns-main-containe {
     display: flex
 }
 
-.motuns-side-bar {
+.motuns-side-ba {
     background-color: #F7F7F7;
     height: 100vh;
     width: 25%;
     /* padding-left: 160px; */
 }
-.motuns-side-bar h3 {
+.motuns-side-ba h3 {
     font-size: 25px;
     color: #3667E7;
     margin-top: 20px;
     padding-left: 160px;
 }
 
-.motuns-content-container {
+.motuns-content-containe {
     margin: 20px 3rem;
     margin-top: 20px;
     width: 75%;
 }
-.motuns-content-container h2 {
+.motuns-content-containe h2 {
     font-size: 36px;
     font-weight: normal;
 }
@@ -59,7 +59,7 @@ li {
     padding: 10px 0;
     padding-left: 160px;
 }
-.list-1 {
+.list {
     background-color: #ffffff;
     padding-left: 160px;
 }
@@ -81,7 +81,7 @@ input {
     margin: 15px 0;
 }
 
-.d-flx {
+.d-fl {
     display: flex;
     justify-content: space-between;
 }
@@ -96,16 +96,16 @@ input {
     height: 162px;
 }
 
-.d-grid {
+.d-grd {
     display: grid;
     text-align: center;
 }
 
-.co-red {
+.co.red {
     color: red;
 }
 
-.upcase {
+.up-case {
     text-transform: uppercase;
     width: 100px;
     height: 45px;
@@ -113,7 +113,7 @@ input {
     margin-top: -1.5rem;
 }
 
-.capitalize {
+.capital {
     text-transform: capitalize;
     width: 138px;
     height: 45px;
