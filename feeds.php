@@ -22,31 +22,39 @@
   <body>
     <main>
       <aside>
-        <h1>Homepage</h1>
+        <h1>The Platform</h1>
         <!--This represents the sidebar and contained in it are icon sets from font-awesome-->
         <div class="news_category">
           <ul>
-            <a class="sub_cat active">
-              <li class="sub_cat active">
+            
+              <li class="">
+              <a class="sub_cat active">
                 <i class="fas fa-circle" style="color:#B12A1F"></i> Nigerian
                 News
+                </a>
               </li>
-            </a>
-            <a class="sub_cat">
-              <li class="sub_cat">
+            
+           
+              <li class="">
+              <a class="sub_cat">
                 <i class="fas fa-circle" style="color:#61e540"></i> Chelsea News
-              </li></a
+                </a
             >
-            <a class="sub_cat">
-              <li class="sub_cat">
-                <i class="fas fa-circle" style="color:#B53577"></i>Dave Talks
               </li>
-            </a>
-            <a class="sub_cat">
-              <li class="sub_cat">
+            
+              <li class="">
+              <a class="sub_cat">
+                <i class="fas fa-circle" style="color:#B53577"></i>Dave Talks
+                </a>
+              </li>
+           
+            
+              <li class="">
+              <a class="sub_cat">
                 <i class="fas fa-circle" style="color:#B12A1F"></i> Vox
-              </li></a
+                </a
             >
+              </li>
           </ul>
         </div>
       </aside>

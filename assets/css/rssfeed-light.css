@@ -10,7 +10,6 @@ a {
 
 li {
     list-style: none;
-    padding-left: 20px !important;
 }
 
 ul {
@@ -103,7 +102,6 @@ aside i.fa {
     flex: 9 1 0;
     display: flex;
     flex-direction: column;
-    width: 20vw;
 }
 
 .news_category i {
