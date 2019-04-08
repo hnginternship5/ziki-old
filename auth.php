@@ -11,9 +11,8 @@ require_once 'Authentication/auth/googleinit.php';
     <title>Sign Up / Sign In</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Hind:400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/authentication.css">
+    <link rel="stylesheet" href="assets/css/base.css">
 </head>
-
 <body>
 
     <!-- <div id="fb-root"></div>
