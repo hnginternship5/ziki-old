@@ -14,6 +14,7 @@
 </head>
 <body>
     <div class="container-fluid">
+      <p><button class="toggle-theme" type="button">Toggle theme</button></p>
 
 
         <div class="row">
@@ -21,7 +22,7 @@
         </div>
 
         <div class="row">
-            
+
             <div class="col-md-3 d-flex flex-column align-items-center profile-section">
                 <div class="profile-img-wrapper">
                     <img class="profile-img" src="assets/img/profile.png">
@@ -38,12 +39,12 @@
                 </div>
 
                 <div>
-                    
+
                     <ul class="menu-wrapper d-flex flex-column">
                         <a href=""><li class="menu-item text-center">Draft</li></a>
                         <a href="#"><li class="menu-item text-center">My Blogs</li> </a>
                         <a href="#"><li class="menu-item text-center">Insights</li> </a>
-                        <a href="#"><li class="menu-item text-center">Settings</li> </a>
+                        <a href="user-profile-setting.php"><li class="menu-item text-center">Settings</li> </a>
 
                     </ul>
                 </div>
@@ -51,7 +52,7 @@
                 <div class="line"></div>
 
                 <div>
-                    
+
                     <ul class="menu-wrapper d-flex flex-column">
                         <a href="#"><li class="menu-item text-center">English (US)</li> </a>
                         <a href="#"><li class="menu-item text-center">Privacy</li> </a>
@@ -64,7 +65,7 @@
 
             </div>
             <div class="col-md-9">
-                
+
                 <!-- <div class=""> -->
 
                     <div class="row d-flex flex-column post-section">
@@ -86,7 +87,7 @@
                                 <a class="post-action-item" href="#css"><img src="assets/img/link.svg"></a>
                                 <button class="btn publish-btn post-action-item">Publish</button>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -97,7 +98,7 @@
                             <img src="assets/img/caret.svg">
                         </div>
                     </div>
-                    
+
                     <div class="row mx-0 mt-md-4 blog-item-wrapper first-child">
                         <div class="d-flex flex-row px-0 blog-item">
                             <div class="blog-item-author-avatar-wrapper">
@@ -137,7 +138,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
 
@@ -180,7 +181,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
 
@@ -223,7 +224,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
 
@@ -266,7 +267,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
 
@@ -309,7 +310,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <div class="row mx-0 blog-item-wrapper">
@@ -351,12 +352,17 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 <!-- </div> -->
             </div>
         </div>
 
     </div>
+
+    <script>
+    const toggleThemeBtn = document.querySelector('.toggle-theme');
+    toggleThemeBtn.addEventListener('click', e => document.querySelector('body').classList.toggle('dark'));
+    </script>
 </body>
 </html>
