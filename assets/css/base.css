@@ -493,7 +493,7 @@ Landing Page Styling
 
 
 /* ===================
-Timeline Page Styling
+Timeline && Contact Us Page Styling
 ==================== */
 .header-img {
 	width: 100%;
@@ -596,9 +596,24 @@ Timeline Page Styling
     border-radius: 11px;
     margin-right: 45px;
 }
+.contact-us-wrap .blog-item-main {
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    display: block;
+}
 .blog-item-main-content {
 	margin-left: 40px;
 	margin-right: 20px;
+}
+.contact-us-wrap .blog-item-main-content {
+    margin-left: 40px;
+    margin-right: 20px;
+    text-align: center;
+    width: 100%;
+    display: block;
 }
 .blog-item-img {
 	border-radius: 11px;
@@ -626,6 +641,11 @@ Timeline Page Styling
     text-align: center;
 
     color: #3667E7;
+}
+.contact-us-wrap .blog-item-author {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .blog-item-author-avatar-wrapper {
 	max-width: 50px;
@@ -717,6 +737,20 @@ Timeline Page Styling
     color: #CCCCCC;
     resize: none;
 }
+.contact-us-wrap .post-input {
+    background-color: white;
+    font-size: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    color: black;
+    display: block;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+}
+.dark-theme .contact-us-wrap .post-input {
+    background: #153F6C;
+    color: #fff;
+}
 .publish-btn {
 	background: #3667E7;
 	border-radius: 5px;
@@ -731,6 +765,15 @@ Timeline Page Styling
     color: #FFFFFF;
 
     border-radius: 1px;
+}
+.publish-btn {
+    background: #3869DF;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+    height: 42px;
+    font-size: 14px;
+    border: 0;
+    width: 100%;
+    margin-bottom: 100px;
 }
 .post-action-right .post-action-item {
 	margin: 0 11px;
@@ -769,4 +812,7 @@ Timeline Page Styling
 	.header-img{
 		height: 240px;
 	}
+}
+.contact-form-con {
+    align-items: center;
 }
