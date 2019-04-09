@@ -70,11 +70,11 @@
                                 <div class="d-flex flex-column blog-item-main-content">
     
                                      <div class="contact-form-con">
-                                     <h4 class="blog-item-author text-left">Get in Touch </h4>
-                                     <p class="blog-item-content text-left">How can we help you? we'd love to hear from you</p>
+                                     <h4 class="blog-item-author">Get in Touch </h4>
+                                     <p class="blog-item-content">How can we help you? we'd love to hear from you</p>
                                 
                                         <div class="">
-                                            <input type="text" class="post-input" id="usr" placeholder="First name">
+                                            <input type="text" class="post-input" id="usr" placeholder="First Name">
                                             <input type="text" class="post-input" id="usr" placeholder="Subject">
                                             <input type="text" class="post-input" id="usr" placeholder="Email Address">
                                             <textarea class="post-input" type="text" name="post-input" rows="8" placeholder="Message"></textarea>
