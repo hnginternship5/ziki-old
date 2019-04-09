@@ -26,8 +26,12 @@
 class Google_Service_PlusDomains_Resource_Activities extends Google_Service_Resource
 {
   /**
+<<<<<<< HEAD
+   * Get an activity. (activities.get)
+=======
    * Shut down. See https://developers.google.com/+/api-shutdown for more details.
    * (activities.get)
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    *
    * @param string $activityId The ID of the activity to get.
    * @param array $optParams Optional parameters.
@@ -40,7 +44,11 @@ class Google_Service_PlusDomains_Resource_Activities extends Google_Service_Reso
     return $this->call('get', array($params), "Google_Service_PlusDomains_Activity");
   }
   /**
+<<<<<<< HEAD
+   * List all of the activities in the specified collection for a particular user.
+=======
    * Shut down. See https://developers.google.com/+/api-shutdown for more details.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * (activities.listActivities)
    *
    * @param string $userId The ID of the user to get activities for. The special

@@ -53,7 +53,10 @@ class Google_Service_Storage extends Google_Service
   public $notifications;
   public $objectAccessControls;
   public $objects;
+<<<<<<< HEAD
+=======
   public $projects_hmacKeys;
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public $projects_serviceAccount;
   
   /**
@@ -1401,6 +1404,8 @@ class Google_Service_Storage extends Google_Service
           )
         )
     );
+<<<<<<< HEAD
+=======
     $this->projects_hmacKeys = new Google_Service_Storage_Resource_ProjectsHmacKeys(
         $this,
         $this->serviceName,
@@ -1497,6 +1502,7 @@ class Google_Service_Storage extends Google_Service
           )
         )
     );
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
     $this->projects_serviceAccount = new Google_Service_Storage_Resource_ProjectsServiceAccount(
         $this,
         $this->serviceName,

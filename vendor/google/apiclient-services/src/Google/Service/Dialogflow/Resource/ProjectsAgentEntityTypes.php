@@ -122,6 +122,11 @@ class Google_Service_Dialogflow_Resource_ProjectsAgentEntityTypes extends Google
    * Format: `projects//agent`.
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
+   * @opt_param int pageSize Optional. The maximum number of items to return in a
+   * single page. By default 100 and at most 1000.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string languageCode Optional. The language to list entity synonyms
    * for. If not specified, the agent's default language is used. [Many
    * languages](https://cloud.google.com/dialogflow-
@@ -129,8 +134,11 @@ class Google_Service_Dialogflow_Resource_ProjectsAgentEntityTypes extends Google
    * enabled in the agent before they can be used.
    * @opt_param string pageToken Optional. The next_page_token value returned from
    * a previous list request.
+<<<<<<< HEAD
+=======
    * @opt_param int pageSize Optional. The maximum number of items to return in a
    * single page. By default 100 and at most 1000.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2ListEntityTypesResponse
    */
   public function listProjectsAgentEntityTypes($parent, $optParams = array())

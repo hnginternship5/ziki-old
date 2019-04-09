@@ -86,6 +86,22 @@ class Google_Service_CloudAsset extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'readTimeWindow.endTime' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'readTimeWindow.startTime' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'assetNames' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'contentType' => array(
+=======
                 'assetNames' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -100,6 +116,7 @@ class Google_Service_CloudAsset extends Google_Service
                   'type' => 'string',
                 ),
                 'readTimeWindow.startTime' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),

@@ -328,6 +328,19 @@ class Google_Service_AndroidEnterprise extends Google_Service
                   'required' => true,
                 ),
               ),
+<<<<<<< HEAD
+            ),'setAndroidDevicePolicyConfig' => array(
+              'path' => 'enterprises/{enterpriseId}/androidDevicePolicyConfig',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
             ),'setStoreLayout' => array(
               'path' => 'enterprises/{enterpriseId}/storeLayout',
               'httpMethod' => 'PUT',

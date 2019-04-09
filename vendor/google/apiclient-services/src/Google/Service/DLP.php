@@ -202,6 +202,13 @@ class Google_Service_DLP extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -210,10 +217,13 @@ class Google_Service_DLP extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),'patch' => array(
               'path' => 'v2/{+name}',
@@ -716,6 +726,13 @@ class Google_Service_DLP extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -724,10 +741,13 @@ class Google_Service_DLP extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),'patch' => array(
               'path' => 'v2/{+name}',

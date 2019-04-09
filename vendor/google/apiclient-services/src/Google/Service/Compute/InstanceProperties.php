@@ -35,8 +35,11 @@ class Google_Service_Compute_InstanceProperties extends Google_Collection
   protected $schedulingDataType = '';
   protected $serviceAccountsType = 'Google_Service_Compute_ServiceAccount';
   protected $serviceAccountsDataType = 'array';
+<<<<<<< HEAD
+=======
   protected $shieldedInstanceConfigType = 'Google_Service_Compute_ShieldedInstanceConfig';
   protected $shieldedInstanceConfigDataType = '';
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   protected $tagsType = 'Google_Service_Compute_Tags';
   protected $tagsDataType = '';
 
@@ -165,6 +168,8 @@ class Google_Service_Compute_InstanceProperties extends Google_Collection
     return $this->serviceAccounts;
   }
   /**
+<<<<<<< HEAD
+=======
    * @param Google_Service_Compute_ShieldedInstanceConfig
    */
   public function setShieldedInstanceConfig(Google_Service_Compute_ShieldedInstanceConfig $shieldedInstanceConfig)
@@ -179,6 +184,7 @@ class Google_Service_Compute_InstanceProperties extends Google_Collection
     return $this->shieldedInstanceConfig;
   }
   /**
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @param Google_Service_Compute_Tags
    */
   public function setTags(Google_Service_Compute_Tags $tags)

@@ -127,14 +127,24 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
+<<<<<<< HEAD
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+<<<<<<< HEAD
+=======
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),'train' => array(
               'path' => 'v2/{+parent}/agent:train',
@@ -223,6 +233,13 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'languageCode' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -231,10 +248,13 @@ class Google_Service_Dialogflow extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),'patch' => array(
               'path' => 'v2/{+name}',
@@ -333,11 +353,19 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'intentView' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'languageCode' => array(
+=======
                 'languageCode' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'intentView' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -361,11 +389,19 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'languageCode' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'intentView' => array(
+=======
                 'intentView' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'languageCode' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -405,6 +441,17 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'languageCode' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'intentView' => array(
+=======
                 'intentView' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -414,6 +461,7 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                 ),
                 'updateMask' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),

@@ -22,10 +22,15 @@ class Google_Service_Compute_Backend extends Google_Model
   public $description;
   public $group;
   public $maxConnections;
+<<<<<<< HEAD
+  public $maxConnectionsPerInstance;
+  public $maxRate;
+=======
   public $maxConnectionsPerEndpoint;
   public $maxConnectionsPerInstance;
   public $maxRate;
   public $maxRatePerEndpoint;
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public $maxRatePerInstance;
   public $maxUtilization;
 
@@ -69,6 +74,8 @@ class Google_Service_Compute_Backend extends Google_Model
   {
     return $this->maxConnections;
   }
+<<<<<<< HEAD
+=======
   public function setMaxConnectionsPerEndpoint($maxConnectionsPerEndpoint)
   {
     $this->maxConnectionsPerEndpoint = $maxConnectionsPerEndpoint;
@@ -77,6 +84,7 @@ class Google_Service_Compute_Backend extends Google_Model
   {
     return $this->maxConnectionsPerEndpoint;
   }
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public function setMaxConnectionsPerInstance($maxConnectionsPerInstance)
   {
     $this->maxConnectionsPerInstance = $maxConnectionsPerInstance;
@@ -93,6 +101,8 @@ class Google_Service_Compute_Backend extends Google_Model
   {
     return $this->maxRate;
   }
+<<<<<<< HEAD
+=======
   public function setMaxRatePerEndpoint($maxRatePerEndpoint)
   {
     $this->maxRatePerEndpoint = $maxRatePerEndpoint;
@@ -101,6 +111,7 @@ class Google_Service_Compute_Backend extends Google_Model
   {
     return $this->maxRatePerEndpoint;
   }
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public function setMaxRatePerInstance($maxRatePerInstance)
   {
     $this->maxRatePerInstance = $maxRatePerInstance;

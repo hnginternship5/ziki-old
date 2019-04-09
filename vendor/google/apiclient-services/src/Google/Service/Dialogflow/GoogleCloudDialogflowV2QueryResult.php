@@ -32,8 +32,11 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryResult extends Googl
   protected $outputContextsDataType = 'array';
   public $parameters;
   public $queryText;
+<<<<<<< HEAD
+=======
   protected $sentimentAnalysisResultType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2SentimentAnalysisResult';
   protected $sentimentAnalysisResultDataType = '';
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public $speechRecognitionConfidence;
   public $webhookPayload;
   public $webhookSource;
@@ -144,6 +147,8 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryResult extends Googl
   {
     return $this->queryText;
   }
+<<<<<<< HEAD
+=======
   /**
    * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2SentimentAnalysisResult
    */
@@ -158,6 +163,7 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryResult extends Googl
   {
     return $this->sentimentAnalysisResult;
   }
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public function setSpeechRecognitionConfidence($speechRecognitionConfidence)
   {
     $this->speechRecognitionConfidence = $speechRecognitionConfidence;

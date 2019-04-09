@@ -224,6 +224,25 @@ class Google_Service_Monitoring extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'ancestorsOfGroup' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'childrenOfGroup' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'descendantsOfGroup' => array(
+=======
                 'childrenOfGroup' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -241,6 +260,7 @@ class Google_Service_Monitoring extends Google_Service
                   'type' => 'integer',
                 ),
                 'ancestorsOfGroup' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -348,6 +368,13 @@ class Google_Service_Monitoring extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -356,10 +383,13 @@ class Google_Service_Monitoring extends Google_Service
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+<<<<<<< HEAD
+=======
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),
           )
@@ -390,6 +420,13 @@ class Google_Service_Monitoring extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -398,10 +435,13 @@ class Google_Service_Monitoring extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),
           )
@@ -584,6 +624,18 @@ class Google_Service_Monitoring extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'view' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'aggregation.groupByFields' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'interval.endTime' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -608,11 +660,19 @@ class Google_Service_Monitoring extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+                'aggregation.perSeriesAligner' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+=======
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'aggregation.perSeriesAligner' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -620,6 +680,8 @@ class Google_Service_Monitoring extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
                 'view' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -629,6 +691,7 @@ class Google_Service_Monitoring extends Google_Service
                   'type' => 'string',
                   'repeated' => true,
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),
           )
@@ -716,14 +779,24 @@ class Google_Service_Monitoring extends Google_Service
               'path' => 'v3/uptimeCheckIps',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
+<<<<<<< HEAD
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+<<<<<<< HEAD
+=======
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),
           )
