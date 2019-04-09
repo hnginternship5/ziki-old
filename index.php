@@ -285,7 +285,6 @@
 
                 </div>
                 <!-- </div> -->
-                <h6 class="text-center" style="margin-top:27px;margin-bottom:27px">Load More<h5>
             </div>
         </div>
     </div>
