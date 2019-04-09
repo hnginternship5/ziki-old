@@ -104,52 +104,87 @@ button {
 /* ==========================
 404 Styling
 ========================= */
+.justice-error-main {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem 3rem 0.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  align-content: space-around;
+}
+
+.justice-error-vector {
+  width: 20%;
+}
+
 .fof-warning-text {
-  font-size: 5vw;
-  line-height: 3vw;
+  font-size: 64px;
   font-weight: bolder;
   text-align: center;
 }
-.fof-second-text {
-  font-size: 5vw;
-  line-height: 2vw;
-  font-weight: bolder;
-  text-align: center;
-}
+
 .fof-return-button {
   background-color: var(--fof-return-btn-bg-color);
-  padding: 23px;
-  padding-left: 50px;
-  padding-right: 50px;
-  position: absolute;
-  top: 65%;
-  left: 34%;
-  right: 34%;
-  border-radius: 10px;
-  font-size: 90%;
+  font-size: 40px;
+  width: 50%;
+  padding: 24px 64px;
+  border-radius: 11px;
   line-height: 30px;
   font-weight: bold;
   color: var(--fof-return-btn-text-color);
-  width: 25%;
   text-align: center;
 }
-@media all and (max-width: 30em) {
-  .fof-return.button {
-    display: block;
-    margin: 0.4em auto;
-    left: 25%;
+@media all and (max-width: 560px) {
+  .justice-error-main {
+    padding: 1rem;
+  }
+
+  .fof-warning-text {
+    font-size: 34px;
+  }
+
+  .justice-error-vector {
+    width: 56%;
+  }
+  .fof-return-button {
+    font-size: 20px;
+    width: 100%;
+    padding: 24px;
   }
 }
-@media only screen and (max-width: 600px) {
-  .fof-return.button {
-    left: 25%;
+@media all and (min-width: 560px) and (max-width: 1024px) {
+  .justice-error-main {
+    padding: 3rem 3rem 1rem 3rem;
+  }
+
+  .fof-warning-text {
+    font-size: 40px;
+  }
+
+  .justice-error-vector {
+    width: 30%;
+  }
+  .fof-return-button {
+    font-size: 25px;
+    width: 80%;
   }
 }
+
+.dark-theme.justice-error-main {
+  background-color: #07223e;
+  color: white;
+}
+.dark-theme .fof-navbar a {
+  color: white;
+}
+.dark-theme .fof-navbar a:hover {
+  color: #3667e7;
+}
+
 .fof-navbar {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   text-align: center;
 }
 

@@ -1,5 +1,5 @@
 html {
-    overflow-x:   hidden;
+    overflow-x: hidden;
 }
 
 * {
@@ -8,7 +8,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -17,9 +19,9 @@ body {
     font-family: 'Lato', sans-serif;
     color: #000000;
     height: 100vh;
-    line-height:        normal;
-    overflow-x:         hidden;
-    letter-spacing:     .2px;
+    line-height: normal;
+    overflow-x: hidden;
+    letter-spacing: .2px;
 }
 
 button {
@@ -32,6 +34,7 @@ button {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
 .motuns-main-container {
     /* display: flex */
     margin: 2rem;
@@ -43,9 +46,11 @@ button {
     justify-content: space-between;
     margin-bottom: 2rem;
 }
-.motuns-side-bar h3 {
+
+.motuns-side-bar h3 a {
     font-size: 25px;
     color: #3667E7;
+    text-decoration: none;
     /* margin-top: 20px; */
     /* padding-left: 160px; */
 }
@@ -60,9 +65,20 @@ button {
     font-weight: 500;
     margin-bottom: 4rem;
 }
+
+.homepage-link {
+    transition: all ease-in-out 0.3s;
+}
+
+.homepage-link:hover {
+    cursor: pointer;
+    color: rgb(35, 70, 161);
+    transition: all ease-in-out 0.3s;
+}
+
 ul {
-    list-style:     none;
-    margin-top:     30px;
+    list-style: none;
+    margin-top: 30px;
 }
 
 li {
@@ -115,6 +131,13 @@ input {
 .co-red {
     color: red;
     /* font-size: 14px; */
+    transition: all ease-in-out 0.3s;
+}
+
+.co-red:hover {
+    cursor: pointer;
+    color: rgb(168, 0, 0);
+    transition: all ease-in-out 0.3s;
 }
 
 .upcase {
@@ -122,7 +145,8 @@ input {
     width: 100px;
     height: 45px;
     margin: 0 auto;
-    border: none
+    border: none;
+    transition: all ease-in-out 0.3s;
 }
 
 .capitalize {
@@ -131,6 +155,7 @@ input {
     height: 45px;
     margin-left: 30%;
     border: none;
+    transition: all ease-in-out 0.3s;
 }
 
 .en {
@@ -142,6 +167,27 @@ input {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     padding: .5rem;
+    transition: all ease-in-out 0.3s;
+}
+
+.en:hover {
+    cursor: pointer;
+    background-color: rgb(185, 185, 185);
+    transition: all ease-in-out 0.3s;
+}
+
+.capitalize:hover {
+    background-color: rgb(35, 70, 161);
+    box-shadow: 1px 1px 10px #a7a7a7;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.upcase:hover {
+    background-color: rgb(35, 70, 161);
+    transition: all ease-in-out 0.3s;
+    box-shadow: 1px 1px 10px #a7a7a7;
+    cursor: pointer;
 }
 
 .sub {
@@ -165,6 +211,13 @@ input {
     display: inline-flex;
     width: 40px;
     border-radius: 50px;
+    transition: all ease-in-out 0.3s;
+}
+
+.toggle:hover {
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
 }
 
 .no-justify {
@@ -204,6 +257,7 @@ input {
         background-color: #ffffff;
         padding: .5rem 0 .5rem 47%
     }
+
     .container {
         width: 65%;
     }
@@ -272,6 +326,7 @@ input {
     form {
         margin-top: 0;
     }
+
     .lang {
         float: right;
         margin-top: -30%;
@@ -291,6 +346,7 @@ input {
 body.dark {
     color: #ffffff;
 }
+
 .motuns-main-container.dark {
     background-color: #07223E;
 }
@@ -301,19 +357,19 @@ body.dark {
 
 .motuns-side-bar.dark p {
     background: #07223E;
-    }
+}
 
 input.dark {
-    background:  #04274C;
+    background: #04274C;
     color: #ffffff;
 }
 
 .en.dark {
-    background:  #04274C;
+    background: #04274C;
 }
 
 .drop.dark {
-    background:  #04274C;
+    background: #04274C;
     border: none;
     color: #ffffff;
 }
