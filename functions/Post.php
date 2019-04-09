@@ -66,15 +66,19 @@ class Post {
         if ($this->id == -1) {
             //Saving new post 
             $filename = $this->userId;
-            $fname = SITE_ROOT."/markdowns/{$filename}.md";
+            $time = date("Y-m-d h:i:sa");
+            $unix = strtotime($time);
+            if (!is_dir(SITE_ROOT."/markdowns/{$filename}")) {
+                mkdir(SITE_ROOT."/markdowns/{$filename}");
+            }
+            $fname = SITE_ROOT."/markdowns/{$filename}/{$filename}-{$unix}.md";
             $postfile = fopen($fname, "w") or die("failed while creating file");
             $result = fwrite($postfile, "<h2>{$this->storyTitle}</h2><p>{$this->storyBody}</p>");
             fclose($postfile);
             if ($result == true) {
                 $id = $this->id = (mt_rand(100001,999999));
-                $file = $filename;
+                $file = $fname;
                 $img = $this->image;
-                $time = date("Y-m-d h:i:sa");
                 $posts[] = array('id'=> $id, 'user_id'=>$_SESSION['loggedUserId'], 'file_url'=> $file, 'post_image' => $img, 'post_timestamp' => $time);
                 $json_db = "posts.json";
                 $fp = fopen($json_db, 'w') or die("post DB not found");
