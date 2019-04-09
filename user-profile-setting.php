@@ -9,12 +9,13 @@
     <title>Profile Setting</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Hind:400,500,700" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/profile-user-setting.css">
 </head>
 <body>
     <main class="motuns-main-container">
         <section class="motuns-side-bar">
-            <h3>
+            <h3 class="homepage-link">
                 Homepage
             </h3>
             <p class="">
