@@ -40,7 +40,7 @@ include 'header.php';
               <a class="nav-link" href="#">Insights</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Settings</a>
+              <a class="nav-link" href="/user-profile-setting.php">Settings</a>
             </li>
           </ul>
         </div>
