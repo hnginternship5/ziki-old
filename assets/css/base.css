@@ -28,6 +28,10 @@
   --blog-author-avatar-border-color: rgba(0, 0, 0, 0.5);
   --post-publish-btn-bg-color: #3869df;
   --post-publish-btn-text-color: white;
+
+  /* to transition the color */
+  --theme-change-transition-duration: 0.3s;
+  --theme-change-timing-function: ease;
 }
 
 .dark {
@@ -64,6 +68,10 @@ body {
   min-height: 100%;
   background-color: var(--default-bg-color);
   color: var(--default-text-color);
+  transition: background-color var(--theme-change-transition-duration)
+      var(--theme-change-timing-function),
+    color var(--theme-change-transition-duration)
+      var(--theme-change-timing-function);
 }
 
 p {
