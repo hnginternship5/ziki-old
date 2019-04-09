@@ -24,8 +24,11 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryParameters extends G
   protected $geoLocationDataType = '';
   public $payload;
   public $resetContexts;
+<<<<<<< HEAD
+=======
   protected $sentimentAnalysisRequestConfigType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2SentimentAnalysisRequestConfig';
   protected $sentimentAnalysisRequestConfigDataType = '';
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   protected $sessionEntityTypesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType';
   protected $sessionEntityTypesDataType = 'array';
   public $timeZone;
@@ -75,6 +78,8 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryParameters extends G
     return $this->resetContexts;
   }
   /**
+<<<<<<< HEAD
+=======
    * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2SentimentAnalysisRequestConfig
    */
   public function setSentimentAnalysisRequestConfig(Google_Service_Dialogflow_GoogleCloudDialogflowV2SentimentAnalysisRequestConfig $sentimentAnalysisRequestConfig)
@@ -89,6 +94,7 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryParameters extends G
     return $this->sentimentAnalysisRequestConfig;
   }
   /**
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType
    */
   public function setSessionEntityTypes($sessionEntityTypes)

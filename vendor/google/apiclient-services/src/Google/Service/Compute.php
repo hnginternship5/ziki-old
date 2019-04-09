@@ -75,7 +75,10 @@ class Google_Service_Compute extends Google_Service
   public $licenseCodes;
   public $licenses;
   public $machineTypes;
+<<<<<<< HEAD
+=======
   public $networkEndpointGroups;
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public $networks;
   public $nodeGroups;
   public $nodeTemplates;
@@ -4525,6 +4528,8 @@ class Google_Service_Compute extends Google_Service
           )
         )
     );
+<<<<<<< HEAD
+=======
     $this->networkEndpointGroups = new Google_Service_Compute_Resource_NetworkEndpointGroups(
         $this,
         $this->serviceName,
@@ -4759,6 +4764,7 @@ class Google_Service_Compute extends Google_Service
           )
         )
     );
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
     $this->networks = new Google_Service_Compute_Resource_Networks(
         $this,
         $this->serviceName,

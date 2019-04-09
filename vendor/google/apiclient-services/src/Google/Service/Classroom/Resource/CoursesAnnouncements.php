@@ -116,9 +116,12 @@ class Google_Service_Classroom_Resource_CoursesAnnouncements extends Google_Serv
    * either the Classroom-assigned identifier or an alias.
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
+=======
    * @opt_param string announcementStates Restriction on the `state` of
    * announcements returned. If this argument is left unspecified, the default
    * value is `PUBLISHED`.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string orderBy Optional sort ordering for results. A comma-
    * separated list of fields with an optional sort direction keyword. Supported
    * field is `updateTime`. Supported direction keywords are `asc` and `desc`. If
@@ -133,6 +136,12 @@ class Google_Service_Classroom_Resource_CoursesAnnouncements extends Google_Serv
    * unspecified indicates that the server may assign a maximum.
    *
    * The server may return fewer than the specified number of results.
+<<<<<<< HEAD
+   * @opt_param string announcementStates Restriction on the `state` of
+   * announcements returned. If this argument is left unspecified, the default
+   * value is `PUBLISHED`.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_Classroom_ListAnnouncementsResponse
    */
   public function listCoursesAnnouncements($courseId, $optParams = array())

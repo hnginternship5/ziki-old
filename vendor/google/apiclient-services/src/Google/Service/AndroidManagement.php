@@ -41,7 +41,10 @@ class Google_Service_AndroidManagement extends Google_Service
   public $enterprises_devices_operations;
   public $enterprises_enrollmentTokens;
   public $enterprises_policies;
+<<<<<<< HEAD
+=======
   public $enterprises_webApps;
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public $enterprises_webTokens;
   public $signupUrls;
   
@@ -69,6 +72,17 @@ class Google_Service_AndroidManagement extends Google_Service
               'path' => 'v1/enterprises',
               'httpMethod' => 'POST',
               'parameters' => array(
+<<<<<<< HEAD
+                'signupUrlName' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'projectId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'enterpriseToken' => array(
+=======
                 'enterpriseToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -78,6 +92,7 @@ class Google_Service_AndroidManagement extends Google_Service
                   'type' => 'string',
                 ),
                 'projectId' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -256,6 +271,13 @@ class Google_Service_AndroidManagement extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -264,10 +286,13 @@ class Google_Service_AndroidManagement extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),
           )
@@ -365,6 +390,8 @@ class Google_Service_AndroidManagement extends Google_Service
           )
         )
     );
+<<<<<<< HEAD
+=======
     $this->enterprises_webApps = new Google_Service_AndroidManagement_Resource_EnterprisesWebApps(
         $this,
         $this->serviceName,
@@ -437,6 +464,7 @@ class Google_Service_AndroidManagement extends Google_Service
           )
         )
     );
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
     $this->enterprises_webTokens = new Google_Service_AndroidManagement_Resource_EnterprisesWebTokens(
         $this,
         $this->serviceName,

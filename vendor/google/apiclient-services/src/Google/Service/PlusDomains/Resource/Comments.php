@@ -26,8 +26,12 @@
 class Google_Service_PlusDomains_Resource_Comments extends Google_Service_Resource
 {
   /**
+<<<<<<< HEAD
+   * Get a comment. (comments.get)
+=======
    * Shut down. See https://developers.google.com/+/api-shutdown for more details.
    * (comments.get)
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    *
    * @param string $commentId The ID of the comment to get.
    * @param array $optParams Optional parameters.
@@ -40,8 +44,26 @@ class Google_Service_PlusDomains_Resource_Comments extends Google_Service_Resour
     return $this->call('get', array($params), "Google_Service_PlusDomains_Comment");
   }
   /**
+<<<<<<< HEAD
+   * Create a new comment in reply to an activity. (comments.insert)
+   *
+   * @param string $activityId The ID of the activity to reply to.
+   * @param Google_Service_PlusDomains_Comment $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_PlusDomains_Comment
+   */
+  public function insert($activityId, Google_Service_PlusDomains_Comment $postBody, $optParams = array())
+  {
+    $params = array('activityId' => $activityId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('insert', array($params), "Google_Service_PlusDomains_Comment");
+  }
+  /**
+   * List all of the comments for an activity. (comments.listComments)
+=======
    * Shut down. See https://developers.google.com/+/api-shutdown for more details.
    * (comments.listComments)
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    *
    * @param string $activityId The ID of the activity to get comments for.
    * @param array $optParams Optional parameters.

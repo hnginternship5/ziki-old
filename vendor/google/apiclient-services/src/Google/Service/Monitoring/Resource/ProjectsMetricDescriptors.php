@@ -84,17 +84,28 @@ class Google_Service_Monitoring_Resource_ProjectsMetricDescriptors extends Googl
    * is "projects/{project_id_or_number}".
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
+   * @opt_param string filter If this field is empty, all custom and system-
+   * defined metric descriptors are returned. Otherwise, the filter specifies
+   * which metric descriptors are to be returned. For example, the following
+   * filter matches all custom metrics: metric.type =
+   * starts_with("custom.googleapis.com/")
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string pageToken If this field is not empty then it must contain
    * the nextPageToken value returned by a previous call to this method. Using
    * this field causes the method to return additional results from the previous
    * method call.
    * @opt_param int pageSize A positive number that is the maximum number of
    * results to return.
+<<<<<<< HEAD
+=======
    * @opt_param string filter If this field is empty, all custom and system-
    * defined metric descriptors are returned. Otherwise, the filter specifies
    * which metric descriptors are to be returned. For example, the following
    * filter matches all custom metrics: metric.type =
    * starts_with("custom.googleapis.com/")
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_Monitoring_ListMetricDescriptorsResponse
    */
   public function listProjectsMetricDescriptors($name, $optParams = array())

@@ -1,6 +1,6 @@
 <?php
-require_once './authentication/auth/googleinit.php';
-
+require_once '/authentication/auth/googleinit.php';
+include '/includes/config.php';
 
 ?>
 

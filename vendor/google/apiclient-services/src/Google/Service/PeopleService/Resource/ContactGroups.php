@@ -96,13 +96,20 @@ class Google_Service_PeopleService_Resource_ContactGroups extends Google_Service
    *
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
+=======
    * @opt_param int pageSize The maximum number of resources to return.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string syncToken A sync token, returned by a previous call to
    * `contactgroups.list`. Only resources changed since the sync token was created
    * will be returned.
    * @opt_param string pageToken The next_page_token value returned from a
    * previous call to [ListContactGroups](/people/api/rest/v1/contactgroups/list).
    * Requests the next page of resources.
+<<<<<<< HEAD
+   * @opt_param int pageSize The maximum number of resources to return.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_PeopleService_ListContactGroupsResponse
    */
   public function listContactGroups($optParams = array())

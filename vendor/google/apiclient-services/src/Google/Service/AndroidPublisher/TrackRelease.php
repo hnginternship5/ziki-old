@@ -18,8 +18,11 @@
 class Google_Service_AndroidPublisher_TrackRelease extends Google_Collection
 {
   protected $collection_key = 'versionCodes';
+<<<<<<< HEAD
+=======
   protected $countryTargetingType = 'Google_Service_AndroidPublisher_CountryTargeting';
   protected $countryTargetingDataType = '';
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public $name;
   protected $releaseNotesType = 'Google_Service_AndroidPublisher_LocalizedText';
   protected $releaseNotesDataType = 'array';
@@ -27,6 +30,8 @@ class Google_Service_AndroidPublisher_TrackRelease extends Google_Collection
   public $userFraction;
   public $versionCodes;
 
+<<<<<<< HEAD
+=======
   /**
    * @param Google_Service_AndroidPublisher_CountryTargeting
    */
@@ -41,6 +46,7 @@ class Google_Service_AndroidPublisher_TrackRelease extends Google_Collection
   {
     return $this->countryTargeting;
   }
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public function setName($name)
   {
     $this->name = $name;

@@ -104,6 +104,13 @@ class Google_Service_CloudResourceManager extends Google_Service
               'path' => 'v2/folders',
               'httpMethod' => 'GET',
               'parameters' => array(
+<<<<<<< HEAD
+                'showDeleted' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -116,10 +123,13 @@ class Google_Service_CloudResourceManager extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
                 'showDeleted' => array(
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),'move' => array(
               'path' => 'v2/{+name}:move',

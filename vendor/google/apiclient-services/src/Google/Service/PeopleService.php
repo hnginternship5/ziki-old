@@ -36,6 +36,12 @@ class Google_Service_PeopleService extends Google_Service
   /** See and download your contacts. */
   const CONTACTS_READONLY =
       "https://www.googleapis.com/auth/contacts.readonly";
+<<<<<<< HEAD
+  /** View your basic profile info, including your age range and language. */
+  const PLUS_LOGIN =
+      "https://www.googleapis.com/auth/plus.login";
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   /** View your street addresses. */
   const USER_ADDRESSES_READ =
       "https://www.googleapis.com/auth/user.addresses.read";
@@ -130,10 +136,13 @@ class Google_Service_PeopleService extends Google_Service
               'path' => 'v1/contactGroups',
               'httpMethod' => 'GET',
               'parameters' => array(
+<<<<<<< HEAD
+=======
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'syncToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -142,6 +151,13 @@ class Google_Service_PeopleService extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),'update' => array(
               'path' => 'v1/{+resourceName}',
@@ -271,10 +287,13 @@ class Google_Service_PeopleService extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+=======
                 'sortOrder' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'requestSyncToken' => array(
                   'location' => 'query',
                   'type' => 'boolean',
@@ -283,10 +302,28 @@ class Google_Service_PeopleService extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'requestMask.includeField' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+                'syncToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'personFields' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'sortOrder' => array(
+=======
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -296,6 +333,7 @@ class Google_Service_PeopleService extends Google_Service
                   'type' => 'string',
                 ),
                 'personFields' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),

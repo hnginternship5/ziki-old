@@ -91,9 +91,15 @@ class Google_Service_AndroidManagement_Resource_EnterprisesDevicesOperations ext
    * @param string $name The name of the operation's parent resource.
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
+   * @opt_param int pageSize The standard list page size.
+   * @opt_param string filter The standard list filter.
+   * @opt_param string pageToken The standard list page token.
+=======
    * @opt_param string filter The standard list filter.
    * @opt_param string pageToken The standard list page token.
    * @opt_param int pageSize The standard list page size.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_AndroidManagement_ListOperationsResponse
    */
   public function listEnterprisesDevicesOperations($name, $optParams = array())

@@ -145,12 +145,20 @@ class Google_Service_ServiceManagement_Resource_Services extends Google_Service_
    * `example.googleapis.com`.
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
+   * @opt_param string view Specifies which parts of the Service Config should be
+   * returned in the response.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string configId The id of the service configuration resource.
    *
    * This field must be specified for the server to return all fields, including
    * `SourceInfo`.
+<<<<<<< HEAD
+=======
    * @opt_param string view Specifies which parts of the Service Config should be
    * returned in the response.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_ServiceManagement_Service
    */
   public function getConfig($serviceName, $optParams = array())

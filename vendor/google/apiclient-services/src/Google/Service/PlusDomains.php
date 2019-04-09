@@ -48,6 +48,12 @@ class Google_Service_PlusDomains extends Google_Service
   /** View your Google+ posts, comments, and stream. */
   const PLUS_STREAM_READ =
       "https://www.googleapis.com/auth/plus.stream.read";
+<<<<<<< HEAD
+  /** Manage your Google+ posts, comments, and stream. */
+  const PLUS_STREAM_WRITE =
+      "https://www.googleapis.com/auth/plus.stream.write";
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   /** View your email address. */
   const USERINFO_EMAIL =
       "https://www.googleapis.com/auth/userinfo.email";
@@ -191,6 +197,19 @@ class Google_Service_PlusDomains extends Google_Service
                   'required' => true,
                 ),
               ),
+<<<<<<< HEAD
+            ),'insert' => array(
+              'path' => 'activities/{activityId}/comments',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'activityId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
             ),'list' => array(
               'path' => 'activities/{activityId}/comments',
               'httpMethod' => 'GET',
