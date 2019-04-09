@@ -47,9 +47,10 @@ button {
     margin-bottom: 2rem;
 }
 
-.motuns-side-bar h3 {
+.motuns-side-bar h3 a {
     font-size: 25px;
     color: #3667E7;
+    text-decoration: none;
     /* margin-top: 20px; */
     /* padding-left: 160px; */
 }
