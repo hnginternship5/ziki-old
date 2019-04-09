@@ -1,12 +1,12 @@
 <?php
-session_start();
+//session_start();
 
 require ("vendor/autoload.php");
 
 $g_client = new Google_Client();
 $g_client->setClientId("2070310808-dfavj133e4eda2ueprv1tfqemspcb3vb.apps.googleusercontent.com");
 $g_client->setClientSecret("DBsnKq_qekAhT7sMWxEHs1sB");
-$g_client->setRedirectUri('http://localhost:8000/temp_landing_page.php');
+$g_client->setRedirectUri('https://ziki.hng.tech/home.php');
 $g_client->setScopes(array('https://www.googleapis.com/auth/userinfo.email','https://www.googleapis.com/auth/userinfo.profile'));
 
 //function to save access token to json file

@@ -1,24 +1,19 @@
-<!-- Jeff Ogah 2019-->
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$title ="Welcome";
+include 'header.php';
+ ?>
+ <?php if (!isset($_SESSION['name']))
+{?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog Task</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
-</head>
 
-<body>
     <div class="container-fluid">
-        <div class="row justify-content-end">
-            <a href="/auth.php" class="btn align-self-end px-5">Login</a>
+        <div class="row justify-content-between m-4">
+            <img class="img-fluid logo" src="assets/img/logo.png">
+            <a href="/auth.php" class="btn btn-primary align-self-end px-5">Login</a>
         </div>
-
+  <?php  }else {
+      }
+       ?>
 
         <div class="container justify-content-center">
             <div class="col-xs-5">
@@ -37,7 +32,7 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                    <img src="assets/img/star.svg">
+
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -52,14 +47,15 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart-filled.svg">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -82,7 +78,6 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">C.Ronaldo vs Messi</h2>
-                                    <img src="assets/img/star.svg">
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -97,14 +92,14 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
-
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart-filled.svg">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -127,7 +122,6 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">The effect of culture on design trends</h2>
-                                    <img src="assets/img/star.svg">
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -142,14 +136,15 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart.svg">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -172,7 +167,7 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                    <img src="assets/img/star.svg">
+
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -187,14 +182,15 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart-filled.svg">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -217,7 +213,6 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                    <img src="assets/img/star.svg">
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -232,14 +227,15 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart.svg">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -261,7 +257,6 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                    <img src="assets/img/star.svg">
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -276,14 +271,15 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart-filled.svg">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -293,7 +289,6 @@
 
                 </div>
                 <!-- </div> -->
-                <h6 class="text-center" style="margin-top:27px;margin-bottom:27px">Load More<h5>
             </div>
         </div>
     </div>
