@@ -11,82 +11,96 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/newtm.css">
 </head>
 <body class="">
     <div class="container-fluid">
-        <div class="row">
-            <img class="header-img" src="assets/img/header.png" >
-        </div>
 
         <div class="row">
 
-            <div class="col-md-3 d-flex flex-column align-items-center profile-section">
-                <div class="profile-img-wrapper">
-                    <img class="profile-img" src="assets/img/profile.png">
-                </div>
-                <div class="profile-main">
-                    <h3 class="profile-name">Paul Jephtah</h3>
-                    <p class="profile-technologies"><span>UX Designer</span> | <span>Product Designer</span> | <span>Frontend Newbie </span></p>
-                    <p class="profile-motto">I’m kinda weird in a very good way.... I design for survival</p>
-                </div>
-                <div class="profile-social-wrapper">
-                    <a class="profile-social-icon" href="#"><img  src="assets/img/github-logo.svg"></a>
-                    <a  class="profile-social-icon" href="#"><img  src="assets/img/dribble.svg"></a>
-                    <a  class="profile-social-icon" href="#"><img src="assets/img/rss-symbol.svg"></a>
-                </div>
+        <!-- Sidebar Starts -->
+        <div class="col-sm-3 side-info p-4">
+          <div class="logo-area mb-5 mx-4">
+            <img src="assets/img/zikilogo.png" alt="" class="logo" />
+          </div>
 
-                <div>
+          <div class="profile-pic-area mx-auto mt-5">
+            <img src="assets/img/dp.png" alt="" class="profile-pic" />
+          </div>
 
-                    <ul class="menu-wrapper d-flex flex-column">
-                        <a href=""><li class="menu-item text-center">Draft</li></a>
-                        <a href="#"><li class="menu-item text-center">My Blogs</li> </a>
-                        <a href="#"><li class="menu-item text-center">Insights</li> </a>
-                        <a href="user-profile-setting.php"><li class="menu-item text-center">Settings</li> </a>
-
-                    </ul>
-                </div>
-
-                <div class="line"></div>
-
-                <div>
-
-                    <ul class="menu-wrapper d-flex flex-column">
-                        <a href="#"><li class="menu-item text-center">English (US)</li> </a>
-                        <a href="#"><li class="menu-item text-center">Privacy</li> </a>
-                        <a href="#"><li class="menu-item text-center">Terms of Use</li> </a>
-                        <a href="#"><li class="menu-item text-center">Contact</li> </a>
-                        <a href="#"><li class="menu-item text-center">Advertise with us</li> </a>
-
-                    </ul>
-                </div>
-
+          <div class="personal-info text-center ">
+            <h1>Tamz Hallz</h1>
+            <div class="font-weight-bold skillset">
+              UI/UX Designer | Content Designer | Product Newbie
             </div>
+            <div class="shortbio">
+              I'm kinda weird in a good way..... I design for survival
+            </div>
+          </div>
+
+          <div class="sidebar-icons text-center my-3">
+            <i class="fab fa-github social"></i>
+            <i class="fab fa-dribbble social"></i>
+            <i class="fas fa-rss social"></i>
+          </div>
+
+          <ul class="nav flex-column p-5 my-5 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Insights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Sidebar Ends -->
             <div class="col-md-9">
-
-                <!-- <div class=""> -->
-
-                    <div class="row d-flex flex-column post-section">
-
-                        <textarea class="post-input" type="text" name="post-input" placeholder="What’s happening?"></textarea>
-
-                        <div class="row mx-0 d-flex flex-row mt-auto justify-content-between">
-                            <div class="post-action-right">
-                                <a class="post-action-item" href="#css"><img src="assets/img/text.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/italic.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/link-in.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/underline.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/bold.svg" width="10"></a>
+                <!-- Post Box Begins -->
+                <div class="mx-auto mt-5 mb-2 px-5">
+                    <div class="post-box p-2">
+                        <form action="">
+                        <div class="form-group px-3">
+                            <textarea
+                            name=""
+                            id=""
+                            rows="3"
+                            class="form-control post-text"
+                            placeholder="What's Happening"
+                            ></textarea>
+                            <div class="toolbars row my-4 ">
+                            <div class="col">
+                                <img src="assets/img/timeline_icons/type.png" alt="" />
+                                <img src="assets/img/timeline_icons/italic.png" alt="" />
+                                <img
+                                src="assets/img/timeline_icons/attachment2.png"
+                                alt=""
+                                />
+                                <img src="assets/img/timeline_icons/underline.png" alt="" />
+                                <img src="assets/img/timeline_icons/bold.png" alt="" />
                             </div>
-
-                            <div class="post-action-left">
-                                <a class="post-action-item" href="#css"><img src="assets/img/attachment.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/mic.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/link.svg" width="15"></a>
-                                <button class="btn publish-btn post-action-item">Publish</button>
+                            <div class="col text-right">
+                                <img
+                                src="assets/img/timeline_icons/attachment.png"
+                                alt=""
+                                />
+                                <img
+                                src="assets/img/timeline_icons/attachment2.png"
+                                alt=""
+                                />
+                                <img src="assets/img/timeline_icons/mic.png" alt="" />
+                                <button type="submit" class="btn btn-publish">
+                                Publish
+                                </button>
                             </div>
-
+                            </div>
                         </div>
+                        </form>
                     </div>
+                </div>
+
 
                     <div class="row mx-0 d-flex flex-row align-items-center  justify-content-between">
                         <div class="col-md-8 line ml-md-5"></div>
@@ -108,7 +122,7 @@
                                 <div class="d-flex flex-column blog-item-main-content">
                                      <div class="d-flex flex-row justify-content-between">
                                          <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                         <img src="assets/img/star.svg">
+                                         
                                      </div>
                                      <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                      <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -151,7 +165,7 @@
                                 <div class="d-flex flex-column blog-item-main-content">
                                      <div class="d-flex flex-row justify-content-between">
                                          <h2 class="blog-item-header text-left">C.Ronaldo vs Messi</h2>
-                                         <img src="assets/img/star.svg">
+                                         
                                      </div>
                                      <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                      <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -194,7 +208,7 @@
                                 <div class="d-flex flex-column blog-item-main-content">
                                      <div class="d-flex flex-row justify-content-between">
                                          <h2 class="blog-item-header text-left">The effect of culture on design trends</h2>
-                                         <img src="assets/img/star.svg">
+                                         
                                      </div>
                                      <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                      <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -237,7 +251,7 @@
                                 <div class="d-flex flex-column blog-item-main-content">
                                      <div class="d-flex flex-row justify-content-between">
                                          <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                         <img src="assets/img/star.svg">
+                                         
                                      </div>
                                      <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                      <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -280,7 +294,7 @@
                                 <div class="d-flex flex-column blog-item-main-content">
                                      <div class="d-flex flex-row justify-content-between">
                                          <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                         <img src="assets/img/star.svg">
+                                         
                                      </div>
                                      <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                      <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -322,7 +336,7 @@
                                 <div class="d-flex flex-column blog-item-main-content">
                                      <div class="d-flex flex-row justify-content-between">
                                          <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                         <img src="assets/img/star.svg">
+                                         
                                      </div>
                                      <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                      <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -354,6 +368,7 @@
                 <!-- </div> -->
                 <h6 class="text-center" style="margin-top:27px;margin-bottom:27px">Load More<h5>
             </div>
+            
         </div>
 
     </div>
