@@ -53,7 +53,7 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
@@ -96,7 +96,7 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
@@ -138,7 +138,7 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
@@ -183,7 +183,7 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
@@ -226,7 +226,7 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
@@ -268,7 +268,7 @@
                                         <div class="blog-item-tag-wrapper">
                                             <p class="blog-item-tag text-center">Hotels</p>
                                         </div>
-                                        <a href="#">
+                                        <a href="/auth.php">
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>

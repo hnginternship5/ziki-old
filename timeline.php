@@ -122,7 +122,7 @@
                                             <div class="blog-item-tag-wrapper">
                                                 <p class="blog-item-tag text-center">Hotels</p>
                                             </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
+                                            <a href="/blog-detail.php"><p class="blog-item-more_action ">Read More</p></a>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center">
@@ -165,7 +165,7 @@
                                             <div class="blog-item-tag-wrapper">
                                                 <p class="blog-item-tag text-center">Hotels</p>
                                             </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
+                                            <a href="/blog-detail.php"><p class="blog-item-more_action ">Read More</p></a>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center">
@@ -208,7 +208,7 @@
                                             <div class="blog-item-tag-wrapper">
                                                 <p class="blog-item-tag text-center">Hotels</p>
                                             </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
+                                            <a href="/blog-detail.php"><p class="blog-item-more_action ">Read More</p></a>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center">
@@ -251,7 +251,7 @@
                                             <div class="blog-item-tag-wrapper">
                                                 <p class="blog-item-tag text-center">Hotels</p>
                                             </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
+                                            <a href="/blog-detail.php"><p class="blog-item-more_action ">Read More</p></a>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center">
@@ -294,7 +294,7 @@
                                             <div class="blog-item-tag-wrapper">
                                                 <p class="blog-item-tag text-center">Hotels</p>
                                             </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
+                                            <a href="/blog-detail.php"><p class="blog-item-more_action ">Read More</p></a>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center">
@@ -336,7 +336,7 @@
                                             <div class="blog-item-tag-wrapper">
                                                 <p class="blog-item-tag text-center">Hotels</p>
                                             </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
+                                            <a href="/blog-detail.php"><p class="blog-item-more_action ">Read More</p></a>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center">
