@@ -1,4 +1,4 @@
 <?php
-$_SESSION['loggedUserId'] = 33;
-$_SESSION['token'] = "XCSGGS18229282";
+$_SESSION['loggedUserId'] = 35;
+$_SESSION['token'] = "XCSGGS182HHS282";
 define ('SITE_ROOT', realpath(dirname(__FILE__)));
