@@ -15,8 +15,8 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-end">
-            <a href="/auth.php" class="btn align-self-end px-5">Login</a>
+        <div class="row justify-content-end m-4">
+            <a href="/auth.php" class="btn btn-primary align-self-end px-5">Login</a>
         </div>
 
 
