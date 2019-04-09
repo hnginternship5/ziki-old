@@ -15,7 +15,8 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-end m-4">
+        <div class="row justify-content-between m-4">
+            <img class="img-fluid logo" src="assets/img/logo.png">
             <a href="/auth.php" class="btn btn-primary align-self-end px-5">Login</a>
         </div>
 
@@ -37,7 +38,7 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                    <img src="assets/img/star.svg">
+
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -58,7 +59,6 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart-filled.svg">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
                                     </div>
                                 </div>
@@ -82,7 +82,6 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">C.Ronaldo vs Messi</h2>
-                                    <img src="assets/img/star.svg">
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -101,9 +100,7 @@
                                             <p class="blog-item-more_action ">Read More</p>
                                         </a>
                                     </div>
-
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart-filled.svg">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
                                     </div>
                                 </div>
@@ -127,7 +124,6 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">The effect of culture on design trends</h2>
-                                    <img src="assets/img/star.svg">
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -172,7 +168,7 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                    <img src="assets/img/star.svg">
+
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -193,7 +189,6 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart-filled.svg">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
                                     </div>
                                 </div>
@@ -217,7 +212,6 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                    <img src="assets/img/star.svg">
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -238,7 +232,6 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart.svg">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
                                     </div>
                                 </div>
@@ -261,7 +254,6 @@
                             <div class="d-flex flex-column blog-item-main-content">
                                 <div class="d-flex flex-row justify-content-between">
                                     <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                    <img src="assets/img/star.svg">
                                 </div>
                                 <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                 <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
@@ -282,7 +274,6 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart-filled.svg">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
                                     </div>
                                 </div>
