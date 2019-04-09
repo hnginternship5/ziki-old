@@ -60,7 +60,9 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -102,7 +104,9 @@
                                         </a>
                                     </div>
                                     <div class="d-flex flex-row align-items-center">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -145,8 +149,9 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
-                                        <img class="blog-item-action" src="assets/img/heart.svg">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -190,7 +195,9 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -233,7 +240,9 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
@@ -275,7 +284,9 @@
                                     </div>
 
                                     <div class="d-flex flex-row align-items-center">
+                                        <a href="/auth.php">
                                         <img class="blog-item-action" src="assets/img/comment.svg">
+					</a>
                                     </div>
                                 </div>
                                 <p class="blog-item-date">3rd, April 2019 </p>
