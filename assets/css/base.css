@@ -54,6 +54,11 @@ button {
 	outline: none;
 }
 
+.logo {
+    width: 1.5em;
+    height: 1.5em;
+}
+
 /* ==========================
 404 Styling
 ========================= */
