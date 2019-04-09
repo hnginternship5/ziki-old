@@ -51,6 +51,7 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * is "projects/{project_id_or_number}".
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
    * @opt_param string view Specifies which information is returned about the time
    * series.
    * @opt_param string aggregation.groupByFields The set of fields to preserve
@@ -65,6 +66,8 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * have the same resource type, then the time series are aggregated into a
    * single output time series. If crossSeriesReducer is not defined, this field
    * is ignored.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string interval.endTime Required. The end of the time interval.
    * @opt_param string aggregation.alignmentPeriod The alignment period for per-
    * time series alignment. If present, alignmentPeriod must be at least 60
@@ -93,6 +96,13 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * additionally specify metric labels and other information. For example:
    * metric.type = "compute.googleapis.com/instance/cpu/usage_time" AND
    * metric.label.instance_name = "my-instance-name"
+<<<<<<< HEAD
+=======
+   * @opt_param string pageToken If this field is not empty then it must contain
+   * the nextPageToken value returned by a previous call to this method. Using
+   * this field causes the method to return additional results from the previous
+   * method call.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string aggregation.perSeriesAligner The approach to be used to
    * align individual time series. Not all alignment functions may be applied to
    * all time series, depending on the metric type and value type of the original
@@ -101,6 +111,7 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * series reduction. If crossSeriesReducer is specified, then perSeriesAligner
    * must be specified and not equal ALIGN_NONE and alignmentPeriod must be
    * specified; otherwise, an error is returned.
+<<<<<<< HEAD
    * @opt_param string pageToken If this field is not empty then it must contain
    * the nextPageToken value returned by a previous call to this method. Using
    * this field causes the method to return additional results from the previous
@@ -108,6 +119,25 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * @opt_param string interval.startTime Optional. The beginning of the time
    * interval. The default value for the start time is the end time. The start
    * time must not be later than the end time.
+=======
+   * @opt_param string interval.startTime Optional. The beginning of the time
+   * interval. The default value for the start time is the end time. The start
+   * time must not be later than the end time.
+   * @opt_param string view Specifies which information is returned about the time
+   * series.
+   * @opt_param string aggregation.groupByFields The set of fields to preserve
+   * when crossSeriesReducer is specified. The groupByFields determine how the
+   * time series are partitioned into subsets prior to applying the aggregation
+   * function. Each subset contains time series that have the same value for each
+   * of the grouping fields. Each individual time series is a member of exactly
+   * one subset. The crossSeriesReducer is applied to each subset of time series.
+   * It is not possible to reduce across different resource types, so this field
+   * implicitly contains resource.type. Fields not specified in groupByFields are
+   * aggregated away. If groupByFields is not specified and all the time series
+   * have the same resource type, then the time series are aggregated into a
+   * single output time series. If crossSeriesReducer is not defined, this field
+   * is ignored.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_Monitoring_ListTimeSeriesResponse
    */
   public function listProjectsTimeSeries($name, $optParams = array())

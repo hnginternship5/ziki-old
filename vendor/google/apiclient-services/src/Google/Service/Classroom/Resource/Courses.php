@@ -103,6 +103,18 @@ class Google_Service_Classroom_Resource_Courses extends Google_Service_Resource
    *
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
+=======
+   * @opt_param string teacherId Restricts returned courses to those having a
+   * teacher with the specified identifier. The identifier can be one of the
+   * following:
+   *
+   * * the numeric identifier for the user * the email address of the user * the
+   * string literal `"me"`, indicating the requesting user
+   * @opt_param string courseStates Restricts returned courses to those in one of
+   * the specified states The default value is ACTIVE, ARCHIVED, PROVISIONED,
+   * DECLINED.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string studentId Restricts returned courses to those having a
    * student with the specified identifier. The identifier can be one of the
    * following:
@@ -118,6 +130,7 @@ class Google_Service_Classroom_Resource_Courses extends Google_Service_Resource
    * unspecified indicates that the server may assign a maximum.
    *
    * The server may return fewer than the specified number of results.
+<<<<<<< HEAD
    * @opt_param string teacherId Restricts returned courses to those having a
    * teacher with the specified identifier. The identifier can be one of the
    * following:
@@ -127,6 +140,8 @@ class Google_Service_Classroom_Resource_Courses extends Google_Service_Resource
    * @opt_param string courseStates Restricts returned courses to those in one of
    * the specified states The default value is ACTIVE, ARCHIVED, PROVISIONED,
    * DECLINED.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_Classroom_ListCoursesResponse
    */
   public function listCourses($optParams = array())

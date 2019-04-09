@@ -169,11 +169,19 @@ class Google_Service_ServiceManagement extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
                 'view' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'configId' => array(
+=======
+                'configId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'view' => array(
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -390,10 +398,13 @@ class Google_Service_ServiceManagement extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -402,6 +413,13 @@ class Google_Service_ServiceManagement extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),
           )

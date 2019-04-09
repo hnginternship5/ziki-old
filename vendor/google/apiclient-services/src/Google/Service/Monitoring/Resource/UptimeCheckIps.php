@@ -31,14 +31,24 @@ class Google_Service_Monitoring_Resource_UptimeCheckIps extends Google_Service_R
    *
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
    * @opt_param string pageToken If this field is not empty then it must contain
    * the nextPageToken value returned by a previous call to this method. Using
    * this field causes the method to return more results from the previous method
    * call. NOTE: this field is not yet implemented
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param int pageSize The maximum number of results to return in a single
    * response. The server may further constrain the maximum number of results
    * returned in a single page. If the page_size is <=0, the server will decide
    * the number of results to be returned. NOTE: this field is not yet implemented
+<<<<<<< HEAD
+=======
+   * @opt_param string pageToken If this field is not empty then it must contain
+   * the nextPageToken value returned by a previous call to this method. Using
+   * this field causes the method to return more results from the previous method
+   * call. NOTE: this field is not yet implemented
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_Monitoring_ListUptimeCheckIpsResponse
    */
   public function listUptimeCheckIps($optParams = array())

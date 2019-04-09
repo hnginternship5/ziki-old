@@ -129,8 +129,11 @@ class Google_Service_CloudResourceManager_Resource_Folders extends Google_Servic
    *
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
    * @opt_param bool showDeleted Controls whether Folders in the DELETE_REQUESTED
    * state should be returned. Defaults to false. This field is optional.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string pageToken A pagination token returned from a previous call
    * to `ListFolders` that indicates where this listing should continue from. This
    * field is optional.
@@ -140,6 +143,11 @@ class Google_Service_CloudResourceManager_Resource_Folders extends Google_Servic
    * whose Folders are being listed. Must be of the form `folders/{folder_id}` or
    * `organizations/{org_id}`. Access to this method is controlled by checking the
    * `resourcemanager.folders.list` permission on the `parent`.
+<<<<<<< HEAD
+=======
+   * @opt_param bool showDeleted Controls whether Folders in the DELETE_REQUESTED
+   * state should be returned. Defaults to false. This field is optional.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_CloudResourceManager_ListFoldersResponse
    */
   public function listFolders($optParams = array())

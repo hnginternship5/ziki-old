@@ -19,7 +19,11 @@
  * Service definition for BigtableAdmin (v2).
  *
  * <p>
+<<<<<<< HEAD
 </p>
+=======
+ * Administer your Cloud Bigtable tables and instances.</p>
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
  *
  * <p>
  * For more information about this service, see the API
@@ -134,6 +138,13 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+=======
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -142,10 +153,13 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+<<<<<<< HEAD
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),
           )
@@ -274,14 +288,24 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
                 'ignoreWarnings' => array(
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'appProfileId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
+=======
+                'ignoreWarnings' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),'delete' => array(
               'path' => 'v2/{+name}',
@@ -485,6 +509,19 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'type' => 'string',
                 ),
               ),
+<<<<<<< HEAD
+=======
+            ),'getIamPolicy' => array(
+              'path' => 'v2/{+resource}:getIamPolicy',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
             ),'list' => array(
               'path' => 'v2/{+parent}/tables',
               'httpMethod' => 'GET',
@@ -494,6 +531,13 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+<<<<<<< HEAD
+=======
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -502,10 +546,13 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+<<<<<<< HEAD
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
               ),
             ),'modifyColumnFamilies' => array(
               'path' => 'v2/{+name}:modifyColumnFamilies',
@@ -517,6 +564,29 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'required' => true,
                 ),
               ),
+<<<<<<< HEAD
+=======
+            ),'setIamPolicy' => array(
+              'path' => 'v2/{+resource}:setIamPolicy',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'testIamPermissions' => array(
+              'path' => 'v2/{+resource}:testIamPermissions',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
             ),
           )
         )

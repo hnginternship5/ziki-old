@@ -26,7 +26,11 @@
 class Google_Service_PlusDomains_Resource_Audiences extends Google_Service_Resource
 {
   /**
+<<<<<<< HEAD
    * List all of the audiences to which a user can share.
+=======
+   * Shut down. See https://developers.google.com/+/api-shutdown for more details.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * (audiences.listAudiences)
    *
    * @param string $userId The ID of the user to get audiences for. The special

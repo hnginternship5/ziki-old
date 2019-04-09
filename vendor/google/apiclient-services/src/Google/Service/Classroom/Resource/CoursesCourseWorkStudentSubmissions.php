@@ -70,6 +70,7 @@ class Google_Service_Classroom_Resource_CoursesCourseWorkStudentSubmissions exte
    * work in the specified course.
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
    * @opt_param string userId Optional argument to restrict returned student work
    * to those owned by the student with the specified identifier. The identifier
    * can be one of the following:
@@ -79,17 +80,36 @@ class Google_Service_Classroom_Resource_CoursesCourseWorkStudentSubmissions exte
    * @opt_param string late Requested lateness value. If specified, returned
    * student submissions are restricted by the requested value. If unspecified,
    * submissions are returned regardless of `late` value.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string pageToken nextPageToken value returned from a previous list
    * call, indicating that the subsequent page of results should be returned.
    *
    * The list request must be otherwise identical to the one that resulted in this
    * token.
+<<<<<<< HEAD
+=======
+   * @opt_param string states Requested submission states. If specified, returned
+   * student submissions match one of the specified submission states.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param int pageSize Maximum number of items to return. Zero or
    * unspecified indicates that the server may assign a maximum.
    *
    * The server may return fewer than the specified number of results.
+<<<<<<< HEAD
    * @opt_param string states Requested submission states. If specified, returned
    * student submissions match one of the specified submission states.
+=======
+   * @opt_param string userId Optional argument to restrict returned student work
+   * to those owned by the student with the specified identifier. The identifier
+   * can be one of the following:
+   *
+   * * the numeric identifier for the user * the email address of the user * the
+   * string literal `"me"`, indicating the requesting user
+   * @opt_param string late Requested lateness value. If specified, returned
+   * student submissions are restricted by the requested value. If unspecified,
+   * submissions are returned regardless of `late` value.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_Classroom_ListStudentSubmissionsResponse
    */
   public function listCoursesCourseWorkStudentSubmissions($courseId, $courseWorkId, $optParams = array())

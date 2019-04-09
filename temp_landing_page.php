@@ -1,6 +1,9 @@
 <?php
-require_once './auth/googleinit.php';
+require_once 'Authentication/auth/googleinit.php';
+
+print_r($_SESSION);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +51,7 @@ require_once './auth/googleinit.php';
         <?php
             if(isset($_SESSION['accesstoken'])){
   try{
-  
+
         ?>
             <div id="information-container">
                 <div class="information">
@@ -66,7 +69,7 @@ require_once './auth/googleinit.php';
             echo "Google Auth Error:  ". $e->getMessage();
          }
             }
-            
+
             else{
                 echo "User not logged in";
             }

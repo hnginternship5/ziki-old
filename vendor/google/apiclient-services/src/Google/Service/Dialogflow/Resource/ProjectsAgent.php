@@ -96,10 +96,17 @@ class Google_Service_Dialogflow_Resource_ProjectsAgent extends Google_Service_Re
    * `projects/`.
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
    * @opt_param string pageToken Optional. The next_page_token value returned from
    * a previous list request.
    * @opt_param int pageSize Optional. The maximum number of items to return in a
    * single page. By default 100 and at most 1000.
+=======
+   * @opt_param int pageSize Optional. The maximum number of items to return in a
+   * single page. By default 100 and at most 1000.
+   * @opt_param string pageToken Optional. The next_page_token value returned from
+   * a previous list request.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2SearchAgentsResponse
    */
   public function search($parent, $optParams = array())

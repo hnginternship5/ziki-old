@@ -32,12 +32,20 @@ class Google_Service_AndroidManagement_Resource_Enterprises extends Google_Servi
    * @param Google_Service_AndroidManagement_Enterprise $postBody
    * @param array $optParams Optional parameters.
    *
+<<<<<<< HEAD
+=======
+   * @opt_param string enterpriseToken The enterprise token appended to the
+   * callback URL.
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @opt_param string signupUrlName The name of the SignupUrl used to sign up for
    * the enterprise.
    * @opt_param string projectId The ID of the Google Cloud Platform project which
    * will own the enterprise.
+<<<<<<< HEAD
    * @opt_param string enterpriseToken The enterprise token appended to the
    * callback URL.
+=======
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
    * @return Google_Service_AndroidManagement_Enterprise
    */
   public function create(Google_Service_AndroidManagement_Enterprise $postBody, $optParams = array())

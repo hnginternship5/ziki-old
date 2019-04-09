@@ -17,7 +17,11 @@
 
 class Google_Service_Compute_Snapshot extends Google_Collection
 {
+<<<<<<< HEAD
   protected $collection_key = 'licenses';
+=======
+  protected $collection_key = 'storageLocations';
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
   public $creationTimestamp;
   public $description;
   public $diskSizeGb;
@@ -38,6 +42,10 @@ class Google_Service_Compute_Snapshot extends Google_Collection
   public $status;
   public $storageBytes;
   public $storageBytesStatus;
+<<<<<<< HEAD
+=======
+  public $storageLocations;
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
 
   public function setCreationTimestamp($creationTimestamp)
   {
@@ -195,4 +203,15 @@ class Google_Service_Compute_Snapshot extends Google_Collection
   {
     return $this->storageBytesStatus;
   }
+<<<<<<< HEAD
+=======
+  public function setStorageLocations($storageLocations)
+  {
+    $this->storageLocations = $storageLocations;
+  }
+  public function getStorageLocations()
+  {
+    return $this->storageLocations;
+  }
+>>>>>>> a7f7e73b577b38bc3fe0213414daffe719434e59
 }
