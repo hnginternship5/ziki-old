@@ -1,26 +1,19 @@
-<!-- Jeff Ogah 2019-->
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$title ="Welcome";
+include 'header.php';
+ ?>
+ <?php if (!isset($_SESSION['name']))
+{?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Home</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
-</head>
 
-<body>
     <div class="container-fluid">
         <div class="row justify-content-between m-4">
             <img class="img-fluid logo" src="assets/img/logo.png">
             <a href="/auth.php" class="btn btn-primary align-self-end px-5">Login</a>
         </div>
-
+  <?php  }else {
+      }
+       ?>
 
         <div class="container justify-content-center">
             <div class="col-xs-5">

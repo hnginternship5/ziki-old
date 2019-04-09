@@ -1,6 +1,7 @@
 <?php
 
-session_start();
+//session_start();
+include 'includes/config.php';
 require_once 'config.php';
 require_once 'functions/Post.php';
 
