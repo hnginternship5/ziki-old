@@ -1,3 +1,6 @@
+<?php include 'includes/config.php';
+//print_r($_SESSION);
+extract($_SESSION);?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
