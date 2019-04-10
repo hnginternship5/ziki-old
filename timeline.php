@@ -1,341 +1,391 @@
-<?php include 'header.php'; 
-if(isset($_SESSION['name'])) {
-
-?>
-        <div class="row">
-            <img class="header-img" src="assets/img/header.png" >
-        </div>
+<?php
+$title = "Timeline";
+include 'header.php';
+ ?>
 
         <div class="row">
-
-            <div class="col-md-3 d-flex flex-column align-items-center profile-section">
-                <div class="profile-img-wrapper">
-                    <img class="profile-img" src="<?php= $user_info['picture'] ?>">
-                </div>
-                <div class="profile-main">
-                    <h3 class="profile-name"><?php echo $name ?> </h3>
-                    <p class="profile-technologies"><span><?php echo $email ?></span></p>
-                    <p class="profile-motto">I’m kinda weird in a very good way.... I design for survival</p>
-                </div>
-                <div class="profile-social-wrapper">
-                    <a class="profile-social-icon" href="#"><img  src="assets/img/github-logo.svg"></a>
-                    <a  class="profile-social-icon" href="#"><img  src="assets/img/dribble.svg"></a>
-                    <a  class="profile-social-icon" href="#"><img src="assets/img/rss-symbol.svg"></a>
+            <!-- Sidebar Starts -->
+            <div class="col-sm-3 col-12 side-info p-4">
+                <div class="logo-area mb-5 mx-4">
+                    <img src="assets/img/zikilogo.png" alt="" class="logo" />
                 </div>
 
-                <div>
-
-                    <ul class="menu-wrapper d-flex flex-column">
-                        <a href=""><li class="menu-item text-center">Draft</li></a>
-                        <a href="#"><li class="menu-item text-center">My Blogs</li> </a>
-                        <a href="#"><li class="menu-item text-center">Insights</li> </a>
-                        <a href="user-profile-setting.php"><li class="menu-item text-center">Settings</li> </a>
-                        <a href="/logout.php"><li class="menu-item text-center">Logout</li></a>
-
-                    </ul>
+                <!-- user profile picture -->
+                <div class="profile-pic-area mx-auto mt-5">
+                    <img src="assets/img/dp.png" alt="" class="profile-pic" />
                 </div>
 
-                <div class="line"></div>
-
-                <div>
-
-                    <ul class="menu-wrapper d-flex flex-column">
-                        <a href="#"><li class="menu-item text-center">English (US)</li> </a>
-                        <a href="#"><li class="menu-item text-center">Privacy</li> </a>
-                        <a href="#"><li class="menu-item text-center">Terms of Use</li> </a>
-                        <a href="#"><li class="menu-item text-center">Contact</li> </a>
-                        <a href="#"><li class="menu-item text-center">Advertise with us</li> </a>
-
-                    </ul>
+                <!-- User name, Skills, short bio -->
+                <div class="text-center">
+                    <h3 class="profile-name">
+                        <?php 
+                            // echo $name; dear backend dev. just uncomment this 
+                            // and remove what echoes below. That's it.
+                            echo 'Austin Asoluka';
+                        ?>
+                    </h3>
+                    <h4 class="user-skills">
+                        <?php 
+                            // echo $email; dear backend dev. just uncomment this 
+                            // and remove what echoes below. That's it.
+                            echo 'Web | Software Developer';
+                        ?>
+                    </h4>
+                    <p class="profile-motto">Software Engineer at AWS design enthusiast and music lover</p>
                 </div>
 
+                <!-- social media links -->
+                <div class="sidebar-icons text-center my-3">
+                    <i class="fab fa-github social"></i>
+                    <i class="fab fa-dribbble social"></i>
+                    <i class="fas fa-rss social"></i>
+                </div>
+
+                <ul class="nav flex-column p-5 my-5 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user-profile-setting.php">Settings</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-9">
 
-                <!-- <div class=""> -->
+            <!-- Sidebar Ends -->
+            <div class="col-md-9 col-12 posts-area">
+                <!-- Post Box Begins -->
+               <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row d-flex flex-column post-section">
+                                <textarea class="post-input" type="text" name="post-input" placeholder="What’s happening?"></textarea>
 
-                    <div class="row d-flex flex-column post-section">
+                                <div class="row mx-0 d-flex flex-row mt-auto justify-content-between">
+                                    <div class="post-action-right">
+                                        <button class="tool fa fa-underline"  onclick="document.execCommand('underline', false, '');"></button>
+                                        <button class="tool fa fa-italic" onclick="document.execCommand('italic', false, '');"></button>
+                                        <button class="tool fa fa-bold" onclick="document.execCommand('bold', false, '');"></button>
+                                        <button class="tool fas fa-cut" onclick="document.execCommand('cut',false,'')"></button>
+                                        <button class="tool fas fa-strikethrough" onclick="document.execCommand('strikeThrough',false,'')"></button>
+                                        <button class="tool fa fa-trash" onclick="document.execCommand('delete',false,'')"></button>
+                                        <button class="tool fab fa-scribd" onclick="document.execCommand('selectAll',false,'')"></button>
+                                        <button class="tool fa fa-align-center" onclick="document.execCommand('justifyCenter',false,'')"></button>
+                                        <button class="tool fa fa-align-left" onclick="document.execCommand('justifyLeft',false,'')"></button>
+                                        <button class="tool fa fa-align-right" onclick="document.execCommand('justifyRight',false,'')"></button>  
+                                    </div>
 
-                        <textarea class="post-input" type="text" name="post-input" placeholder="What’s happening?"></textarea>
-
-                        <div class="row mx-0 d-flex flex-row mt-auto justify-content-between">
-                            <div class="post-action-right">
-                                <a class="post-action-item" href="#css"><img src="assets/img/text.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/italic.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/link-in.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/underline.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/bold.svg" width="10"></a>
+                                    <div class="post-action-left">
+                                        <i class="fas fa-paperclip"></i>
+                                        <a class="post-action-item" href="#css"><img src="assets/img/mic.svg"></a>
+                                        <i class="fas fa-link"></i>
+                                        <button class="btn btn-primary post-action-item">Publish</button>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="post-action-left">
-                                <a class="post-action-item" href="#css"><img src="assets/img/attachment.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/mic.svg" width="15"></a>
-                                <a class="post-action-item" href="#css"><img src="assets/img/link.svg" width="15"></a>
-                                <button class="btn publish-btn post-action-item">Publish</button>
-                            </div>
-
                         </div>
                     </div>
-
-                    <div class="row mx-0 d-flex flex-row align-items-center  justify-content-between">
+                    <div class="row mx-0 d-flex flex-row align-items-center justify-content-between padd">
                         <div class="col-md-8 line ml-md-5"></div>
                         <div class="col d-inline-flex mr-md-5 flex-row justify-content-between">
                             <p class="post-filter"><span class="post-filter-title">Sort by:</span> Most Recent Posts</p>
                             <img src="assets/img/caret.svg">
                         </div>
                     </div>
+                </div>
 
-                    <div class="row mx-0 mt-md-4 blog-item-wrapper first-child">
-                        <div class="d-flex flex-row px-0 blog-item">
-                            <div class="blog-item-author-avatar-wrapper">
-                                <img class="blog-item-author-avatar" src="assets/img/naomi.png">
-                            </div>
-                            <div class="blog-item-main d-flex flex-row">
-                                <div class="blog-item-img-wrapper">
-                                    <img class="blog-item-img" src="assets/img/wall.jpg">
-                                </div>
-                                <div class="d-flex flex-column blog-item-main-content">
-                                     <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                     </div>
-                                     <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
-                                     <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
-                                     <div class="row d-flex flex-row align-items-center justify-content-between mx-0">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Javascript</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Tech</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Hotels</p>
-                                            </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center">
-                                            <img class="blog-item-action" src="assets/img/comment.svg">
-                                        </div>
-                                    </div>
-                                    <p class="blog-item-date">3rd, April 2019 </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="row mx-0 blog-item-wrapper">
-                        <div class="d-flex flex-row px-0 blog-item">
-                            <div class="blog-item-author-avatar-wrapper">
-                                <img class="blog-item-author-avatar" src="assets/img/naomi.png">
-                            </div>
-                            <div class="blog-item-main d-flex flex-row">
-                                <div class="blog-item-img-wrapper">
-                                    <img class="blog-item-img" src="assets/img/image-1.png">
-                                </div>
-                                <div class="d-flex flex-column blog-item-main-content">
-                                     <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">C.Ronaldo vs Messi</h2>
-                                     </div>
-                                     <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
-                                     <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
-                                     <div class="row d-flex flex-row align-items-center justify-content-between mx-0">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Javascript</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Tech</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Hotels</p>
-                                            </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center">
-                                            <img class="blog-item-action" src="assets/img/comment.svg">
-                                        </div>
-                                    </div>
-                                    <p class="blog-item-date">3rd, April 2019 </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="row mx-0 blog-item-wrapper">
-                        <div class="d-flex flex-row px-0 blog-item">
-                            <div class="blog-item-author-avatar-wrapper">
+                <!-- Post feeds start here -->
+                <div class="row posts">
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <div class="col-md-1">
                                 <img class="blog-item-author-avatar" src="assets/img/avatar-2.jpeg">
                             </div>
-                            <div class="blog-item-main d-flex flex-row">
-                                <div class="blog-item-img-wrapper">
-                                    <img class="blog-item-img" src="assets/img/image-1.png">
-                                </div>
-                                <div class="d-flex flex-column blog-item-main-content">
-                                     <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">The effect of culture on design trends</h2>
-                                     </div>
-                                     <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
-                                     <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
-                                     <div class="row d-flex flex-row align-items-center justify-content-between mx-0">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Javascript</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Tech</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Hotels</p>
-                                            </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center">
-                                            <img class="blog-item-action" src="assets/img/comment.svg">
+                            <div class="col-md-11 col-12">
+                                <div class="row blog-main-item">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row">
+                                            <img src="assets/img/wall.jpg" class="img-fluid post-img" alt="Profile Image">
                                         </div>
                                     </div>
-                                    <p class="blog-item-date">3rd, April 2019 </p>
+                                    <div class="col-md-9 col-12">
+                                        <div class="row post-heading">
+                                            <div class="col-md-8 col-10">
+                                                <h4>UI/UX Concept</h4>
+                                            </div>
+                                            <div class="col-md-4 col-2 text-right">
+                                                <a href="#"><i class="far fa-star star"></i></a>
+                                                <!-- When user stars a post, change class to
+                                                    the one below-->
+                                                <!-- <i class="fas fa-star"></i> -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-12">
+                                                <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+                                                <span class="read-more">....read more</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row post-footer">
+                                            <div class="col-md-8 col-7">
+                                                <span class="badge badge-primary">Tech</span>
+                                                <span class="badge badge-primary">AI</span>
+                                                <span class="badge badge-primary">Academic</span>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="post-date">April 3, 2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-5 text-right">
+                                                <a href="#"><i class="fas fa-heart post-icon spaced-icon liked"></i></a>
+                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <!-- <div class="col-md-1"></div> -->
+                </div>
 
-
-                    <div class="row mx-0 blog-item-wrapper">
-                        <div class="d-flex flex-row px-0 blog-item">
-                            <div class="blog-item-author-avatar-wrapper">
+                <div class="row posts">
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <div class="col-md-1">
                                 <img class="blog-item-author-avatar" src="assets/img/avatar-2.jpeg">
                             </div>
-                            <div class="blog-item-main d-flex flex-row">
-                                <div class="blog-item-img-wrapper">
-                                    <img class="blog-item-img" src="assets/img/image-1.png">
-                                </div>
-                                <div class="d-flex flex-column blog-item-main-content">
-                                     <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                     </div>
-                                     <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
-                                     <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
-                                     <div class="row d-flex flex-row align-items-center justify-content-between mx-0">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Javascript</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Tech</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Hotels</p>
-                                            </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center">
-                                            <img class="blog-item-action" src="assets/img/comment.svg">
+                            <div class="col-md-11 col-12">
+                                <div class="row blog-main-item">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row">
+                                            <img src="assets/img/header-img.jpg" class="img-fluid post-img" alt="Profile Image">
                                         </div>
                                     </div>
-                                    <p class="blog-item-date">3rd, April 2019 </p>
+                                    <div class="col-md-9 col-12">
+                                        <div class="row post-heading">
+                                            <div class="col-md-8 col-10">
+                                                <h4>UI/UX Concept</h4>
+                                            </div>
+                                            <div class="col-md-4 col-2 text-right">
+                                                <a href="#"><i class="far fa-star star"></i></a>
+                                                <!-- When user stars a post, change class to
+                                                    the one below-->
+                                                <!-- <i class="fas fa-star"></i> -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-12">
+                                                <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+                                                <span class="read-more">....read more</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row post-footer">
+                                            <div class="col-md-8 col-7">
+                                                <span class="badge badge-primary">Tech</span>
+                                                <span class="badge badge-primary">AI</span>
+                                                <span class="badge badge-primary">Academic</span>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="post-date">April 3, 2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-5 text-right">
+                                                <a href="#"><i class="fas fa-heart post-icon spaced-icon liked"></i></a>
+                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <!-- <div class="col-md-1"></div> -->
+                </div>
 
-
-                    <div class="row mx-0 blog-item-wrapper">
-                        <div class="d-flex flex-row px-0 blog-item">
-                            <div class="blog-item-author-avatar-wrapper">
+                <div class="row posts">
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <div class="col-md-1">
                                 <img class="blog-item-author-avatar" src="assets/img/avatar-2.jpeg">
                             </div>
-                            <div class="blog-item-main d-flex flex-row">
-                                <div class="blog-item-img-wrapper">
-                                    <img class="blog-item-img" src="assets/img/image-1.png">
-                                </div>
-                                <div class="d-flex flex-column blog-item-main-content">
-                                     <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                     </div>
-                                     <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
-                                     <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
-                                     <div class="row d-flex flex-row align-items-center justify-content-between mx-0">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Javascript</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Tech</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Hotels</p>
-                                            </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center">
-                                            <img class="blog-item-action" src="assets/img/comment.svg">
+                            <div class="col-md-11 col-12">
+                                <div class="row blog-main-item">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row">
+                                            <img src="assets/img/timeline.jpg" class="img-fluid post-img" alt="Profile Image">
                                         </div>
                                     </div>
-                                    <p class="blog-item-date">3rd, April 2019 </p>
+                                    <div class="col-md-9 col-12">
+                                        <div class="row post-heading">
+                                            <div class="col-md-8 col-10">
+                                                <h4>UI/UX Concept</h4>
+                                            </div>
+                                            <div class="col-md-4 col-2 text-right">
+                                                <a href="#"><i class="far fa-star star"></i></a>
+                                                <!-- When user stars a post, change class to
+                                                    the one below-->
+                                                <!-- <i class="fas fa-star"></i> -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-12">
+                                                <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+                                                <span class="read-more">....read more</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row post-footer">
+                                            <div class="col-md-8 col-7">
+                                                <span class="badge badge-primary">Tech</span>
+                                                <span class="badge badge-primary">AI</span>
+                                                <span class="badge badge-primary">Academic</span>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="post-date">April 3, 2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-5 text-right">
+                                                <a href="#"><i class="fas fa-heart post-icon spaced-icon liked"></i></a>
+                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <!-- <div class="col-md-1"></div> -->
+                </div>
 
-                    <div class="row mx-0 blog-item-wrapper">
-                        <div class="d-flex flex-row px-0 blog-item">
-                            <div class="blog-item-author-avatar-wrapper">
+                <div class="row posts">
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <div class="col-md-1">
                                 <img class="blog-item-author-avatar" src="assets/img/avatar-2.jpeg">
                             </div>
-                            <div class="blog-item-main d-flex flex-row">
-                                <div class="blog-item-img-wrapper">
-                                    <img class="blog-item-img" src="assets/img/image-1.png">
-                                </div>
-                                <div class="d-flex flex-column blog-item-main-content">
-                                     <div class="d-flex flex-row justify-content-between">
-                                         <h2 class="blog-item-header text-left">This is my first Post</h2>
-                                     </div>
-                                     <h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
-                                     <p class="blog-item-content text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nulla pariatur ....</p>
-                                     <div class="row d-flex flex-row align-items-center justify-content-between mx-0">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Javascript</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Tech</p>
-                                            </div>
-                                            <div class="blog-item-tag-wrapper">
-                                                <p class="blog-item-tag text-center">Hotels</p>
-                                            </div>
-                                            <a href="#"><p class="blog-item-more_action ">Read More</p></a>
-                                        </div>
-
-                                        <div class="d-flex flex-row align-items-center">
-                                            <img class="blog-item-action" src="assets/img/comment.svg">
+                            <div class="col-md-11 col-12">
+                                <div class="row blog-main-item">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row">
+                                            <img src="assets/img/wall.jpg" class="img-fluid post-img" alt="Profile Image">
                                         </div>
                                     </div>
-                                    <p class="blog-item-date">3rd, April 2019 </p>
+                                    <div class="col-md-9 col-12">
+                                        <div class="row post-heading">
+                                            <div class="col-md-8 col-10">
+                                                <h4>UI/UX Concept</h4>
+                                            </div>
+                                            <div class="col-md-4 col-2 text-right">
+                                                <a href="#"><i class="far fa-star star"></i></a>
+                                                <!-- When user stars a post, change class to
+                                                    the one below-->
+                                                <!-- <i class="fas fa-star"></i> -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-12">
+                                                <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+                                                <span class="read-more">....read more</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row post-footer">
+                                            <div class="col-md-8 col-7">
+                                                <span class="badge badge-primary">Tech</span>
+                                                <span class="badge badge-primary">AI</span>
+                                                <span class="badge badge-primary">Academic</span>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="post-date">April 3, 2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-5 text-right">
+                                                <a href="#"><i class="fas fa-heart post-icon spaced-icon liked"></i></a>
+                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                    <!-- <div class="col-md-1"></div> -->
+                </div>
+
+
+                <div class="row posts">
+                    <div class="col-md-12 col-12">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img class="blog-item-author-avatar" src="assets/img/avatar-2.jpeg">
+                            </div>
+                            <div class="col-md-11 col-12">
+                                <div class="row blog-main-item">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row">
+                                            <img src="assets/img/wall.jpg" class="img-fluid post-img" alt="Profile Image">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-12">
+                                        <div class="row post-heading">
+                                            <div class="col-md-8 col-10">
+                                                <h4>UI/UX Concept</h4>
+                                            </div>
+                                            <div class="col-md-4 col-2 text-right">
+                                                <a href="#"><i class="far fa-star star"></i></a>
+                                                <!-- When user stars a post, change class to
+                                                    the one below-->
+                                                <!-- <i class="fas fa-star"></i> -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12 col-12">
+                                                <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+                                                <span class="read-more">....read more</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="row post-footer">
+                                            <div class="col-md-8 col-7">
+                                                <span class="badge badge-primary">Tech</span>
+                                                <span class="badge badge-primary">AI</span>
+                                                <span class="badge badge-primary">Academic</span>
+                                                <div class="col-md-12">
+                                                    <div class="row">
+                                                        <p class="post-date">April 3, 2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-5 text-right">
+                                                <a href="#"><i class="fas fa-heart post-icon spaced-icon liked"></i></a>
+                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-1"></div> -->
+                </div>
+                <!-- Post feed ends here -->
+
+                <!-- post feed ends here -->
                 <!-- </div> -->
-                <h6 class="text-center" style="margin-top:27px;margin-bottom:27px">Load More<h5>
+
             </div>
+
         </div>
 
-        <?php }
-else{
-    header('Location: auth.php');//redirect to login page, or...
+    </div>
 
-}
-include 'footer.php'; ?>
+  <?php include 'footer.php'; ?>
