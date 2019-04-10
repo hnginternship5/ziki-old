@@ -2,18 +2,8 @@
 include 'header.php';
 $title ="Welcome";
  ?>
-<?php
-            if(isset($_SESSION['accesstoken'])){
-  try{ 
-      header("location:timeline.php");
-
-        ?>
-<?php
-        }
-            else{
-                header("Location: index.php");
-            }
-        ?>
+ <?php if (!isset($_SESSION['name']))
+{?>
 
 
     <div class="container-fluid">
@@ -23,6 +13,9 @@ $title ="Welcome";
                 Login
             </button>
         </div>
+  <?php  }else {
+      }
+       ?>
 
         <div class="container justify-content-center">
             <div class="col-md-12 col-12 posts-area">
