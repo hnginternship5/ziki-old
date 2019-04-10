@@ -875,13 +875,8 @@ Timeline && Contact Us Page Styling
 }
 
 .post-section {
-  min-height: 160px;
   background-color: var(--post-section-bg-color);
   padding: 18px 30px;
-  margin-top: 47px;
-  margin-left: 48px;
-  margin-right: 45px;
-  margin-bottom: 22px;
 }
 
 .post-input {
