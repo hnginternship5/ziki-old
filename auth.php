@@ -1,6 +1,6 @@
 <?php
-require_once './authentication/auth/googleinit.php';
-require_once './authentication/auth/fbook.php';
+require_once './Authentication/auth/googleinit.php';
+require_once './Authentication/auth/fbook.php';
 if (!session_id()) {
   session_start();
 }
@@ -24,13 +24,14 @@ if (!session_id()) {
   <!-- <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=325441314824736&autoLogAppEvents=1"></script>
      -->
-  <main class="fega-main-container">
-    <div class="fega-content-container">
+  <main class="auth-main-container">
+    <div class="auth-content-wrap">
+	<div class="auth-content">
       <h1>Hello!</h1>
       <p>Access is just one click away</p>
 
       <div class="auth-btns">
-        <button class="google-btn">
+        <button class="auth-google-btn">
           <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path d="M3.1027 9.06465L2.61538 11.0138L0.834231 11.0542C0.30193 9.99638 0 8.78609 0 7.49996C0 6.25628 0.282297 5.08347 0.782688 4.05078H0.78307L2.36879 4.36227L3.06343 6.05105C2.91804 6.50519 2.8388 6.99269 2.8388 7.49996C2.83886 8.05051 2.93193 8.578 3.1027 9.06465Z" fill="#FBBB00" />
@@ -45,8 +46,7 @@ if (!session_id()) {
             </defs>
           </svg>
 
-          <span><a href="<?php echo $glogin_url; ?>">Google</a></span>
-
+          <span><a href="<?php echo $glogin_url;?>">Google</a></span>
 
         </button>
 
@@ -55,11 +55,12 @@ if (!session_id()) {
         <button class="auth-facebook-btn" type="button">
           <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0.191598 6.3912H1.49358V11.8065C1.49358 11.9134 1.57932 12 1.68516 12H3.89272C3.99855 12 4.0843 11.9134 4.0843 11.8065V6.41672H5.58105C5.67837 6.41672 5.76026 6.34294 5.77138 6.24527L5.9987 4.25166C6.00494 4.19681 5.98775 4.14188 5.95142 4.10072C5.91507 4.05954 5.86303 4.03596 5.80842 4.03596H4.08439V2.78625C4.08439 2.40954 4.28515 2.2185 4.6812 2.2185C4.73764 2.2185 5.80842 2.2185 5.80842 2.2185C5.91426 2.2185 6 2.13183 6 2.02495V0.194977C6 0.0880547 5.91426 0.00142969 5.80842 0.00142969H4.25492C4.24397 0.000890625 4.21964 0 4.18377 0C3.91423 0 2.9773 0.0534609 2.23719 0.741328C1.41716 1.50361 1.53116 2.41629 1.5584 2.57454V4.03591H0.191575C0.0857425 4.03591 0 4.12254 0 4.22946V6.19763C2.31987e-05 6.30452 0.0857656 6.3912 0.191598 6.3912Z" fill="white" />
-          </svg>
+	 </svg>
           <span><a href="<?php echo $login_url ?>">Facebook</a></span>
         </button>
       </div>
     </div>
+   </div>
   </main>
 
 </body>
