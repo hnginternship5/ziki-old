@@ -44,6 +44,9 @@ class Post {
     public function getStoryImage() {
         $this->image;
     }
+    public function getMarkdownUrl() {
+        return $this->fileUrl;
+    }
     public function getTimePosted() {
         return $this->postTimestamp;
     }
@@ -55,7 +58,8 @@ class Post {
                 $post = new Post();
                 $post->id = $row['id'];
                 $post->userId = $row['user_id'];
-                $post->image = $row['post_image'];
+                //$post->image = $row['post_image'];
+                $post->fileUrl = $row['file_url'];
                 $post->postTimestamp = $row['post_timestamp'];
                 $result[] = $post;
             }
@@ -65,21 +69,21 @@ class Post {
     public function savePost($db) {
         if ($this->id == -1) {
             //Saving new post 
-            $filename = $this->userId;
+            $filename = md5($this->userId);
             $time = date("Y-m-d h:i:sa");
             $unix = strtotime($time);
-            if (!is_dir(SITE_ROOT."/markdowns/{$filename}")) {
-                mkdir(SITE_ROOT."/markdowns/{$filename}");
+            if (!is_dir(BASE_URL."/markdowns/{$filename}")) {
+                mkdir(BASE_URL."/markdowns/{$filename}");
             }
-            $fname = SITE_ROOT."/markdowns/{$filename}/{$filename}-{$unix}.md";
+            $fname = BASE_URL."/markdowns/{$filename}/{$filename}-{$unix}.md";
             $postfile = fopen($fname, "w") or die("failed while creating file");
             $result = fwrite($postfile, "<h2>{$this->storyTitle}</h2><p>{$this->storyBody}</p>");
             fclose($postfile);
             if ($result == true) {
                 $id = $this->id = (mt_rand(100001,999999));
                 $file = $fname;
-                $img = $this->image;
-                $posts[] = array('id'=> $id, 'user_id'=>$_SESSION['loggedUserId'], 'file_url'=> $file, 'post_image' => $img, 'post_timestamp' => $time);
+                //$img = $this->image;
+                $posts[] = array('id'=> $id, 'user_id'=>$_SESSION['loggedUserId'], 'file_url'=> $file, 'post_timestamp' => $time);
                 $json_db = "posts.json";
                 $fp = fopen($json_db, 'w') or die("post DB not found");
                 $data = $db;
