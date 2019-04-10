@@ -21,14 +21,14 @@ include 'header.php';
                 <div class="text-center">
                     <h3 class="profile-name">
                         <?php 
-                             echo $name; dear backend dev. just uncomment this 
+                             echo $name;// dear backend dev. just uncomment this 
                             // and remove what echoes below. That's it.
                             //echo 'Austin Asoluka';
                         ?>
                     </h3>
                     <h4 class="user-skills">
                         <?php 
-                             echo $email; dear backend dev. just uncomment this 
+                             echo $email; //dear backend dev. just uncomment this 
                             // and remove what echoes below. That's it.
                             //echo 'Web | Software Developer';
                         ?>
