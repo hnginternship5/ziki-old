@@ -1,4 +1,5 @@
 </div>
+
 <script src="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/js/medium-editor.min.js"></script>
 <script>
     const $ = document.querySelector.bind(document)
@@ -77,8 +78,11 @@
 let editor = new MediumEditor('.editable', {
     buttonLabels: 'fontawesome'
 });
-const toggleThemeBtn = document.querySelector('.toggle-theme');
-toggleThemeBtn.addEventListener('click', e => document.querySelector('body').classList.toggle('dark'));
+
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="SwitchTheme.js"></script>
 </body>
 </html>
+
+

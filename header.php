@@ -1,5 +1,6 @@
 <!-- mylo carson 2019-->
 <?php include 'includes/config.php';
+$title = "Welcome";
 //print_r($_SESSION);
 extract($_SESSION);?>
 <!DOCTYPE html>
@@ -17,6 +18,6 @@ extract($_SESSION);?>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
 </head>
-<body class="">
+<body id="setCssClass" class="">
   <div class="container-fluid">
     <!-- mylo carson 2019-->
