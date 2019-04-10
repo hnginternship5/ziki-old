@@ -10,7 +10,7 @@ if(isset($_SESSION['name'])) {
 
             <div class="col-md-3 d-flex flex-column align-items-center profile-section">
                 <div class="profile-img-wrapper">
-                    <img class="profile-img" src="assets/img/profile.png">
+                    <img class="profile-img" src="<?php= $user_info['picture'] ?>">
                 </div>
                 <div class="profile-main">
                     <h3 class="profile-name"><?php echo $name ?> </h3>
