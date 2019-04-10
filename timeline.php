@@ -2,6 +2,22 @@
 $title = "Timeline";
 include 'header.php';
  ?>
+<?php
+            if(isset($_SESSION['accesstoken'])){
+  try{
+
+        ?>
+<?php
+        }catch(Exception $e){
+            //echo "Google Auth Error:  ". $e->getMessage();
+         }
+            }
+
+            else{
+                header("Location: index.php");
+            }
+        ?>
+
 
         <div class="row">
             <!-- Sidebar Starts -->
@@ -95,8 +111,8 @@ include 'header.php';
                     <div class="row mx-0 d-flex flex-row align-items-center justify-content-between padd">
                         <div class="col-md-8 line ml-md-5"></div>
                         <div class="col d-inline-flex mr-md-5 flex-row justify-content-between">
-                            <p class="post-filter"><span class="post-filter-title">Sort by:</span> Most Recent Posts</p>
-                            <img src="assets/img/caret.svg">
+                            <!--<p class="post-filter"><span class="post-filter-title">Sort by:</span> Most Recent Posts</p> 
+                            <img src="assets/img/caret.svg"> -->
                         </div>
                     </div>
                 </div>
@@ -118,7 +134,9 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
-                                                <h4>UI/UX Concept</h4>
+						<a href="/blog-detail.php">
+                                                <h4>UI/UX Concept</h4>	
+						</a>
                                             </div>
                                             <div class="col-md-4 col-2 text-right">
                                                 <!-- When user stars a post, change class to
@@ -128,16 +146,25 @@ include 'header.php';
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12 col-12">
+						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
+						</a>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
+						<a href="#">
                                                 <span class="badge badge-primary">Tech</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">AI</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">Academic</span>
+						</a>
                                                 <div class="col-md-12">
                                                     <div class="row">
                                                         <p class="post-date">April 3, 2016</p>
@@ -145,7 +172,7 @@ include 'header.php';
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-5 text-right">
-                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                <a href="/bog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -172,7 +199,9 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
+					    <a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
+					    </a>
                                             </div>
                                             <div class="col-md-4 col-2 text-right">
                                                 <!-- When user stars a post, change class to
@@ -182,16 +211,25 @@ include 'header.php';
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12 col-12">
+						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
+						</a>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
+                                                <a href="#">
                                                 <span class="badge badge-primary">Tech</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">AI</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">Academic</span>
+						</a>
                                                 <div class="col-md-12">
                                                     <div class="row">
                                                         <p class="post-date">April 3, 2016</p>
@@ -199,7 +237,7 @@ include 'header.php';
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-5 text-right">
-                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -226,7 +264,9 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
+						<a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
+						</a>
                                             </div>
                                             <div class="col-md-4 col-2 text-right">
                                                 <!-- When user stars a post, change class to
@@ -236,16 +276,25 @@ include 'header.php';
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12 col-12">
+						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
+						</a>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
+                                                <a href="#">
                                                 <span class="badge badge-primary">Tech</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">AI</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">Academic</span>
+						</a>
                                                 <div class="col-md-12">
                                                     <div class="row">
                                                         <p class="post-date">April 3, 2016</p>
@@ -253,7 +302,7 @@ include 'header.php';
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-5 text-right">
-                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -280,7 +329,9 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
+						<a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
+						</a>
                                             </div>
                                             <div class="col-md-4 col-2 text-right">
                                                 <!-- When user stars a post, change class to
@@ -290,16 +341,25 @@ include 'header.php';
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12 col-12">
+						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
+						</a>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
+                                                <a href="#">
                                                 <span class="badge badge-primary">Tech</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">AI</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">Academic</span>
+						</a>
                                                 <div class="col-md-12">
                                                     <div class="row">
                                                         <p class="post-date">April 3, 2016</p>
@@ -307,7 +367,7 @@ include 'header.php';
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-5 text-right">
-                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -335,7 +395,9 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
+					    <a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
+					    </a>
                                             </div>
                                             <div class="col-md-4 col-2 text-right">
                                                 <!-- When user stars a post, change class to
@@ -344,17 +406,27 @@ include 'header.php';
                                             </div>
                                         </div>
                                         <div class="row">
+					
                                             <div class="col-md-12 col-12">
+						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
+						</a>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
+                                                <a href="#">
                                                 <span class="badge badge-primary">Tech</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">AI</span>
+						</a>
+						<a href="#">
                                                 <span class="badge badge-primary">Academic</span>
+						</a>
                                                 <div class="col-md-12">
                                                     <div class="row">
                                                         <p class="post-date">April 3, 2016</p>
@@ -362,7 +434,7 @@ include 'header.php';
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-5 text-right">
-                                                <a href="#"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
                                             </div>
                                         </div>
                                     </div>
