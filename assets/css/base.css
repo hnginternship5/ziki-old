@@ -1045,6 +1045,7 @@ user profile settings styling
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 4rem;
+  text-align: center;
 }
 .homepage-link {
   transition: all ease-in-out 0.3s;
@@ -1146,6 +1147,9 @@ user profile settings styling
 
 .drop {
   margin-top: 1rem;
+
+  /* hacky, needs to be improved */
+  min-height: 60px;
 }
 
 .togg {
@@ -1212,6 +1216,7 @@ user profile settings styling
     font-weight: 500;
     margin-bottom: 4rem;
     margin-top: 3rem;
+    text-align: left;
   }
 
   .user-profile-setting-form {
@@ -1265,17 +1270,5 @@ user profile settings styling
 
   .user-profile-setting-form {
     margin-top: 0;
-  }
-
-  .lang {
-    float: right;
-    margin-top: -30%;
-    margin-right: 13%;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .lang {
-    margin-top: -20%;
-    margin-right: 9%;
   }
 }
