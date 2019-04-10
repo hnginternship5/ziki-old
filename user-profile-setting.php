@@ -66,10 +66,12 @@
                     </form>
 
                 </div>
-                <div class="d-flx sub">
-                    <span class="btn user-profile-button co-red">
+                <div class="sub">
+                  <div>
+                    <span class="btn mb-3 user-profile-button co-red">
                         Delete account
                     </span>
+                  </div>
                     <p class="lang">
                         Language
                         <span class="en">
