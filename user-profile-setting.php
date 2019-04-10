@@ -25,6 +25,21 @@
     }
 }
 </style>
+<?php
+            if(isset($_SESSION['accesstoken'])){
+  try{
+
+        ?>
+<?php
+        }catch(Exception $e){
+            //echo "Google Auth Error:  ". $e->getMessage();
+         }
+            }
+
+            else{
+                header("Location: index.php");
+            }
+        ?>
 <body class="">
     <main class="motuns-main-container">
         <section class="motuns-side-bar">

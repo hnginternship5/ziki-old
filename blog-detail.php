@@ -26,7 +26,9 @@
 <body class="">
     <div class="blog-details-main-container">
         <div class="blog-details-heading">
+	<a href="/blog-detail.php">
             <h1 class="blog-details-logo-holder">Homepage</h1>
+	</a>
             <div class="blog-details-heading-content">
                 <div>
                     <h2 class="blog-details-post-title">The effect of culture on design trends</h2>
