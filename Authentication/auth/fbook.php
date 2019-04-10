@@ -14,13 +14,15 @@ $fb = new Facebook\Facebook([
 //Fetch url login
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email']; // Optional permissions
-$login_url = $helper->getLoginUrl('http://ziki.hng.tech/Authentication/auth/fbook.php', $permissions);
+$login_url = $helper->getLoginUrl('https://ziki.hng.tech/Authentication/auth/fbook.php', $permissions);
+//$login_url = $helper->getLoginUrl('https://localhost/ziki/Authentication/auth/fbook.php', $permissions);
+
 
 try{
   $access_token = $helper->getAccessToken();
   if(isset($access_token)){
     $_SESSION['accesstoken'] = (string)$access_token;
-    header("Location: https://ziki.hng.tech/home.php");
+    header("Location: https://ziki.hng.tech/ziki/home.php");
   }
   if(isset($_SESSION['accesstoken'])){
     
