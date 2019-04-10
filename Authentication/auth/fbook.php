@@ -22,7 +22,9 @@ try{
   $access_token = $helper->getAccessToken();
   if(isset($access_token)){
     $_SESSION['accesstoken'] = (string)$access_token;
-    header("Location: https://ziki.hng.tech/ziki/home.php");
+    header("Location: https://ziki.hng.tech/home.php");
+    //header("Location: https://localhost/ziki/home.php");
+
   }
   if(isset($_SESSION['accesstoken'])){
     
