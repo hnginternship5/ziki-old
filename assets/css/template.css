@@ -1,0 +1,62 @@
+:root {
+  /* the light theme is the default */
+  /* specify colors for the light theme here */
+  /* the syntax is */
+  /* --variable-name: variable value */
+  /* for example */
+  --bg-color: white;
+  --default-text-color: black;
+
+  /* specify other colors you use here */
+  /* ... */
+  /* ... */
+  /* ... */
+  /* they will be reassigned in the dark theme */
+
+  /* these colors do not change with the theme */
+  /* so they will NOT be reassigned in the .dark class */
+  --btn-bg-color: cornflowerblue;
+  --btn-text-color: white;
+
+  /* these variables are for the transition, don't change them */
+  --theme-change-transition-duration: 0.3s;
+  --theme-change-timing-function: ease;
+}
+
+.dark {
+  /* the .dark class will be added to the body element of each page */
+  /* which will ensure that the colors here apply throughout the page */
+  /* specify the new values for the colors that need to change */
+  --bg-color: #06223d;
+  --default-text-color: white;
+  /* ... */
+  /* ... */
+  /* ... */
+
+  /* I haven't reassigned --btn-bg-color and --btn-text-color */
+  /* because they don't change across themes */
+}
+
+html,
+body {
+  /* now use the variable as necessary */
+  /* the syntax is */
+  /* css-property: var(--variable-name); */
+  /* for example */
+  background-color: var(--bg-color);
+  color: var(--default-text-color);
+
+  /* this transition makes the color change smoothly */
+  /* don't change it */
+  transition: background-color var(--theme-change-transition-duration)
+      var(--theme-change-timing-function),
+    color var(--theme-change-transition-duration)
+      var(--theme-change-timing-function);
+
+  height: 100vw;
+}
+
+button {
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+}

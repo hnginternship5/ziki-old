@@ -1,6 +1,6 @@
 <?php
 include 'header.php';
-$title = "Welcome";
+
 //print_r($_SESSION);
 ?>
 <?php if (!isset($_SESSION['name'])) { ?>
@@ -339,13 +339,4 @@ $title = "Welcome";
         </div>
     </div>
 </div>
-
-</div>
-
-<script>
-    const toggleThemeBtn = document.querySelector('.toggle-theme');
-    toggleThemeBtn.addEventListener('click', e => document.querySelector('body').classList.toggle('dark'));
-</script>
-</body>
-
-</html>
+<?php require_once('footer.php'); ?>
