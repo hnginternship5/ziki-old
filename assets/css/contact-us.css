@@ -1,0 +1,271 @@
+/** mylo carson 2019 */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #06223D;
+    color: white;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+p {
+    font-size: 12px;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.header-img {
+    width: 100%;
+    min-height: 200px;
+    height: 33%;
+}
+
+.profile-section {
+    background: #04284A;
+}
+
+.profile-img-wrapper {
+    position: absolute;
+    top: -120px;
+    margin-bottom: -120px;
+}
+
+.profile-img {
+    /*position: absolute;
+    top: -113px;
+    margin-bottom: 113px;*/
+    border-radius: 50%;
+    max-width: 230px;
+    height: 230px;
+}
+
+.profile-main {
+    margin-top: 100px;
+}
+
+.profile-name {
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Open Sans;*/
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: -0.04em;
+    margin-bottom: 6px
+}
+
+.profile-technologies {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.profile-motto {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: normal;
+    text-align: center;
+    margin-top: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.profile-social-wrapper {
+    margin-top: 24px;
+    color: white;
+}
+
+.profile-social-icon {
+    margin: 0 12px;
+    color: white;
+}
+
+.profile-social-icon:first-child {
+    margin-left: 0;
+}
+
+.profile-social-icon:last-child {
+    margin-right: 0;
+}
+
+.menu-wrapper {
+    margin: 68px 0;
+}
+
+.menu-item {
+    margin: 15px 0;
+}
+
+.blog-item-wrapper {
+    margin: 10px 0;
+}
+
+.blog-item-wrapper:first-child {
+    margin-top: 32px;
+}
+
+.blog-item {
+    width: 100%;
+}
+
+.blog-item-main {
+    background: #04284A;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+    border-radius: 11px;
+    margin-right: 30px;
+    margin-left: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    display: block;
+}
+
+.blog-item-main-content {
+    margin-left: 40px;
+    margin-right: 20px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    align-items: center
+}
+
+.blog-item-header {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: normal;
+    margin-top: 15px;
+    color: white;
+}
+
+.blog-item-content {
+    margin-bottom: 20px;
+}
+
+.blog-item-author {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: normal;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form-con {
+    align-items: center;
+    position: absolute;
+    width: 50%;
+}
+
+.post-section {
+    min-height: 160px;
+    background: #04284A;
+    padding: 18px 30px;
+    margin-top: 47px;
+    margin-left: 48px;
+    margin-right: 45px;
+    margin-bottom: 22px;
+}
+
+.post-input {
+    background: #153F6C;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    width: 100%;
+    outline: 0;
+    margin-bottom: 20px;
+    padding: 15px;
+    color: white;
+    resize: none;
+    display: block;
+}
+
+.post-input::-webkit-input-placeholder {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #E1E1E1;
+}
+
+.post-input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #E1E1E1;
+}
+
+.post-input::placeholder {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #E1E1E1;
+}
+
+.publish-btn {
+    background: #0082FF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    height: 42px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: normal;
+    text-align: center;
+    color: #FFFFFF;
+    border: 0;
+    width: 100%;
+    margin-bottom: 100px;
+}

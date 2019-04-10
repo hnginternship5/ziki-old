@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+:root {
+  --font: "Open Sans", sans-serif;
+  --black: #000;
+  --grey: #f7f7f7;
+  --tag-btn-color: #aecdee;
+  --white: #fff;
+  --body-bg: #fff;
+  --post-content-bg: #f8f8f8;
+  --post-title: #07223e;
+  --tag-btn: #fff;
+  --post-btn: #fff;
+  --post-btn-color: #000;
+  --tag-btn-color: #fff;
+}
+/* Dark Theme- To use append the dark class to all elements*/
+.dark {
+  --white: #07223e !important;
+  --grey: #04274c !important;
+  --black: #fff !important;
+  --body-bg: #07223e !important;
+  --post-content-bg: #04274c !important;
+  --post-title: #fff !important;
+  --tag-btn: #000 !important;
+  --post-btn-bg: #3667e7;
+  --post-btn-color: #fff;
+  --tag-text-color: #000;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--body-bg);
+  box-sizing: border-box;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+}
+
+/* Draft SideBar */
+.draft-sidebar {
+  background: var(--grey);
+}
+.draft-main-title-header {
+  font-weight: bolder;
+  color: var(--black);
+}
+.btn-post {
+  background-color: var(--post-btn-bg);
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+  border-radius: 11px;
+  color: var(--post-btn-color);
+  margin: 4rem 0;
+}
+.btn-post:hover {
+  background-color: #3667e7;
+  box-shadow: 3px 8px 13px rgba(0, 0, 0, 0.2);
+  color: var(--white);
+}
+
+.btn-tag {
+  background-color: #aecdee;
+  color: var(--tag-text-color);
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-tag:hover {
+  background-color: #3667e7;
+  box-shadow: 3px 8px 13px rgba(0, 0, 0, 0.2);
+  color: var(--black);
+}
+
+/* Post Area */
+.post-area {
+  padding: 3rem 4rem;
+  background-color: var(--body-bg);
+}
+.post-content:first-of-type {
+  margin-top: 0;
+}
+.post-content {
+  background: var(--post-content-bg);
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
+  border-radius: 11px;
+  margin: 3rem 0;
+}
+.post-title-header > h3 {
+  color: var(--post-title);
+  font-weight: bolder;
+}
+.post-title-body {
+  font-size: 18px;
+}
+.post-date {
+  font-size: 12px;
+}
+
+/* Blog Icons */
+.fa,
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-size: 25px;
+  margin: 8px;
+}
+.fa-edit {
+  color: #3667e7;
+}
+.fa-trash-alt {
+  color: #ff0000;
+}
+
+/* Dark Theme */
+body.dark {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--dark-bg);
+  box-sizing: border-box;
+  color: var(--white);
+}
+.draft-sidebar {
+  background: var(--grey);
+}
+
+/* Mobile Styles */
+
+@media (max-width: 1200px) {
+  .draft-sidebar {
+    display: none;
+  }
+  .blog-item-img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin: 10px auto;
+  }
+}
