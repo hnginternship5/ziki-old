@@ -12,12 +12,28 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base.css">
 </head>
+<style>
+    @media only screen and (min-width: 768px) {
+    .logo-profile{
+        margin: 0 1rem;
+        }
+    }
+    @media only screen and (min-width: 1024px) {
+    
+  .logo-profile{
+    margin: 1rem;
+    }
+}
+</style>
 <body class="">
     <main class="motuns-main-container">
         <section class="motuns-side-bar">
-            <h3 class="homepage-link">
-                <a href="./timeline.php">Homepage</a>
-            </h3>
+        <div class="logo-area logo-profile">
+	      <a href="timeline.php">
+            <img src="assets/img/zikilogo.png" alt="" class="logo" />
+            </a>
+          </div>
+            
             <p class="">
                 Profile
             </p>
