@@ -255,6 +255,17 @@ button {
 Authentication Styling
 ======================= */
 
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 3rem;
+  display: flex;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
 .dark .auth-main-container {
   background: #07223e;
 }
