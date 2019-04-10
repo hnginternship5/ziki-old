@@ -1,7 +1,5 @@
 <!-- mylo carson 2019-->
 <?php include 'includes/config.php';
-
-
 //print_r($_SESSION);
 extract($_SESSION);?>
 <!DOCTYPE html>
@@ -18,10 +16,6 @@ extract($_SESSION);?>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Hind:400,500,700|Josefin+Sans:300|B612:700|Source+Sans+Pro:900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/newtm.css">
-
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/medium-editor@latest/dist/css/medium-editor.min.css" type="text/css" media="screen" charset="utf-8">
-
 
     <style type="text/css">
         /** mylo carson 2019 */
@@ -368,6 +362,6 @@ extract($_SESSION);?>
         }
     </style>
 </head>
-<body id="setCssClass" class="">
+<body class="">
   <div class="container-fluid">
     <!-- mylo carson 2019-->
