@@ -11,21 +11,71 @@
     <link href="https://fonts.googleapis.com/css?family=Hind:400,500,700" rel="stylesheet">
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base.css">
-</head>
-<style>
-    @media only screen and (min-width: 768px) {
-    .logo-profile{
-        margin: 0 1rem;
-        }
-    }
-    @media only screen and (min-width: 1024px) {
-    
-  .logo-profile{
-    margin: 1rem;
-    }
+    <style type="text/css">
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            }
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-</style>
-<body class="">
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #111;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #111;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+    </style>
+</head>
+
+<body id="setCssClass">
+
     <main class="motuns-main-container">
         <section class="motuns-side-bar">
         <div class="logo-area logo-profile">
@@ -95,13 +145,14 @@
                         Mode
                     </p>
                     <div class="d-flx no-justify">
-                        <div class="toggle">
-                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="9" cy="9" r="9" fill="black"/>
-                            </svg>
+                        <div class="">
+                        <label class="switch">
+                             <input type="checkbox" class="toggleFocus" id="toggleThemeMode">
+                             <span class="slider round"></span>
+                        </label>
                         </div>
-                        <p class="ml-1">
-                            Lori Lightfoot
+                        <p class="ml-1 themeModeLabel">
+                            Light Mode
                         </p>
                     </div>
                 </div>
@@ -113,3 +164,6 @@
     </main>
 </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="SwitchTheme.js"></script>
+
