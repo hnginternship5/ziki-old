@@ -2,6 +2,7 @@
 $title = "Timeline";
 include 'header.php';
  ?>
+
     <div class="container-fluid">
 
         <div class="row">
@@ -83,22 +84,29 @@ include 'header.php';
                                 Publish
                                 </button>
                             </div>
+
+
                             </div>
                         </div>
                         </form>
                     </div>
+
                 </div>
 
 
                     <div class="row mx-0 d-flex flex-row align-items-center  justify-content-between">
+
                         <div class="col-md-8 line ml-md-5"></div>
                         <div class="col d-inline-flex mr-md-5 flex-row justify-content-between">
                             <p class="post-filter"><span class="post-filter-title">Sort by:</span> Most Recent Posts</p>
                             <img src="assets/img/caret.svg">
                         </div>
                     </div>
+                </div>
+
 
                     <div class="post-section"></div>
+
                 <!-- </div> -->
 
             </div>
