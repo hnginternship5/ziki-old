@@ -34,6 +34,7 @@ if(isset($code)) {
       $name = $user_info['name'];
       $email = $user_info['email'];
 
+
       $response = array();
       $user = array();
       $user[] = array('Name'=> $name , 'Email'=> $email, 'Access Token'=> $_SESSION['accesstoken']);
@@ -45,6 +46,7 @@ if(isset($code)) {
       fclose($fp);
       $_SESSION['name'] = $user_info['name'];
       $_SESSION['email'] = $user_info['email'];
+      $_SESSION['img'] = $user_info['picture'];
 
 
   }catch (Exception $e){

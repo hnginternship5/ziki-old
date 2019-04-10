@@ -30,7 +30,7 @@ include 'header.php';
 
                 <!-- user profile picture -->
                 <div class="profile-pic-area mx-auto mt-5">
-                    <img src="assets/img/dp.png" alt="" class="profile-pic" />
+                    <img src="<?php $_SESSION['img']?>" alt="" class="profile-pic" />
                 </div>
 
                 <!-- User name, Skills, short bio -->

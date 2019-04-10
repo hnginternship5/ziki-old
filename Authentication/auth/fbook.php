@@ -6,9 +6,9 @@ if (!session_id()) {
 require 'vendor/autoload.php';
 
 $fb = new Facebook\Facebook([
-    'app_id'=>'1049022241947586',
-    'app_secret' => '83d0df86dfd991f91ae0b4290e82d63f',
-    'default_graph_version' => 'v3.2'
+  'app_id'=>'346578099397815',
+  'app_secret' => '6990705a0b8a89143b9a850505e923d3',
+  'default_graph_version' => 'v3.2'
 ]);
 
 //Fetch url login
