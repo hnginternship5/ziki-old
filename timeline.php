@@ -52,20 +52,21 @@ include 'header.php';
                     <p class="profile-motto">Software Engineer at AWS design enthusiast and music lover</p>
                 </div>
 
-                <!-- social media links -->
+                <!-- social media links 
                 <div class="sidebar-icons text-center my-3">
                     <i class="fab fa-github social"></i>
                     <i class="fab fa-dribbble social"></i>
                     <i class="fas fa-rss social"></i>
                 </div>
-
+		-->
                 <ul class="nav flex-column p-5 my-5 text-center">
-                    <li class="nav-item">
+                <!--    <li class="nav-item">
                         <a class="nav-link" href="#">My Blogs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Insights</a>
                     </li>
+		-->
                     <li class="nav-item">
                         <a class="nav-link" href="/user-profile-setting.php">Settings</a>
                     </li>
@@ -85,7 +86,7 @@ include 'header.php';
                                 <textarea class="post-input" type="text" name="post-input" placeholder="What’s happening?"></textarea>
 
                                 <div class="row mx-0 d-flex flex-row mt-auto justify-content-between">
-                                    <div class="post-action-right">
+                                 <!--   <div class="post-action-right">
                                         <button class="tool fa fa-underline"  onclick="document.execCommand('underline', false, '');"></button>
                                         <button class="tool fa fa-italic" onclick="document.execCommand('italic', false, '');"></button>
                                         <button class="tool fa fa-bold" onclick="document.execCommand('bold', false, '');"></button>
@@ -97,8 +98,8 @@ include 'header.php';
                                         <button class="tool fa fa-align-left" onclick="document.execCommand('justifyLeft',false,'')"></button>
                                         <button class="tool fa fa-align-right" onclick="document.execCommand('justifyRight',false,'')"></button>  
                                     </div>
-
-                                    <div class="post-action-left">
+					-->
+                                    <div class="post-action-left" style="margin-left:0;">
                                         <i class="fas fa-paperclip"></i>
                                         <a class="post-action-item" href="#css"><img src="assets/img/mic.svg"></a>
                                         <i class="fas fa-link"></i>
