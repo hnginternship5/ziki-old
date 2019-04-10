@@ -13,5 +13,5 @@ extract($_SESSION);?>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
 </head>
-<body class="">
+<body id="setCssClass" class="">
   <div class="container-fluid">
