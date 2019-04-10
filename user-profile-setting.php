@@ -9,58 +9,55 @@
     <title>Profile Setting</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Hind:400,500,700" rel="stylesheet">
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/profile-user-setting.css">
 </head>
 <body>
-    <main class="motuns-main-container">
-        <section class="motuns-side-bar">
-            <h3 class="homepage-link">
-                <a href="./timeline.php">Homepage</a>
+    <main class="motuns-main-containe">
+        <section class="motuns-side-ba">
+            <h3>
+                Homepage
             </h3>
-            <p class="">
-                Profile
-            </p>
+            <ul>
+                <li class="list">
+                    Profile
+                </li>
+                <li>
+                    Themes
+                </li>
+            </ul>
         </section>
-        <div class="container">
-            <section class="motuns-content-container">
-                <h2>
-                    Settings
-                </h2>
-                <div class="details">
-                    <div class="d-grid update">
-                        <img src="/assets/img/avatar-2.jpeg" alt="" class="avatar">
-                        <button class="upcase">
-                            update
-                        </button>
-                    </div>
-                    <form action="/action_page.php">
-                        First name:<br>
-                        <input type="text" name="firstname" value="Dragon">
-                        <br>
-                        Last name:<br>
-                        <input type="text" name="lastname" value="Blade">
-                        <br>
-                        Email Address:<br>
-                        <input type="text" name="firstname">
-                        <br>
-                        Change passord:<br>
-                        <input type="text" name="lastname">
-                        
-                    </form> 
+        <section class="motuns-content-containe">
+            <h2>
+                Settings
+            </h2>
+            <div class="d-fl">
+                <form action="/action_page.php">
+                    First name:<br>
+                    <input type="text" name="firstname" value="Dragon">
+                    <br>
+                    Last name:<br>
+                    <input type="text" name="lastname" value="Blade">
+                    <br>
+                    Email Address:<br>
+                    <input type="text" name="firstname">
+                    <br>
+                    Change passord:<br>
+                    <input type="text" name="lastname">
                     
-                </div>
-                <div class="d-flx sub">
-                    <span class="co-red">
-                        Delete my account
-                    </span>
-                    <p class="lang">
+                </form> 
+                <div class="d-grd">
+                    <img src="/assets/img/avatar-2.jpeg" alt="" class="avatar">
+                    <button class="up-case">
+                        update
+                    </button>
+                    <p>
                         Language
                         <span class="en">
                             en
                         </span>
                     </p>
                 </div>
+<<<<<<< HEAD
             </section>
             <section class="theme">
                 <div>
@@ -94,6 +91,18 @@
                 Save changes
             </button>
         </div>
+=======
+            </div>
+            <div class="d-fl">
+                <span class="co.red">
+                    Delete my account
+                </span>
+                <button  class="capital">
+                    Save changes
+                </button>
+            </div>
+        </section>
+>>>>>>> upstream/staging
     </main>
 </body>
 </html>

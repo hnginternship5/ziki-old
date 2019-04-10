@@ -1,1 +1,2 @@
-vendor/
+/vendor
+/Authentcation/auth/vendor
