@@ -29,8 +29,8 @@ include 'header.php';
                 </div>
 
                 <!-- user profile picture -->
-                <div class="profile-pic-area mx-auto mt-5">
-                    <img src="<?php $_SESSION['img']?>" alt="" class="profile-pic" />
+                <div class="profile-pic-area mx-auto mt-5" style="padding-left:100px;">
+                    <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/profile.png" class="profile-pic" />
                 </div>
 
                 <!-- User name, Skills, short bio -->
@@ -99,7 +99,7 @@ include 'header.php';
                                         <button class="tool fa fa-align-right" onclick="document.execCommand('justifyRight',false,'')"></button>  
                                     </div>
 					-->
-                                    <div class="post-action-left" style="margin-left:0;">
+                                    <div class="post-action-left" style="padding-left:700px;">
                                         <i class="fas fa-paperclip"></i>
                                         <a class="post-action-item" href="#css"><img src="assets/img/mic.svg"></a>
                                         <i class="fas fa-link"></i>
