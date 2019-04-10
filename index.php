@@ -1,6 +1,6 @@
 <?php
-$title ="Welcome";
 include 'header.php';
+$title ="Welcome";
  ?>
  <?php if (!isset($_SESSION['name']))
 {?>

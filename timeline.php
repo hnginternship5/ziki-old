@@ -7,7 +7,9 @@ include 'header.php';
             <!-- Sidebar Starts -->
             <div class="col-sm-3 col-12 side-info p-4">
                 <div class="logo-area mb-5 mx-4">
+		  <a href="/timeline.php">
                     <img src="assets/img/zikilogo.png" alt="" class="logo" />
+		 </a>		
                 </div>
 
                 <!-- user profile picture -->
@@ -19,16 +21,16 @@ include 'header.php';
                 <div class="text-center">
                     <h3 class="profile-name">
                         <?php 
-                            // echo $name; dear backend dev. just uncomment this 
+                             echo $name; dear backend dev. just uncomment this 
                             // and remove what echoes below. That's it.
-                            echo 'Austin Asoluka';
+                            //echo 'Austin Asoluka';
                         ?>
                     </h3>
                     <h4 class="user-skills">
                         <?php 
-                            // echo $email; dear backend dev. just uncomment this 
+                             echo $email; dear backend dev. just uncomment this 
                             // and remove what echoes below. That's it.
-                            echo 'Web | Software Developer';
+                            //echo 'Web | Software Developer';
                         ?>
                     </h4>
                     <p class="profile-motto">Software Engineer at AWS design enthusiast and music lover</p>
