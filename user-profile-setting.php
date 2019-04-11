@@ -139,7 +139,7 @@ input:checked + .slider:before {
                         <br>
                         
                         Email Address:<br>
-                        <input class="user-profile-input" type="text" name="<?php 
+                        <input class="user-profile-input" type="text" name="email" placeholder="<?php 
                              echo $email;
                         ?>">
                         <br>
