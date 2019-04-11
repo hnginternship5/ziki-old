@@ -75,10 +75,10 @@ class Post {
             $filename = $this->userId;
             $time = date("Y-m-d h:i:sa");
             $unix = strtotime($time);
-            if (!is_dir(BASE_URL."/markdowns/{$filename}")) {
-                mkdir(BASE_URL."/markdowns/{$filename}");
+            if (!is_dir(dir."/markdowns/{$filename}")) {
+                mkdir(dir."/markdowns/{$filename}");
             }
-            $fname = BASE_URL."/markdowns/{$filename}/{$filename}-{$unix}.md";
+            $fname = dir."/markdowns/{$filename}/{$filename}-{$unix}.md";
             $postfile = fopen($fname, "w") or die("failed while creating file");
             $result = fwrite($postfile, "<h2>{$this->storyTitle}</h2><p>{$this->storyBody}</p>");
             fclose($postfile);
