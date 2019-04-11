@@ -53,8 +53,8 @@ try{
         //echo  $_SESSION['access_token'];
 
     } catch(Exception $e){
-      echo $e->getTraceAsString();
-
+      //echo $e->getTraceAsString();
+      return $e->getTraceAsString();
     }
   }
 }
