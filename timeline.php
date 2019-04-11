@@ -30,7 +30,7 @@ include 'header.php';
 
                 <!-- user profile picture -->
                 <div class="profile-pic-area mx-auto mt-5" style="padding-left:100px;">
-                    <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/profile.png" class="profile-pic" />
+                    <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/avatar-2.jpeg" class="profile-pic" />
                 </div>
 
                 <!-- User name, Skills, short bio -->
