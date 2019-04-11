@@ -664,17 +664,27 @@ Timeline && Contact Us Page Styling
   margin-bottom: -120px;
 }
 
+.profile-pic-area {
+  text-align: center;
+}
+
 .profile-img {
   /*position: absolute;
     top: -113px;
     margin-bottom: 113px;*/
   border-radius: 50%;
   max-width: 230px;
-  height: 230px;
+  width: 100%;
 }
 
 .profile-main {
-  margin-top: 100px;
+  height: 40px;
+  margin-right: 10px;
+  border: 0.5px solid var(--blog-author-avatar-border-color);
+
+  /* layer the image on top the blog post */
+  position: relative;
+  z-index: 2;
 }
 
 .profile-name {
@@ -687,6 +697,20 @@ Timeline && Contact Us Page Styling
   text-align: center;
   letter-spacing: -0.04em;
   margin-bottom: 6px;
+}
+
+.img-picker {
+  /* hide ugly file picker */
+  display: none;
+}
+
+.img-error {
+  color: var(--ziki-red);
+  padding: 0.2em;
+}
+
+.fa-paperclip:hover {
+  cursor: pointer;
 }
 
 .profile-technologies {

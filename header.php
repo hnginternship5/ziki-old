@@ -193,18 +193,6 @@ extract($_SESSION);?>
             background: rgba(243, 243, 243, 0.62);
         }
 
-        .profile-img-wrapper{
-            position: absolute;
-            top: -120px;
-            margin-bottom: -120px;
-        }
-
-        .profile-img{
-            border-radius: 50%;
-            max-width: 230px;
-            height: 230px;
-        }
-
         .profile-main{
             /*margin-top: 100px;*/
         }

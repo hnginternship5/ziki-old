@@ -29,7 +29,7 @@ include 'header.php';
                 </div>
 
                 <!-- user profile picture -->
-                <div class="profile-pic-area mx-auto mt-5" style="padding-left:100px;">
+                <div class="profile-pic-area mx-auto mt-5">
                     <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/avatar-2.jpeg" class="profile-pic" />
                 </div>
 
