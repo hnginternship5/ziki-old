@@ -63,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 else {
     $data = file_get_contents("posts.json");
+    define ("dir", "https://ziki.hng.tech/" );
     $posts = json_decode($data, true);
     $getAllPosts = Post::fetchAllPosts($posts);
     $posts = array();
