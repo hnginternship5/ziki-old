@@ -1,13 +1,21 @@
 :root {
   /* light theme is the default */
+
+  /* common colors */
   --ziki-blue: #3667e7;
   --ziki-dark-blue: #04284a;
+  --ziki-red: red;
+  --ziki-gray: #999;
+  --ziki-light-gray: #ddd;
   --almost-white: #f8f8f8;
+
+  /* these change across themes */
   --default-bg-color: white;
   --default-text-color: black;
-  --fof-return-btn-bg-color: var(--ziki-blue);
-  --fof-return-btn-text-color: white;
+  --fof-navbar-link-color: var(--ziki-blue);
+  --fof-navbar-link-hover-color: black;
   --profile-bg-color: rgba(243, 243, 243, 0.62);
+  --horizontal-line-color: rgba(0, 0, 0, 0.3);
   --blog-header-text-color: var(--ziki-blue);
   --blog-details-pagination-bg-color: var(--almost-white);
   --blog-item-bg-color: var(--almost-white);
@@ -16,11 +24,16 @@
   --post-section-bg-color: var(--almost-white);
   --post-text-color: #555;
   --post-filter-text-color: #333;
+  --form-input-bg-color: var(--ziki-light-gray);
+  --badge-bg-color: var(--ziki-light-gray);
+  --badge-text-color: var(--default-text-color);
+  --sidebar-bg-color: var(--almost-white);
+  --selected-sidebar-item-bg-color: white;
 
   /* not changed across themes */
-  --fof-navbar-link-color: var(--ziki-blue);
-  --fof-navbar-link-hover-color: black;
-  --horizontal-line-color: rgba(0, 0, 0, 0.3);
+  --default-btn-bg-color: #3869df;
+  --default-btn-text-color: white;
+  --default-btn-hover-bg-color: rgb(35, 70, 161);
   --blog-post-tag-bg-color: #aecdee;
   --blog-post-tag-text-color: black;
   --blog-details-pagination-btn-color: var(--ziki-blue);
@@ -28,6 +41,9 @@
   --blog-author-avatar-border-color: rgba(0, 0, 0, 0.5);
   --post-publish-btn-bg-color: #3869df;
   --post-publish-btn-text-color: white;
+  --red-btn: var(--ziki-red);
+  --red-btn-hover: firebrick;
+  --hovered-badge-bg-color: var(--ziki-gray);
 
   /* to transition the color */
   --theme-change-transition-duration: 0.3s;
@@ -40,6 +56,7 @@
   --fof-navbar-link-color: white;
   --fof-navbar-link-hover-color: aqua;
   --profile-bg-color: #04284a;
+  --horizontal-line-color: white;
   --blog-header-text-color: white;
   --blog-details-pagination-bg-color: var(--ziki-dark-blue);
   --blog-item-bg-color: var(--ziki-dark-blue);
@@ -48,13 +65,17 @@
   --post-section-bg-color: var(--ziki-dark-blue);
   --post-text-color: white;
   --post-filter-text-color: white;
+  --form-input-bg-color: var(--ziki-dark-blue);
+  --badge-bg-color: darkcyan;
+  --badge-text-color: black;
+  --sidebar-bg-color: var(--ziki-dark-blue);
+  --selected-sidebar-item-bg-color: var(--default-bg-color);
 }
 
 html {
   font-size: 16px;
   height: 100%;
 }
-
 *,
 *::before,
 *::after {
@@ -68,6 +89,8 @@ body {
   min-height: 100%;
   background-color: var(--default-bg-color);
   color: var(--default-text-color);
+
+  /* smoothly transition the colors */
   transition: background-color var(--theme-change-transition-duration)
       var(--theme-change-timing-function),
     color var(--theme-change-transition-duration)
@@ -84,6 +107,7 @@ a {
   font-size: 1rem;
   color: var(--default-text-color);
 }
+
 a:active,
 a:focus,
 a:hover {
@@ -104,6 +128,7 @@ button {
 /* ==========================
 404 Styling
 ========================= */
+
 .justice-error-main {
   width: 100vw;
   height: 100vh;
@@ -112,7 +137,6 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
   align-content: space-around;
 }
 
@@ -127,25 +151,24 @@ button {
 }
 
 .fof-return-button {
-  background-color: var(--fof-return-btn-bg-color);
+  background-color: var(--default-btn-bg-color);
   font-size: 40px;
   width: 50%;
   padding: 24px 64px;
   border-radius: 11px;
   line-height: 30px;
   font-weight: bold;
-  color: var(--fof-return-btn-text-color);
+  color: var(--default-btn-text-color);
   text-align: center;
 }
+
 @media all and (max-width: 560px) {
   .justice-error-main {
     padding: 1rem;
   }
-
   .fof-warning-text {
     font-size: 34px;
   }
-
   .justice-error-vector {
     width: 56%;
   }
@@ -155,15 +178,14 @@ button {
     padding: 24px;
   }
 }
+
 @media all and (min-width: 560px) and (max-width: 1024px) {
   .justice-error-main {
     padding: 3rem 3rem 1rem 3rem;
   }
-
   .fof-warning-text {
     font-size: 40px;
   }
-
   .justice-error-vector {
     width: 30%;
   }
@@ -173,21 +195,9 @@ button {
   }
 }
 
-.dark-theme.justice-error-main {
-  background-color: #07223e;
-  color: white;
-}
-.dark-theme .fof-navbar a {
-  color: white;
-}
-.dark-theme .fof-navbar a:hover {
-  color: #3667e7;
-}
-
 .fof-navbar {
   text-align: center;
 }
-
 .fof-navbar a {
   display: inline-block;
   color: var(--fof-navbar-link-color);
@@ -196,9 +206,11 @@ button {
   text-decoration: none;
   font-size: 17px;
 }
+
 .fof-navbar a:hover {
   color: var(--fof-navbar-link-hover-color);
 }
+
 .fof-left-vector {
   position: absolute;
   left: 49.89%;
@@ -206,6 +218,7 @@ button {
   top: 46.11%;
   bottom: 37.05%;
 }
+
 .fof-right-vector {
   position: absolute;
   left: 41.79%;
@@ -213,6 +226,7 @@ button {
   top: 41.08%;
   bottom: 44.4%;
 }
+
 .fof-top-vector {
   position: absolute;
   left: 51.6%;
@@ -220,6 +234,7 @@ button {
   top: 43.82%;
   bottom: 53.62%;
 }
+
 .fof-top-left-vector {
   position: absolute;
   left: 48.75%;
@@ -227,6 +242,7 @@ button {
   top: 39.44%;
   bottom: 58.18%;
 }
+
 .fof-top-middle-vector {
   position: absolute;
   left: 50.7%;
@@ -238,9 +254,22 @@ button {
 /* =======================
 Authentication Styling
 ======================= */
-.dark-theme .auth-main-container {
+
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 3rem;
+  display: flex;
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.dark .auth-main-container {
   background: #07223e;
 }
+
 .auth-main-container {
   width: 100%;
   display: flex;
@@ -252,10 +281,12 @@ Authentication Styling
   background: #fff;
   color: #000;
 }
-.dark-theme .auth-content-wrap {
+
+.dark .auth-content-wrap {
   background: #04274c;
   color: #fff;
 }
+
 .auth-content-wrap {
   max-width: 886px;
   width: 100%;
@@ -271,36 +302,45 @@ Authentication Styling
   padding: 0 1.5rem;
   text-align: center;
 }
+
 @media screen and (max-width: 567px) {
   .auth-content-wrap {
     height: 500px;
   }
 }
+
 /* To get the second theme;
 this is the only styling it needs */
-.auth-content-wrap.dark-theme {
+
+.auth-content-wrap.dark {
   background: #07223e;
   color: #ffffff;
 }
+
 /* ================================== */
+
 .auth-content {
   max-width: 300px;
   width: 100%;
   text-align: center;
 }
+
 .auth-content h1 {
   font-size: 1.5rem;
 }
+
 .auth-content p {
   margin-top: 0.5rem;
   font-size: 1rem;
   font-weight: 500;
 }
+
 .auth-btns {
   margin-top: 2.5rem;
   position: relative;
   z-index: 1;
 }
+
 .auth-btns button {
   transition: 0.3s;
   border: none;
@@ -314,23 +354,28 @@ this is the only styling it needs */
   align-items: center;
   justify-content: center;
 }
+
 .auth-btns button svg {
   margin-right: 0.25rem;
 }
+
 .auth-btns button:hover {
   transition: 0.3s;
   opacity: 0.7;
   cursor: pointer;
 }
+
 .auth-btns button.auth-google-btn {
   background: #ffffff;
   color: #656565;
   border: 1px solid #656565;
 }
+
 .auth-btns button.auth-facebook-btn {
   background: #385c8e;
   color: #ffffff;
 }
+
 p.auth-demarcation-or {
   color: #c4c4c4;
   padding: 1.2rem 0;
@@ -339,6 +384,7 @@ p.auth-demarcation-or {
   align-items: center;
   justify-content: space-between;
 }
+
 .auth-demarcation-or::before,
 .auth-demarcation-or::after {
   content: '';
@@ -346,6 +392,7 @@ p.auth-demarcation-or {
   width: 135px;
   border: 0.65px solid #c4c4c4;
 }
+
 @media screen and (max-width: 567px) {
   .auth-demarcation-or::before,
   .auth-demarcation-or::after {
@@ -356,21 +403,25 @@ p.auth-demarcation-or {
 /* ====================
 Blog Details Styling
 ==================== */
+
 div.blog-details-main-container {
   padding: 2rem 5rem 0;
   max-width: 1680px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 768px) {
   div.blog-details-main-container {
     padding: 1.5rem;
   }
 }
+
 div.blog-details-heading .blog-details-logo-holder {
   font-size: 25px;
   color: var(--blog-header-text-color);
   margin-bottom: 2.5rem;
 }
+
 div.blog-details-heading .blog-details-heading-content {
   display: flex;
   align-items: flex-start;
@@ -384,6 +435,7 @@ div.blog-details-heading
   max-width: 550px;
   font-size: 45px;
 }
+
 div.blog-details-heading .blog-details-heading-content .blog-details-post-date {
   font-weight: 300;
   margin-top: 0.75rem;
@@ -397,27 +449,42 @@ div.blog-details-heading
   border: none;
   outline: none;
 }
+
+div.blog-details-heading
+  .blog-details-heading-content
+  button.blog-details-favorite {
+  margin-top: 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
 div.blog-details-banner {
   margin-bottom: 2rem;
   width: 100%;
   height: 450px;
 }
+
 div.blog-details-banner img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 div.blog-details-post-content {
   margin-bottom: 2rem;
 }
+
 div.blog-details-post-content::after {
   content: '';
   display: block;
   clear: both;
 }
+
 div.blog-details-post-content p {
   margin-bottom: 2rem;
 }
+
 div.blog-details-post-content .post-image-left {
   max-width: 750px;
   height: 600px;
@@ -426,6 +493,7 @@ div.blog-details-post-content .post-image-left {
   margin-right: 2rem;
   margin-bottom: 1rem;
 }
+
 @media screen and (max-width: 992px) {
   div.blog-details-post-content .post-image-left {
     max-width: 100%;
@@ -435,6 +503,7 @@ div.blog-details-post-content .post-image-left {
     margin-bottom: 2rem;
   }
 }
+
 div.blog-details-engagement {
   display: flex;
   align-items: center;
@@ -450,10 +519,12 @@ div.blog-details-engagement button {
   display: flex;
   align-items: center;
 }
+
 ul.blog-details-post-tags {
   display: flex;
   flex-wrap: wrap;
 }
+
 ul.blog-details-post-tags a {
   color: var(--blog-post-tag-text-color);
   background-color: var(--blog-post-tag-bg-color);
@@ -465,9 +536,11 @@ ul.blog-details-post-tags a {
   margin-right: 1rem;
   margin-bottom: 2rem;
 }
+
 ul.blog-details-post-tags a:hover {
   opacity: 0.7;
 }
+
 div.blog-details-pagination {
   width: 100%;
   display: flex;
@@ -486,14 +559,17 @@ div.blog-details-pagination button {
   align-items: baseline;
   justify-content: center;
 }
+
 div.blog-details-pagination button:hover {
   opacity: 0.7;
 }
+
 div.blog-details-comment_section {
   max-width: 750px;
   margin: 3rem auto;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   div.blog-details-comment_section {
     padding: 0 1.5rem;
@@ -503,9 +579,11 @@ div.blog-details-comment_section {
 /* ====================
 Landing Page Styling
 ==================== */
+
 .landing-page-container {
   margin-left: 1.9rem !important;
 }
+
 .landing-page-head {
   font-weight: bold;
   font-size: 24px;
@@ -514,12 +592,14 @@ Landing Page Styling
   margin-top: 30px;
   margin-bottom: 60px;
 }
+
 .landing-page-greeting {
   font-weight: bold;
   font-size: 14px;
   color: #3667e7;
   margin-top: 60px;
 }
+
 .landing-page-main-header {
   font-weight: bold;
   font-size: 144px;
@@ -527,12 +607,14 @@ Landing Page Styling
   margin-bottom: 12px;
   border-bottom: 4px solid #3667e7;
 }
+
 .landing-page-info {
   font-weight: bold;
   font-size: 1.1rem;
   color: #3667e7;
   margin-top: 9px;
 }
+
 .landing-page-btn {
   transition: 0.3s;
   font-weight: 600;
@@ -549,12 +631,14 @@ Landing Page Styling
   margin-left: 100px;
   cursor: pointer;
 }
+
 .landing-page-btn:hover {
   transition: 0.3s;
   color: #3667e7;
   background: #ffffff;
   box-shadow: none;
 }
+
 @media (max-width: 1439px) {
   .landing-page-main-header {
     font-size: 100px;
@@ -573,22 +657,36 @@ Timeline && Contact Us Page Styling
 .profile-section {
   background: var(--profile-bg-color);
 }
+
 .profile-img-wrapper {
   position: absolute;
   top: -120px;
   margin-bottom: -120px;
 }
+
+.profile-pic-area {
+  text-align: center;
+}
+
 .profile-img {
   /*position: absolute;
     top: -113px;
     margin-bottom: 113px;*/
   border-radius: 50%;
   max-width: 230px;
-  height: 230px;
+  width: 100%;
 }
+
 .profile-main {
-  margin-top: 100px;
+  height: 40px;
+  margin-right: 10px;
+  border: 0.5px solid var(--blog-author-avatar-border-color);
+
+  /* layer the image on top the blog post */
+  position: relative;
+  z-index: 2;
 }
+
 .profile-name {
   font-family: 'Open Sans', sans-serif;
   /*font-family: Open Sans;*/
@@ -600,6 +698,21 @@ Timeline && Contact Us Page Styling
   letter-spacing: -0.04em;
   margin-bottom: 6px;
 }
+
+.img-picker {
+  /* hide ugly file picker */
+  display: none;
+}
+
+.img-error {
+  color: var(--ziki-red);
+  padding: 0.2em;
+}
+
+.fa-paperclip:hover {
+  cursor: pointer;
+}
+
 .profile-technologies {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -610,6 +723,7 @@ Timeline && Contact Us Page Styling
   margin-top: 6px;
   margin-bottom: 16px;
 }
+
 .profile-motto {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -620,27 +734,35 @@ Timeline && Contact Us Page Styling
   margin-top: 16px;
   margin-bottom: 24px;
 }
+
 .profile-social-wrapper {
   margin-top: 24px;
 }
+
 .profile-social-icon {
   margin: 0 12px;
 }
+
 .profile-social-icon:first-child {
   margin-left: 0;
 }
+
 .profile-social-icon:last-child {
   margin-right: 0;
 }
+
 .menu-wrapper {
   margin: 68px 0;
 }
+
 .menu-item {
   margin: 15px 0;
 }
-.dark-theme .line {
+
+.dark .line {
   background-color: white;
 }
+
 .line {
   width: 50%;
   height: 1px;
@@ -650,12 +772,15 @@ Timeline && Contact Us Page Styling
 .blog-item-wrapper {
   margin: 10px 0;
 }
+
 .blog-item-wrapper:first-child {
   margin-top: 32px;
 }
+
 .blog-item {
   width: 100%;
 }
+
 .blog-item-main {
   background-color: var(--blog-item-bg-color);
   box-shadow: 0px 4px 13px var(--blog-item-shadow-color);
@@ -673,10 +798,12 @@ Timeline && Contact Us Page Styling
   width: inherit;
   height: 165px;
 }
+
 .blog-item-img-wrapper {
   width: 230px;
   margin: 22px 24px;
 }
+
 .blog-item-header {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -685,6 +812,7 @@ Timeline && Contact Us Page Styling
   line-height: normal;
   margin-top: 15px;
 }
+
 .blog-item-author {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -698,6 +826,7 @@ Timeline && Contact Us Page Styling
 .blog-item-author-avatar-wrapper {
   max-width: 50px;
 }
+
 .blog-item-author-avatar {
   border-radius: 50%;
   max-width: 50px;
@@ -705,6 +834,7 @@ Timeline && Contact Us Page Styling
   margin-right: 10px;
   border: 0.5px solid var(--blog-author-avatar-border-color);
 }
+
 .blog-item-content {
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
@@ -713,15 +843,18 @@ Timeline && Contact Us Page Styling
   line-height: normal;
   margin-bottom: 6px;
 }
+
 .blog-item-tag-wrapper {
   background-color: var(--blog-post-tag-bg-color);
   border-radius: 5px;
   margin: 6px 6px;
   padding: 5px 17px;
 }
+
 .blog-item-tag-wrapper:first-child {
   margin-left: 0;
 }
+
 .blog-item-tag {
   font-family: Open Sans;
   font-style: normal;
@@ -732,6 +865,7 @@ Timeline && Contact Us Page Styling
   margin: 0;
   color: var(--blog-post-tag-text-color);
 }
+
 .blog-item-more_action {
   font-family: Open Sans;
   font-style: normal;
@@ -742,6 +876,7 @@ Timeline && Contact Us Page Styling
   text-decoration-line: underline;
   color: var(--blog-item-read-more-link-color);
 }
+
 .blog-item-date {
   font-family: Open Sans;
   font-style: normal;
@@ -750,25 +885,24 @@ Timeline && Contact Us Page Styling
   line-height: normal;
   margin-top: 6px 0;
 }
+
 .blog-item-action {
   margin: 0 15px;
 }
+
 .blog-item-action:first-child {
   margin-left: 0;
 }
+
 .blog-item-action:last-child {
   margin-right: 0;
 }
 
 .post-section {
-  min-height: 160px;
   background-color: var(--post-section-bg-color);
   padding: 18px 30px;
-  margin-top: 47px;
-  margin-left: 48px;
-  margin-right: 45px;
-  margin-bottom: 22px;
 }
+
 .post-input {
   background-color: transparent;
   font-family: Open Sans;
@@ -795,23 +929,30 @@ Timeline && Contact Us Page Styling
   text-align: center;
   color: var(--post-publish-btn-text-color);
   border-radius: 1px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .post-action-right .post-action-item {
   margin: 0 11px;
 }
+
 .post-action-right .post-action-item:first-child {
   margin-left: 0;
 }
+
 .post-action-right .post-action-item:last-child {
   margin-right: 0;
 }
+
 .post-action-left .post-action-item {
   margin: 0 11px;
 }
+
 .post-action-left .post-action-item:first-child {
   margin-left: 0;
 }
+
 .post-action-left .post-action-item:last-child {
   margin-right: 0;
 }
@@ -824,9 +965,11 @@ Timeline && Contact Us Page Styling
   letter-spacing: -0.05em;
   color: var(--post-filter-text);
 }
+
 .post-filter-title {
   font-weight: normal;
 }
+
 @media (max-width: 1439px) {
   .header-img {
     height: 240px;
@@ -834,6 +977,7 @@ Timeline && Contact Us Page Styling
 }
 
 /* contact us page is not currently a priority */
+
 .contact-us-wrap .blog-item-main {
   margin: 0 auto;
   max-width: 700px;
@@ -842,6 +986,7 @@ Timeline && Contact Us Page Styling
   margin-top: 100px;
   display: block;
 }
+
 .contact-us-wrap .blog-item-main-content {
   margin-left: 40px;
   margin-right: 20px;
@@ -849,11 +994,13 @@ Timeline && Contact Us Page Styling
   width: 100%;
   display: block;
 }
+
 .contact-us-wrap .blog-item-author {
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .contact-us-wrap .post-input {
   background-color: white;
   font-size: 12px;
@@ -864,10 +1011,288 @@ Timeline && Contact Us Page Styling
   display: block;
   box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.12);
 }
-.dark-theme .contact-us-wrap .post-input {
+
+.dark .contact-us-wrap .post-input {
   background: #153f6c;
   color: #fff;
 }
+
 .contact-form-con {
   align-items: center;
+}
+
+/*=======================
+user profile settings styling
+============================*/
+
+.user-profile-button {
+  background-color: var(--default-btn-bg-color);
+  padding: 0.5rem;
+  color: var(--default-btn-text-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  height: 45px;
+  transition: all ease-in-out 0.3s;
+}
+
+.user-profile-button:hover {
+  background-color: var(--default-btn-hover-bg-color);
+  cursor: pointer;
+}
+
+.motuns-main-container {
+  /* display: flex */
+  margin: 2rem;
+}
+
+.motuns-side-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.motuns-side-bar h3 {
+  font-size: 25px;
+  /* margin-top: 20px; */
+  /* padding-left: 160px; */
+}
+
+.motuns-side-bar p {
+  font-size: 24px;
+}
+
+.motuns-content-container h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.homepage-link {
+  transition: all ease-in-out 0.3s;
+}
+
+.homepage-link:hover {
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.user-profile-setting-form {
+  margin-top: 4rem;
+  width: 100%;
+}
+.user-profile-setting-form input {
+  font-size: 14px;
+  background-color: var(--form-input-bg-color);
+  color: var(--default-text-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: none;
+  padding: 10px 10px;
+  margin: 1rem 0 35px 0;
+  width: 100%;
+}
+.d-flx {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 162px;
+  height: 162px;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+.d-grid {
+  display: grid;
+  text-align: center;
+}
+.co-red {
+  background-color: var(--red-btn);
+  color: white;
+  width: 150px;
+  /* font-size: 14px; */
+  transition: all ease-in-out 0.3s;
+}
+.co-red:hover {
+  background-color: var(--red-btn-hover);
+}
+
+.upcase {
+  text-transform: uppercase;
+  width: 100px;
+  margin: 0 auto;
+  border: none;
+}
+
+.en {
+  background-color: var(--badge-bg-color);
+  color: var(--badge-text-color);
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 0.5rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.en:hover {
+  cursor: pointer;
+  background-color: var(--hovered-badge-bg-color);
+}
+
+.capitalize {
+  text-transform: capitalize;
+  width: 138px;
+  margin-left: 30%;
+  border: none;
+}
+
+.capitalize:hover {
+  background-color: var(--default-btn-hover-bg-color);
+  cursor: pointer;
+}
+
+.sub {
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.drop {
+  margin-top: 1rem;
+
+  /* hacky, needs to be improved */
+  min-height: 60px;
+}
+
+.togg {
+  margin-top: 2rem;
+}
+.toggle {
+  background-color: var(--ziki-light-gray);
+  display: inline-flex;
+  width: 40px;
+  border-radius: 50px;
+  transition: all ease-in-out 0.3s;
+}
+
+.toggle:hover {
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.no-justify {
+  justify-content: normal;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .motuns-main-container {
+    margin: 0;
+    display: flex;
+  }
+
+  .motuns-side-bar {
+    background-color: var(--sidebar-bg-color);
+    width: 35%;
+    display: block;
+  }
+
+  .motuns-side-bar h3 {
+    font-size: 25px;
+    padding-top: 20%;
+    padding-left: 47%;
+  }
+
+  .motuns-side-bar p {
+    font-size: 24px;
+    padding-left: 47%;
+    margin-top: 2rem;
+    background-color: var(--selected-sidebar-item-bg-color);
+    padding: 0.5rem 0 0.5rem 47%;
+  }
+
+  .container {
+    width: 65%;
+  }
+
+  .motuns-content-container {
+    margin: 3rem 2rem;
+  }
+
+  .motuns-content-container h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    text-align: left;
+  }
+
+  .user-profile-setting-form {
+    width: 50%;
+  }
+
+  .avatar {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  .upcase {
+    margin: 0 2rem;
+  }
+
+  .sub {
+    display: block;
+  }
+
+  .co-red {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .theme {
+    margin: 3rem 2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .motuns-side-bar {
+    width: 25%;
+  }
+
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+  }
+
+  .container {
+    width: 75%;
+  }
+
+  .update {
+    order: 2;
+  }
+
+  .upcase {
+    margin-top: -8rem;
+  }
+
+  .user-profile-setting-form {
+    margin-top: 0;
+  }
 }
