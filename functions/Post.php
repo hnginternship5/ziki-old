@@ -42,10 +42,13 @@ class Post {
         return $this->storyBody;
     }
     public function getStoryImage() {
-        return $this->imageUrl;
+        $this->image;
     }
     public function getMarkdownUrl() {
         return $this->fileUrl;
+    }
+    public function getAuthorPic(){
+        return $this->authPic;
     }
     public function getTimePosted() {
         return $this->postTimestamp;
@@ -53,21 +56,20 @@ class Post {
     static public function fetchAllPosts($postJson) {
         $result = array();
         //run check
-        //die(json_encode($postJson));
         if (!empty($postJson)) {
             foreach ($postJson as $row) {
                 $post = new Post();
                 $post->id = $row['id'];
                 $post->userId = $row['user_id'];
+                $post->authPic = $row['auth_pic'];
                 $post->fileUrl = $row['file_url'];
-                $post->imageUrl = $row['post_image'];
                 $post->postTimestamp = $row['post_timestamp'];
                 $result[] = $post;
             }
         }
         return $result;
     }
-    public function savePost($db) {
+    public function savePost($db, $name, $img) {
         if ($this->id == -1) {
             //Saving new post 
             $filename = $this->userId;
@@ -81,16 +83,16 @@ class Post {
             $result = fwrite($postfile, "<h2>{$this->storyTitle}</h2><p>{$this->storyBody}</p>");
             fclose($postfile);
             if ($result == true) {
-                $id = $this->id = (mt_rand(100001,999999));
+                $id = $this->id = (mt_rand(100001,999999))."-".$unix;
                 $file = $fname;
-                $img = $this->image;
-                $posts[] = array('id'=> $id, 'user_id'=>$_SESSION['loggedUserId'], 'file_url'=> $file, 'post_image' => $img, 'post_timestamp' => $time);
+                //$img = $this->image;
+                $posts[] = array('id'=> $id, 'user_id'=>$name, 'file_url'=> $file, 'auth_pic' => $img, 'post_timestamp' => $time);
                 $json_db = "posts.json";
+                $prev_post = json_decode($db);
+                $new =array_merge($prev_post, $posts);
                 $fp = fopen($json_db, 'w') or die("post DB not found");
-                $data = $db;
-                $prev_post = json_decode($data, true);
-                $new_post = fwrite($fp, json_encode($posts));
-                array_push($prev_post, $new_post);
+                //die(json_encode($new));
+                $new_post = fwrite($fp, json_encode($new));
                 fclose($fp);
                 return true;
             } else {

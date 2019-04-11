@@ -1,18 +1,30 @@
 <?php
 
-session_start();
+//session_start();
+include 'includes/config.php';
 require_once 'config.php';
 require_once 'functions/Post.php';
-
-if (!isset($_SESSION['token'])) {
-    header('Location: /');
-}
+extract($_SESSION);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $title = isset($_POST['title']) ? trim($_POST['title']) : null;
+    //$title = isset($_POST['title']) ? trim($_POST['title']) : null;
     $body = isset($_POST['body']) ? trim($_POST['body']) : null;
-    $file = $_FILES['image'];
-    $user = $_SESSION['loggedUserId'];
+    //$file = $_FILES['image'];
+    $name ="Ogundiji Bolade Adio";
+    $email = "kamponistullar@gmail.com";
+    $user = $email;
+    $db_json = file_get_contents("posts.json");
+    $newPost = new Post();
+    $newPost->setUserId($user);
+    $newPost->setStoryBody($body);
+    //$newPost->setStoryTitle($title);
+    //$newPost->setStoryImage($target_file);
+    if ($newPost->savePost($db_json, $name, $img)) {
+        $response = array('error' => false, 'message' => 'post published successfully');
+    } else {
+    $response = array('error' => true, 'message' => 'error occured while posting');
+    }
+    /*
     $new_file_name = date('dmYHis').str_replace(" ", "", basename($_FILES['image']['name']));
     $image_type = strtolower(pathinfo($new_file_name, PATHINFO_EXTENSION));
     if ($image_type != "jpg" && $image_type != "png" && $image_type != "jpeg") {
@@ -45,10 +57,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $response['error'] = true;
             $response['message'] = 'Error, please select an image';
         }
-    }
-    die(json_encode($response));
+    }*/
+    header("Location: https://ziki.hng.tech/timeline.php");
+    //header('Location: http://localhost:8000/timeline.php');
 }
-else{
+else {
     $data = file_get_contents("posts.json");
     $posts = json_decode($data, true);
     $getAllPosts = Post::fetchAllPosts($posts);
@@ -56,15 +69,16 @@ else{
     if (!empty($getAllPosts)) {
         foreach ($getAllPosts as $blog) {
             $postId = $blog->getId();
-            $postTitle = $blog->getStoryTitle();
+            //$postTitle = $blog->getStoryTitle();
             $postBody = $blog->getStoryBody();
-            $postPic = $blog->getStoryImage();
+            //$postPic = $blog->getStoryImage();
             $markdownLink = $blog->getMarkdownUrl();
+            $authPic = $blog->getAuthorPic();
             $postTimestamp = $blog->getTimePosted();
             $post['id'] = $postId;
-            $post['post_image'] = $postPic;
+            $post['author_image'] = $authPic;
             $post['markdown_url'] = $markdownLink;
-            $post['post_timestamp'] = $postTimestamp;
+            $post['post_timestamp'] = date("jS F, Y", strtotime($postTimestamp));
             array_push($posts, $post);
         }
         $result['error'] = false;
