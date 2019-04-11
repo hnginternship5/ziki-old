@@ -32,7 +32,7 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
 						</a>
                                             </div>
@@ -46,7 +46,7 @@ include 'header.php';
                                             <div class="col-md-12 col-12">
 						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
 						</a>
                                                 </p>
@@ -97,7 +97,7 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
 						</a>
                                             </div>
@@ -111,7 +111,7 @@ include 'header.php';
                                             <div class="col-md-12 col-12">
 						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
 						</a>
                                                 </p>
@@ -162,7 +162,7 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
 						</a>
                                             </div>
@@ -176,7 +176,7 @@ include 'header.php';
                                             <div class="col-md-12 col-12">
 						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
 						</a>
                                                 </p>
@@ -227,7 +227,7 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
 						</a>
                                             </div>
@@ -241,7 +241,7 @@ include 'header.php';
                                             <div class="col-md-12 col-12">
 						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
 						</a>
                                                 </p>
@@ -293,7 +293,7 @@ include 'header.php';
                                     <div class="col-md-9 col-12">
                                         <div class="row post-heading">
                                             <div class="col-md-8 col-10">
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <h4>UI/UX Concept</h4>
 						</a>
                                             </div>
@@ -307,7 +307,7 @@ include 'header.php';
                                             <div class="col-md-12 col-12">
 						<h6 class="blog-item-author text-left">Oluwa Trumpeter </h6>
                                                 <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dgiat nuor sit amet, consectetur adipiscing elit, sed
-						<a href="/bolg-detail.php">
+						<a href="/blog-detail.php">
                                                 <span class="read-more">....read more</span>
 						</a>
                                                 </p>
