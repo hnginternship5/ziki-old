@@ -1,5 +1,5 @@
 <?php
-
+define ("dir", "https://ziki.hng.tech/" ); 
 //session_start();
 include 'includes/config.php';
 require_once 'config.php';
@@ -63,7 +63,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 else {
     $data = file_get_contents("posts.json");
-    define ("dir", "https://ziki.hng.tech/" );
     $posts = json_decode($data, true);
     $getAllPosts = Post::fetchAllPosts($posts);
     $posts = array();
