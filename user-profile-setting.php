@@ -125,20 +125,23 @@ input:checked + .slider:before {
                 </h2>
                 <div class="details">
                     <div class="d-grid update">
-                        <img src="/assets/img/avatar-2.jpeg" alt="" class="avatar">
+                    <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/avatar-2.jpeg" class="avatar" />
+                    <br/>
                         <button class="upcase user-profile-button">
                             update
                         </button>
                     </div>
-                    <form class="user-profile-setting-form" action="/action_page.php">
-                        First name:<br>
-                        <input class="user-profile-input" type="text" name="firstname" placeholder="Dragon">
+                    <form class="user-profile-setting-form" action="#">
+                        Full Name:<br>
+                        <input class="user-profile-input" type="text" name="firstname" placeholder="<?php 
+                             echo $name;
+                        ?>">
                         <br>
-                        Last name:<br>
-                        <input class="user-profile-input" type="text" name="lastname" placeholder="Blade">
-                        <br>
+                        
                         Email Address:<br>
-                        <input class="user-profile-input" type="text" name="firstname">
+                        <input class="user-profile-input" type="text" name="<?php 
+                             echo $email;
+                        ?>">
                         <br>
                         Change password:<br>
                         <input class="user-profile-input" type="text" name="lastname">
