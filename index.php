@@ -2,7 +2,7 @@
 $title ="Welcome";
 include 'header.php';
 require_once "config.php";
-$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  $_SERVER['REQUEST_URI']; 
+$link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  $_SERVER['REQUEST_URI'];
 $site = (isset($site_url)) ? $site_url : die("please provide your site url in the config.php file.") ;
 $site_address = ($link == $site) ? $site : die("Your url is not the same as the url installed in the config.php file");
  ?>
@@ -20,7 +20,7 @@ $site_address = ($link == $site) ? $site : die("Your url is not the same as the 
         <div class="container justify-content-center">
             <div class="col-md-12 col-12 posts-area">
                 <!-- Post feeds start here -->
-            
+
         </div>
     </div>
 <script>
@@ -59,7 +59,7 @@ $site_address = ($link == $site) ? $site : die("Your url is not the same as the 
                                 <img class="blog-item-author-avatar" src="${card.author_image}">
                             </div>
                             <div class="col-md-11 col-12">
-                                <div class="row blog-main-item">
+                                <div class="row blog-item-main">
                                     <div class="col-md-3 col-12">
                                         <div class="row">
                                             <img src="${card.post_image}" class="img-fluid post-img" alt="Profile Image">
@@ -113,7 +113,7 @@ $site_address = ($link == $site) ? $site : die("Your url is not the same as the 
     </script>
 
     <?php include'auth.php' ;?>
-    
+
 </body>
 
 </html>

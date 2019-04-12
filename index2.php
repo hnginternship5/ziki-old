@@ -56,7 +56,7 @@ include 'header.php';
                                 <img class="blog-item-author-avatar" src="assets/img/avatar-2.jpeg">
                             </div>
                             <div class="col-md-11 col-12">
-                                <div class="row blog-main-item">
+                                <div class="row blog-item-main">
                                     <div class="col-md-3 col-12">
                                         <div class="row">
                                             <img src="assets/img/wall.jpg" class="img-fluid post-img" alt="Profile Image">

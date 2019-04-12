@@ -43,7 +43,7 @@ const $ = document.querySelector.bind(document)
                                 <img class="blog-item-author-avatar" src="${card.author_image}">
                             </div>
                             <div class="col-md-11 col-12">
-                                <div class="row blog-main-item">
+                                <div class="row blog-item-main">
                                     <div class="col-md-3 col-12">
                                         <div class="row">
                                             <img src="${card.post_image}" class="img-fluid post-img" alt="Profile Image">
