@@ -1,4 +1,5 @@
-<?php include 'includes/header.php';
+<?php 
+include 'includes/config.php';
 //print_r($_SESSION);
 extract($_SESSION);?>
 <!DOCTYPE html>
