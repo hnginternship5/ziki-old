@@ -27,26 +27,29 @@ $_SESSION['accesstoken'] = true;
                 <div class="logo-area mb-5 mx-4">
 		  <a href="/timeline.php">
                     <img src="assets/img/zikilogo.png" alt="" class="logo" />
-		 </a>		
+		 </a>
                 </div>
 
                 <!-- user profile picture -->
-                <div class="profile-pic-area mx-auto mt-5" style="padding-left:100px;">
-                    <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/profile.png" class="profile-pic" />
+                <div class="profile-pic-area mx-auto mt-5">
+                    <img src="<?php if (isset($img) && $img ==''){echo $img ;
+                    }else {
+                      echo "assets/img/noavatar92.png";
+                    }?>" alt="Not Found" onerror=this.src="assets/img/noavatar92.png" class="profile-pic" />
                 </div>
 
                 <!-- User name, Skills, short bio -->
                 <div class="text-center">
                     <h3 class="profile-name">
-                        <?php 
-                             echo $name;// dear backend dev. just uncomment this 
+                        <?php
+                             echo $name;// dear backend dev. just uncomment this
                             // and remove what echoes below. That's it.
                             //echo 'Austin Asoluka';
                         ?>
                     </h3>
                     <h4 class="user-skills">
-                        <?php 
-                             echo $email; //dear backend dev. just uncomment this 
+                        <?php
+                             echo $email; //dear backend dev. just uncomment this
                             // and remove what echoes below. That's it.
                             //echo 'Web | Software Developer';
                         ?>
@@ -54,7 +57,7 @@ $_SESSION['accesstoken'] = true;
                     <p class="profile-motto">Software Engineer at AWS design enthusiast and music lover</p>
                 </div>
 
-                <!-- social media links 
+                <!-- social media links
                 <div class="sidebar-icons text-center my-3">
                     <i class="fab fa-github social"></i>
                     <i class="fab fa-dribbble social"></i>
@@ -99,7 +102,7 @@ $_SESSION['accesstoken'] = true;
                                             <button class="tool fab fa-scribd" onclick="document.execCommand('selectAll',false,'')"></button>
                                             <button class="tool fa fa-align-center" onclick="document.execCommand('justifyCenter',false,'')"></button>
                                             <button class="tool fa fa-align-left" onclick="document.execCommand('justifyLeft',false,'')"></button>
-                                            <button class="tool fa fa-align-right" onclick="document.execCommand('justifyRight',false,'')"></button>  
+                                            <button class="tool fa fa-align-right" onclick="document.execCommand('justifyRight',false,'')"></button>
                                         </div>
                         -->
                                         <div class="post-action-left" style="padding-left:700px;">
@@ -121,7 +124,7 @@ $_SESSION['accesstoken'] = true;
                     <div class="row mx-0 d-flex flex-row align-items-center justify-content-between padd">
                         <div class="col-md-8 line ml-md-5"></div>
                         <div class="col d-inline-flex mr-md-5 flex-row justify-content-between">
-                            <!--<p class="post-filter"><span class="post-filter-title">Sort by:</span> Most Recent Posts</p> 
+                            <!--<p class="post-filter"><span class="post-filter-title">Sort by:</span> Most Recent Posts</p>
                             <img src="assets/img/caret.svg"> -->
                         </div>
                     </div>

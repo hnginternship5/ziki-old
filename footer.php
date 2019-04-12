@@ -7,6 +7,61 @@
     const toggleThemeBtn = document.querySelector('.toggle-theme');
     toggleThemeBtn.addEventListener('click', e => document.querySelector('body').classList.toggle('dark'));
 </script>
+<?php if (isset($_GET['id'])) {?>
+  <script>
+  const $ = document.querySelector.bind(document)
+      function readTextFile(file, div)
+      {
+          var rawFile = new XMLHttpRequest();
+          rawFile.open("GET", file, false);
+          rawFile.onreadystatechange = function ()
+          {
+              if(rawFile.readyState === 4)
+              {
+                  if(rawFile.status === 200 || rawFile.status == 0)
+                  {
+                      var allText = rawFile.responseText;
+                      $(`.markedcontent${div}`).innerHTML = allText;
+                  }
+              }
+          }
+          rawFile.send(null);
+      }
+        post = "<?php echo $_GET['id']; ?>";
+          const url = "<?php echo "{$site_url}/Single_post.php?post="; ?>" + post;
+          fetch(url)
+          .then((resp) => resp.json())
+          .then(function(data) {
+              console.log(data)
+              let res = data.result;
+              for (let i = 0; i < res.length; i++) {
+                  let card = res[i];
+                  console.log(card);
+
+                  let post_card = `
+                  <div class="blog-details-date font-weight-light mb-5 px-5">
+                  <img class="blog-item-author-avatar" src="${card.author_image}" height="100" width="100">  <span> ${card.post_timestamp}</span>
+                  </div>
+                  <div class="blog-details-banner">
+                      <img src="${card.post_image}" alt="" class="img-fluid">
+                      <div class="blog-details-image-description mt-2 mb-5 font-weight-light text-center">
+
+                      </div>
+                  </div>
+                  <div class="blog-details-content px-5">
+                  <div class="m-5 px-5 markedcontent${i}"></div>
+                  </div>
+                  `;
+                  $('.blog').innerHTML += post_card;
+                  readTextFile(card.markdown_url, i);
+              }
+          })
+          .catch(function(error) {
+              console.log(error);
+          });
+  </script>
+<?php } else {?>
+
 <script>
 const $ = document.querySelector.bind(document)
     function readTextFile(file, div)
@@ -26,7 +81,7 @@ const $ = document.querySelector.bind(document)
         }
         rawFile.send(null);
     }
-        const url = "<?php echo "{$site_url}/post.php" ?>"; 
+        const url = "<?php echo "{$site_url}/post.php" ?>";
         fetch(url)
         .then((resp) => resp.json())
         .then(function(data) {
@@ -50,7 +105,7 @@ const $ = document.querySelector.bind(document)
                                         </div>
                                     </div>
                                     <div class="col-md-8 col-10">
-                                    <a href="/blog-detail.php">
+                                    <a href="/blog.php?id=${card.id}">
                                         <div class="markedcontent${i}"></div>
                                     </a>
                                         <div class="row post-footer">
@@ -71,7 +126,7 @@ const $ = document.querySelector.bind(document)
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-5 text-right">
-                                                <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                <a href="/blog.php?id=${card.id}"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -89,6 +144,14 @@ const $ = document.querySelector.bind(document)
         .catch(function(error) {
             console.log(error);
         });
+</script>
+<?php  }?>
+<script>
+// Switch logo and Rss Image when dark mode is turned on
+  if(document.getElementById("bodySwitch").className == 'dark'){
+    document.getElementById("logoImage").src="assets/img/ziki-light.png";
+    document.getElementById("subscribeImage").src="assets/img/subscribeLight.png";
+  }
 </script>
 </body>
 </html>

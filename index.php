@@ -1,10 +1,12 @@
 <?php
 $title ="Welcome";
 include 'header.php';
+
 require_once "config.php";
 $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  $_SERVER['REQUEST_URI'];
 $site = (isset($site_url)) ? $site_url : die("please provide your site url in the config.php file.") ;
 $site_address = ($link == $site) ? $site : die("Your url is not the same as the url installed in the config.php file");
+
  ?>
 
 <style>
@@ -95,7 +97,7 @@ $site_address = ($link == $site) ? $site : die("Your url is not the same as the 
                                                     </a>
                                                     <a href="#">
                                                 <span class="badge badge-primary">Academic</span>
-					                            	</a>   
+					                            	</a>
                                             </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
                                                     <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
