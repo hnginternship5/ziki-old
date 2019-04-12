@@ -71,10 +71,10 @@
     </style>
 </head>
 
-<body class="">
+<body class="" id="bodySwitch">
     <div class="container-fluid blog-details-fluid">
       <div class="header-logo mt-3 mb-5 px-5">
-        <a href="./timeline.php"><img class="" src="assets/img/zikilogo.png"></a>
+        <a href="./timeline.php"><img class="" src="assets/img/zikilogo.png" id="logoImage"></a>
       </div>
       <div class="blog-details">
         <div class="blog-details-header px-5 mt-5 mb-5">
@@ -164,7 +164,7 @@
           </div>
 
           <div class="subscribe mr-5 px-5">
-            Subscribe <span> <a href=""><img src="./assets/img/rss-symbol.svg" alt=""></a> </span>
+            Subscribe <span> <a href=""><img src="./assets/img/rss-symbol.svg" id="subscribeImage" alt=""></a> </span>
           </div>
         </div>
 
@@ -208,7 +208,13 @@
     </script>
 
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+    <script>
+    // Switch logo and Rss Image when dark mode is turned on
+      if(document.getElementById("bodySwitch").className == 'dark'){
+        document.getElementById("logoImage").src="assets/img/ziki-light.png";
+        document.getElementById("subscribeImage").src="assets/img/subscribeLight.png";   
+      }
+    </script>
     <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script id="dsq-count-scr" src="//ziki-1.disqus.com/count.js" async></script>
