@@ -1,8 +1,6 @@
 <!-- mylo carson 2019-->
 <?php include 'includes/config.php';
 //print_r($_SESSION);
-//if( $user->is_logged_in() ){ header('Location: timeline.php'); }
-
 extract($_SESSION);?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +15,7 @@ extract($_SESSION);?>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Hind:400,500,700|Josefin+Sans:300|B612:700|Source+Sans+Pro:900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/newtm.css">
 
     <!-- Markdown cdn link -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
@@ -177,7 +176,7 @@ extract($_SESSION);?>
             border: none;
             padding: 1rem;
             background-color: rgba(0,0,0,0.03);
-        }
+        } 
         .status-area {
             border-radius: 15px;
             outline: none;
@@ -193,6 +192,18 @@ extract($_SESSION);?>
 
         .profile-section{
             background: rgba(243, 243, 243, 0.62);
+        }
+
+        .profile-img-wrapper{
+            position: absolute;
+            top: -120px;
+            margin-bottom: -120px;
+        }
+
+        .profile-img{
+            border-radius: 50%;
+            max-width: 230px;
+            height: 230px;
         }
 
         .profile-main{
@@ -217,6 +228,7 @@ extract($_SESSION);?>
             text-align: center;
             margin-top: 6px;
             margin-bottom: 16px;
+            color: #000000;
         }
 
         .profile-motto{
@@ -228,6 +240,7 @@ extract($_SESSION);?>
             text-align: center;
             margin-top: 16px;
             margin-bottom: 24px;
+            color: #000000;
         }
 
         .menu-wrapper{
@@ -258,7 +271,7 @@ extract($_SESSION);?>
             border-radius: 50%;
             max-width: 70px;
             height: 60px;
-            margin-right:  10px ;
+            margin-right:  10px ; 
             border: 0.5px solid rgba(0, 0, 0, 0.5);
         }
 
@@ -351,14 +364,8 @@ extract($_SESSION);?>
                 padding: 5px;
             }
         }
-        .dark{
-            background: #07223e;
-        }
-        .dark h4, p{
-            color : white
-        }
     </style>
 </head>
-<body id="setCssClass">
+<body class="">
   <div class="container-fluid">
     <!-- mylo carson 2019-->

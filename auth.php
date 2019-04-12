@@ -58,7 +58,7 @@ require_once './Authentication/auth/fbook.php';
                           </button>
                           </a>
                           <p class="auth-demarcation-or">or</p>
-<a href="login.php">Log in Locally</a>
+                          <a href="login.php">Log in Locally</a>
                       </div>
                   </div>
               </div>

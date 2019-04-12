@@ -26,8 +26,7 @@ const $ = document.querySelector.bind(document)
         }
         rawFile.send(null);
     }
-        //const url = 'http://localhost:8000/post.php'; //uncomment if you want to test locally
-        const url = 'https://ziki.hng.tech/post.php';
+        const url = "<?php echo "{$site_url}/post.php" ?>"; 
         fetch(url)
         .then((resp) => resp.json())
         .then(function(data) {
@@ -47,11 +46,13 @@ const $ = document.querySelector.bind(document)
                                 <div class="row blog-main-item">
                                     <div class="col-md-3 col-12">
                                         <div class="row">
-                                            <img src="assets/img/wall.jpg" class="img-fluid post-img" alt="Profile Image">
+                                            <img src="${card.post_image}" class="img-fluid post-img" alt="Profile Image">
                                         </div>
                                     </div>
-                                    <div class="col-md-9 col-12">
-                                    <div class="markedcontent${i}"></div>
+                                    <div class="col-md-8 col-10">
+                                    <a href="/blog-detail.php">
+                                        <div class="markedcontent${i}"></div>
+                                    </a>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
                                                 <a href="#">
@@ -89,7 +90,5 @@ const $ = document.querySelector.bind(document)
             console.log(error);
         });
 </script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="SwitchTheme.js"></script>
 </body>
 </html>
