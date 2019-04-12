@@ -1,6 +1,8 @@
 <!-- mylo carson 2019-->
 <?php include 'includes/config.php';
 //print_r($_SESSION);
+//if( $user->is_logged_in() ){ header('Location: timeline.php'); }
+
 extract($_SESSION);?>
 <!DOCTYPE html>
 <html lang="en">
@@ -175,7 +177,7 @@ extract($_SESSION);?>
             border: none;
             padding: 1rem;
             background-color: rgba(0,0,0,0.03);
-        } 
+        }
         .status-area {
             border-radius: 15px;
             outline: none;
@@ -256,7 +258,7 @@ extract($_SESSION);?>
             border-radius: 50%;
             max-width: 70px;
             height: 60px;
-            margin-right:  10px ; 
+            margin-right:  10px ;
             border: 0.5px solid rgba(0, 0, 0, 0.5);
         }
 

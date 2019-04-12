@@ -1,6 +1,9 @@
 <?php
 $title ="Welcome";
 include 'header.php';
+//print_r($_SESSION);
+if( $user->is_logged_in() ){ header('Location: timeline.php'); }
+
  ?>
 
 
@@ -353,7 +356,7 @@ include 'header.php';
     </script>
 
     <?php include'auth.php' ;?>
-    
+
 </body>
 
 </html>

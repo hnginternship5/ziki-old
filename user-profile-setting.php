@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'includes/config.php';
 //print_r($_SESSION);
 extract($_SESSION);?>
@@ -49,7 +49,7 @@ extract($_SESSION);?>
     height: 34px;
     }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -112,8 +112,8 @@ input:checked + .slider:before {
 }
 
     .motuns-content-container {
-        margin: 4rem;  
-        padding-right: 1rem;  
+        margin: 4rem;
+        padding-right: 1rem;
     }
 
     .logo-profile{
@@ -123,7 +123,7 @@ input:checked + .slider:before {
     .details {
         display: flex;
         justify-content: space-between;
-        margin: 0;    
+        margin: 0;
     }
 
     .update {
@@ -158,7 +158,7 @@ input:checked + .slider:before {
     }
     }
     @media only screen and (min-width: 1024px) {
-    
+
   .logo-profile{
     margin: 1rem;
     }
@@ -207,7 +207,10 @@ input:checked + .slider:before {
             <section class="content">
                 <div class="details">
                     <div class="d-grid update">
-                    <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/avatar-2.jpeg" class="avatar" />
+                    <img src="<?php if (isset($img) && $img ==''){echo $img ;
+                    }else {
+                      echo "assets/img/noavatar92.png";
+                    }?>" alt="Not Found" onerror=this.src="assets/img/noavatar92.png" class="avatar" />
                     <br/>
                         <button class="upcase user-profile-button">
                             update
@@ -215,19 +218,19 @@ input:checked + .slider:before {
                     </div>
                     <form class="user-profile-setting-form" action="#">
                         First Name*<br>
-                        <input class="user-profile-input" type="text" name="firstname" placeholder="Dragon"<?php 
+                        <input class="user-profile-input" type="text" name="firstname" placeholder="Dragon"<?php
                              echo $name;
                         ?>">
                         <br>
-                        
+
                         Last Name*<br>
-                        <input class="user-profile-input" type="text" name="lastname" placeholder="Blade"<?php 
-                             
+                        <input class="user-profile-input" type="text" name="lastname" placeholder="Blade"<?php
+
                         ?>">
                         <br>
 
                         Email Address*<br>
-                        <input class="user-profile-input" type="text" name="email" placeholder="<?php 
+                        <input class="user-profile-input" type="text" name="email" placeholder="<?php
                              echo $email;
                         ?>">
                         <br>
@@ -243,7 +246,7 @@ input:checked + .slider:before {
                 </div>
             </section>
             <section class="theme">
-                
+
                 <div>
                     <p>
                         Theme
@@ -284,4 +287,3 @@ input:checked + .slider:before {
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="SwitchTheme.js"></script>
 </html>
-
