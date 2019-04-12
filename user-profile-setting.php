@@ -1,4 +1,4 @@
-<?php include 'includes/config.php';
+<?php include 'includes/header.php';
 //print_r($_SESSION);
 extract($_SESSION);?>
 <!DOCTYPE html>
@@ -15,12 +15,38 @@ extract($_SESSION);?>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base.css">
     <style type="text/css">
-        .switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            }
+
+    .m-4 {
+        margin: 0 !important ;
+    }
+.content {
+    margin-top:  3rem;
+}
+
+.update {
+    margin-bottom:  3rem;
+}
+
+
+.user-profile-setting-form {
+    margin-top: 0;
+}
+
+.log {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.co.red {
+    color: (--ziki-red) !important ;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    }
 
 .switch input { 
   opacity: 0;
@@ -79,15 +105,75 @@ input:checked + .slider:before {
 <body id="setCssClass">
 <style>
     @media only screen and (min-width: 768px) {
+
+    .user-profile-setting-form {
+        width: 35%;
+}
+
+    .motuns-content-container {
+        margin: 4rem;  
+        padding-right: 1rem;  
+    }
+
     .logo-profile{
         margin: 0 1rem;
         }
+
+    .details {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;    
+    }
+
+    .update {
+        order:  2;
+    }
+    .upcase {
+        margin-top: -19rem;
+    }
+
+    .theme {
+        display: inline-block;
+        float: right;
+        margin-top: -25rem;
+        margin-right: -4rem;
+    }
+
+    .drop {
+        min-height: auto;
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+        outline: none;
+        font-size:  14px;
+}
+    .capitalize {
+        margin-left: 0;
+    }
+
+    .fl-r {
+        float:      right;
+        color:      red;
+    }
     }
     @media only screen and (min-width: 1024px) {
     
   .logo-profile{
     margin: 1rem;
     }
+    .body {
+        width:  80%;
+        margin: auto;
+    }
+    @media only screen and (min-width: 1440px) {
+        .body {
+            width:  80%;
+            margin: auto;
+            padding: 0 5% 0 15%;
+    }
+
+    }
+
 }
 </style>
 <?php
@@ -107,22 +193,17 @@ input:checked + .slider:before {
         ?>
 <body id="setCssClass">
     <main class="motuns-main-container">
-        <section class="motuns-side-bar">
-        <div class="logo-area logo-profile">
-	      <a href="timeline.php">
-            <img src="assets/img/zikilogo.png" alt="" class="logo" />
-            </a>
-          </div>
-            
-            <p class="">
-                Profile
-            </p>
-        </section>
-        <div class="container">
-            <section class="motuns-content-container">
-                <h2>
-                    Settings
-                </h2>
+    <div class=" blog-item motuns-content-container">
+        <div class="d-flx">
+	   <a href="/timeline.php">
+            <img class="img-fluid logo" src="assets/img/zikilogo.png">
+	</a>
+            <button type="button" class="log" data-toggle="modal" data-target="#exampleModalCenter">
+                Log Out
+            </button>
+        </div>
+        <div class="body">
+            <section class="content">
                 <div class="details">
                     <div class="d-grid update">
                     <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/avatar-2.jpeg" class="avatar" />
@@ -132,38 +213,36 @@ input:checked + .slider:before {
                         </button>
                     </div>
                     <form class="user-profile-setting-form" action="#">
-                        Full Name:<br>
-                        <input class="user-profile-input" type="text" name="firstname" placeholder="<?php 
+                        First Name*<br>
+                        <input class="user-profile-input" type="text" name="firstname" placeholder="Dragon"<?php 
                              echo $name;
                         ?>">
                         <br>
                         
-                        Email Address:<br>
+                        Last Name*<br>
+                        <input class="user-profile-input" type="text" name="lastname" placeholder="Blade"<?php 
+                             
+                        ?>">
+                        <br>
+
+                        Email Address*<br>
                         <input class="user-profile-input" type="text" name="email" placeholder="<?php 
                              echo $email;
                         ?>">
                         <br>
-                        Change password:<br>
+                        Change password*<br>
                         <input class="user-profile-input" type="text" name="lastname">
-
+                        <br>
+                        Github<br>
+                        <input class="user-profile-input" type="text" name="lastname" placeholder="http://github.com/myusername">
+                        <br>
+                        Dribble<br>
+                        <input class="user-profile-input" type="text" name="lastname" placeholder="http://dribbble.com/myusername">
                     </form>
-
-                </div>
-                <div class="sub">
-                  <div>
-                    <span class="btn mb-3 user-profile-button co-red">
-                        Delete account
-                    </span>
-                  </div>
-                    <p class="lang">
-                        Language
-                        <span class="en">
-                            en
-                        </span>
-                    </p>
                 </div>
             </section>
             <section class="theme">
+                
                 <div>
                     <p>
                         Theme
@@ -191,6 +270,9 @@ input:checked + .slider:before {
                         </p>
                     </div>
                 </div>
+                <button class="co.red fl-r">
+                    Delete account
+                </button>
             </section>
             <button  class="capitalize lang user-profile-button">
                 Save changes
