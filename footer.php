@@ -40,7 +40,7 @@
 
                   let post_card = `
                   <div class="blog-details-date font-weight-light mb-5 px-5">
-                  <img class="blog-item-author-avatar" src="${card.author_image}" height="100" width="100">  <span> ${card.post_timestamp}</span>
+                  <img class="blog-item-author-avatar" src="${card.author_image}">  <span> ${card.post_timestamp}</span>
                   </div>
                   <div class="blog-details-banner">
                       <img src="${card.post_image}" alt="" class="img-fluid">
@@ -110,14 +110,8 @@ const $ = document.querySelector.bind(document)
                                     </a>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
-                                                <a href="#">
-                                                <span class="badge badge-primary">Tech</span>
-						</a>
-						<a href="#">
-                                                <span class="badge badge-primary">AI</span>
-						</a>
-						<a href="#">
-                                                <span class="badge badge-primary">Academic</span>
+                                                
+
 						</a>
                                                 <div class="col-md-12">
                                                     <div class="row">
@@ -140,6 +134,7 @@ const $ = document.querySelector.bind(document)
                 $('.feeds').innerHTML += post_card;
                 readTextFile(card.markdown_url, i);
             }
+            $('.load-more').remove();
         })
         .catch(function(error) {
             console.log(error);

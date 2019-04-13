@@ -120,15 +120,7 @@ $site_address = ($link == $site) ? $site : die("Your url is not the same as the 
                                         </a>
                                         <div class="row post-footer mt-1">
                                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <a href="#">
-                                                <span class="badge badge-primary">Tech</span>
-                                                    </a>
-                                                    <a href="#">
-                                                <span class="badge badge-primary">AI</span>
-                                                    </a>
-                                                    <a href="#">
-                                                <span class="badge badge-primary">Academic</span>
-					                            	</a>
+                                                
                                             </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
                                                     <a role = "button" data-toggle="modal"
@@ -150,6 +142,7 @@ $site_address = ($link == $site) ? $site : die("Your url is not the same as the 
                     $('.posts-area').innerHTML += post_card;
                     readTextFile(card.markdown_url, i);
                 }
+                $('.load-more').remove();
             })
             .catch(function (error) {
                 console.log(error);
