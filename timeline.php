@@ -100,6 +100,11 @@ if (!isset($_SESSION['name'])) {
     <div class="col-md-9 posts-area">
         <!-- Post Box Begins -->
         <div class="row">
+        <div class="col-12" id="error">
+            <?php if($msg != ''): ?>
+                <div class="alert <?php echo $_SESSION['msgClass']; ?>"><?php echo $_SESSION['msg']; ?></div>
+            <?php endif; ?>
+            </div>
             <div class="col-12 post-section">
                 <form method="POST" action="/post.php" enctype="multipart/form-data">
                     <textarea class="editable medium-editor-textarea post-input" type="text" name="body"

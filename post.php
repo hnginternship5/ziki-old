@@ -6,6 +6,10 @@ require_once 'config.php';
 require_once 'functions/Post.php';
 extract($_SESSION);
 
+
+$_SESSION['msg'] = '';
+$_SESSION['msgClass'] = '';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //$title = isset($_POST['title']) ? trim($_POST['title']) : null;
     $default_img = $site_url.'/markdowns/post-images/blog-details.png';
@@ -15,8 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $new_file_name = date('dmYHis').str_replace(" ", "", basename($file['name']));
     $image_type = strtolower(pathinfo($new_file_name, PATHINFO_EXTENSION));
     if ($image_type != "jpg" && $image_type != "png" && $image_type != "jpeg") {
-        $response['error'] = true;
-        $response['message'] = 'Please make sure you uploading your image';
+        
+        $_SESSION['msg'] = 'Please Make Sure You Are Uploading Your Image';
+        $_SESSION['msgClass'] = 'alert-danger';
     }
     else{
         $target_file = SITE_ROOT.'/markdowns/post-images/'.$new_file_name;
@@ -30,19 +35,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $newPost->setStoryBody($body);
                 $newPost->setStoryImage($url_link);
                 if ($newPost->savePost($db_json, $name, $img, $site_url)) {
-                    $response = array('error' => false, 'message' => 'post published successfully');
+                    $_SESSION['msg'] = 'Your Post Was Successfully uploaded';
+                    $_SESSION['msgClass'] = 'alert-success';
                 } else {
-                    $response = array('error' => true, 'message' => 'error occured while posting');
+                    $_SESSION['msg'] = 'An Error Occured While Posting';
+                    $_SESSION['msgClass'] = 'alert-danger';
                 }
             }
             else{
-                $response['error'] = true;
-                $response['message'] = 'Error while uploading image';
+                $_SESSION['msg'] = 'An Error While Uploading Image';
+                $_SESSION['msgClass'] = 'alert-danger';
             }
         }
         else{
-            $response['error'] = true;
-            $response['message'] = 'Error, please select an image';
+            $_SESSION['msg'] = 'Error, Please Select an Image';
+            $_SESSION['msgClass'] = 'alert-danger'; 
         }
     }
     header("Location: {$site_url}timeline.php");
