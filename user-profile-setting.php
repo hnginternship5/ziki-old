@@ -377,9 +377,7 @@ input:checked + .slider:before {
 
 
             else{
-
-                header("Location: index.php");
-
+                header("Location: $site_url");
             }
 
         ?>
