@@ -219,23 +219,37 @@ input:checked + .slider:before {
                             update
                         </button>
                     </div>
+<<<<<<< HEAD
+                    <form class="user-profile-setting-form" action="savechanges.php" method = "POST">
+                        First Name*<br>
+                        <input class="user-profile-input" type="text" name="firstname" value="<?php
+=======
                     <form class="user-profile-setting-form" action="#">
                         Full Name*<br>
                         <input class="user-profile-input" type="text" name="firstname" placeholder="<?php 
+>>>>>>> b99cff4989e0969167093352facbf45b2c01a841
                              echo $name;
                         ?>" disabled>
                         <br>
 
+<<<<<<< HEAD
+                        Email Address*<br>
+                        <input class="user-profile-input" type="text" name="email" value="<?php
+=======
                         Email Address<br>
                         <input class="user-profile-input" type="text" name="email" placeholder="<?php 
+>>>>>>> b99cff4989e0969167093352facbf45b2c01a841
                              echo $email;
                         ?>" disabled>
                         <br>
                         Github<br>
-                        <input class="user-profile-input" type="text" name="lastname" placeholder="http://github.com/myusername">
+                        <input class="user-profile-input" type="text" name="git" placeholder="http://github.com/myusername">
                         <br>
                         Dribble<br>
-                        <input class="user-profile-input" type="text" name="lastname" placeholder="http://dribbble.com/myusername">
+                        <input class="user-profile-input" type="text" name="dribble" placeholder="http://dribbble.com/myusername">
+                        <button type = "submit" class="capitalize lang user-profile-button">
+                Save changes
+            </button>
                     </form>
                 </div>
             </section>
@@ -272,9 +286,7 @@ input:checked + .slider:before {
                         Delete account
                     </a>
             </section>
-            <button  class="capitalize lang user-profile-button">
-                Save changes
-            </button>
+           
         </div>
     </main>
 </body>
