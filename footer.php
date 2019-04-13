@@ -52,7 +52,7 @@
                   <div class="markedcontent${i}"></div>
                   </div>
                   `;
-                  $('.blog').innerHTML += post_card;
+                  $('.feeds').innerHTML += post_card;
                   readTextFile(card.markdown_url, i);
               }
           })

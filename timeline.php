@@ -69,7 +69,7 @@ if (!isset($_SESSION['name'])) {
                             //echo 'Web | Software Developer';
                         ?>
             </h4>
-            
+            <p class="profile-motto">Software Engineer at AWS design enthusiast and music lover</p>
         </div>
 
         <!-- social media links
@@ -100,11 +100,6 @@ if (!isset($_SESSION['name'])) {
     <div class="col-md-9 posts-area">
         <!-- Post Box Begins -->
         <div class="row">
-        <div class="col-12" id="error">
-            <?php if($msg != ''): ?>
-                <div class="alert <?php echo $_SESSION['msgClass']; ?>"><?php echo $_SESSION['msg']; ?></div>
-            <?php endif; ?>
-            </div>
             <div class="col-12 post-section">
                 <form method="POST" action="/post.php" enctype="multipart/form-data">
                     <textarea class="editable medium-editor-textarea post-input" type="text" name="body"
@@ -148,42 +143,78 @@ if (!isset($_SESSION['name'])) {
 
 <!-- Post feeds start here -->
 <div class="feeds">
+                    <?php
+                        $url = 'posts.json'; // path to your JSON file
+                        $data = file_get_contents($url); //get file content
+                        $posts = json_decode($data);
+                        $i = 0;
+                        foreach ($posts as $post) {
+                            $mk = "markedcontent";
+                            $class = $mk.$i;
 
-<!-- test post for the feeds section -->
-<div class="row posts pb-3">
-                            <div class="col-md-1">
-                                <img class="blog-item-author-avatar" src="${card.author_image}">
-                            </div>
-                            <div class="col-md-11">
-                                <div class="row blog-item-main">
-                                    <div class="col-md-3">
-                                            <img src="${card.post_image}" class="img-fluid post-img" alt="Profile Image">
-                                    </div>
-
-                                    <div class="col-md-9">
-                                        <a href="/blog-detail.php">
-                                            <div class="markedcontent${i}"></div>
-                                        </a>
-                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
-                                                    <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
-                                                </div>
-                                        </div>
-
+                            if (count($post) > 0){
+                                echo '<div class="row posts">
+                                    <div class="col-md-12 col-12">
                                         <div class="row">
-                                                        <div class="col-md-12">
-                                                        <p class="post-date">${card.post_timestamp}</p>
+                                            <div class="col-md-1">
+                                                <img class="blog-item-author-avatar" src="' .$post->auth_pic. '">
+                                            </div>
+                                            <div class="col-md-11 col-12">
+                                                <div class="row blog-item-main">
+                                                    <div class="col-md-3 col-12">
+                                                        <div class="row">
+                                                            <img src="' .$post->post_image. '" class="img-fluid post-img" alt="Profile Image">
                                                         </div>
+                                                    </div>
+                                                    <div class="col-md-8 col-10">
+                                                    <a href="/blog-detail.php">
+                                                        <div class="'.$class.'">
+                                                        
+                                                        </div>
+                                                    </a>
+                                                    <div class="row post-footer">
+                                                        <div class="col-md-8 col-7">
+                                                            <a href="#">
+                                                                <span class="badge badge-primary">Tech</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <span class="badge badge-primary">AI</span>
+                                                            </a>
+                                                            <a href="#">
+                                                                <span class="badge badge-primary">Academic</span>
+                                                            </a>
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <p class="post-date">' .$post->post_timestamp. '</p>
+                                                                </div>
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-5 text-right">
+                                                                <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                    <!-- <div class="col-md-1"></div> -->
+                                    <!-- <div class="col-md-1"></div> -->
+                                </div>';
+
+                                $i++;
+                                // if($i > 10){
+                                //     break;
+                                // }
+                            }else{
+                                echo "No posts yet !!";
+                            }
+                           
+                        }
+                    ?>
                 </div>
-<!-- test post -->
-
-</div>
 <!-- Post feed ends here -->
-
+                <input type="hidden" id="pageno" value="1">
+                <img id="loader" src="assets/img/loader.svg">
 <!-- post feed ends here -->
 <!-- </div> -->
 

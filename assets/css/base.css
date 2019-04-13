@@ -1000,6 +1000,11 @@ div.posts {
   font-weight: normal;
 }
 
+#loader{
+  margin: 0 auto;
+  display: block;
+}
+
 @media (max-width: 576px) {
   .post-img {
     max-height: 200px;
