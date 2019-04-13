@@ -56,9 +56,7 @@ require_once './Authentication/auth/fbook.php';
                               </svg>
                                Facebook
                           </button>
-                          </a>
-                          <p class="auth-demarcation-or">or</p>
-                          <a href="login.php">Log in Locally</a>
+                          
                       </div>
                   </div>
               </div>
