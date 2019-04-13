@@ -4,7 +4,7 @@ $title = "Blog Post";
 include 'header.php';
 require_once "config.php";
  ?>
-      <div class="container-fluid blog-details-fluid">
+      <div class="container blog-details-fluid">
     <div class="blog-details-main-container">
       <div class="header-logo mt-3 mb-5 px-5">
         <?php if (!isset($_SESSION['name'])){?>

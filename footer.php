@@ -48,8 +48,8 @@
 
                       </div>
                   </div>
-                  <div class="blog-details-content px-5">
-                  <div class="m-5 px-5 markedcontent${i}"></div>
+                  <div class="blog-details-content">
+                  <div class="markedcontent${i}"></div>
                   </div>
                   `;
                   $('.blog').innerHTML += post_card;
