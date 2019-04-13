@@ -32,7 +32,7 @@ $_SESSION['accesstoken'] = true;
 
                 <!-- user profile picture -->
                 <div class="profile-pic-area mx-auto mt-5">
-                    <img src="<?php if (isset($img) && $img ==''){echo $img ;
+                    <img src="<?php if (isset($img) && $img !==''){echo $img ;
                     }else {
                       echo "assets/img/noavatar92.png";
                     }?>" alt="Not Found" onerror=this.src="assets/img/noavatar92.png" class="profile-pic" />
