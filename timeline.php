@@ -88,9 +88,6 @@ if (!isset($_SESSION['name'])) {
                     </li>
 		-->
             <li class="nav-item">
-                <a class="nav-link" href="/draft.php">Drafts</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="/user-profile-setting.php">Settings</a>
             </li>
             <li class="nav-item">
