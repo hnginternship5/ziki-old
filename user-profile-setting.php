@@ -213,7 +213,7 @@ input:checked + .slider:before {
             <section class="content">
                 <div class="details">
                     <div class="d-grid update">
-                    <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/avatar-2.jpeg" class="avatar" />
+                    <img src="<?php echo $img ?>" alt="Not Found" onerror=this.src="assets/img/noavatar92.png" class="avatar" />
                     <br/>
                         <button class="upcase user-profile-button">
                             update
@@ -221,7 +221,7 @@ input:checked + .slider:before {
                     </div>
                     <form class="user-profile-setting-form" action="#">
                         Full Name*<br>
-                        <input class="user-profile-input" type="text" name="firstname" placeholder="Dragon"<?php 
+                        <input class="user-profile-input" type="text" name="firstname" placeholder="<?php 
                              echo $name;
                         ?>" disabled>
                         <br>
