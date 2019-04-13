@@ -100,7 +100,8 @@ $site_address = ($link == $site) ? $site : die("Your url is not the same as the 
 					                            	</a>
                                             </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
-                                                    <a href="/blog.php?id=${card.id}"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                    <a role = "button" data-toggle="modal"
+            data-target="#exampleModalCenter"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
                                                 </div>
                                         </div>
 

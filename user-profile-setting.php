@@ -268,9 +268,9 @@ input:checked + .slider:before {
                         </p>
                     </div>
                 </div>
-                <button class="co.red fl-r">
-                    Delete account
-                </button>
+                <a role = "button" href = "delete_user.php" class="btn mb-3 user-profile-button co-red">
+                        Delete account
+                    </a>
             </section>
             <button  class="capitalize lang user-profile-button">
                 Save changes

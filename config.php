@@ -1,9 +1,6 @@
 <?php
  //example
 
- //$site_url =  "http://localhost:8000/";
-$site_url = "https://ziki.hng.tech/";
-
 //$site_url =  "http://localhost:8000/";
 $site_url = "https://ziki.hng.tech/";
 
