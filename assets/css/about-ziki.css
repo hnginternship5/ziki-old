@@ -1,0 +1,168 @@
+/* .container-fluid {
+  background-image: url(https://cdn.sketchapp.com/assets/components/block-header/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -150px;
+  padding-top: 50px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: .0625rem;
+} */
+
+html {
+  background: url(https://cdn.sketchapp.com/assets/components/block-header/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background-color: #fff0!important;
+}
+
+.landing-h1 {
+  font-family: Poppins;
+  font-size: 70px;
+  font-weight: 900;
+  text-align: left;
+  line-height: 1;
+}
+
+.lead {
+  text-align: left;
+  font-family: Poppins;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #6610F2;
+  border-color: #6610F2;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #6610F2;
+  border-color: #6610F2;
+}
+
+.btn-lg {
+  padding: .5rem;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: .4rem;
+  margin-right: 550px;
+  font-weight: 600;
+  font-family: Poppins;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(102,16,242,0.7);
+  -moz-box-shadow: 10px 10px 20px 1px rgba(102,16,242,0.7);
+  box-shadow: 10px 10px 20px 1px rgba(102,16,242,0.7);
+
+}
+
+.img-fluid-logo {
+padding-left: 50px;
+padding-top: 50px;
+}
+
+span.line {
+display: inline-block;
+}
+
+/* Responsive */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .landing-h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    line-height: 1.1;
+  }
+  .img-fluid-logo {
+  padding-left: 0px;
+  }
+  .lead {
+  font-size: 10px;
+  }
+  .btn-lg {
+    padding: .4rem;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: .4rem;
+    margin-right: 170px;
+    font-weight: 600;
+    font-family: Poppins;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .px-md-5 {
+    padding-left: 70px;
+  }
+  .landing-h1 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: left;
+    line-height: 1.1;
+  }
+  .img-fluid-logo {
+  padding-left: 0px;
+  }
+  .lead {
+  font-size: 13px;
+  }
+  .btn-lg {
+    padding: .4rem;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: .4rem;
+    margin-right: 150px;
+    font-weight: 600;
+    font-family: Poppins;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .landing-h1 {
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: left;
+    line-height: 1.1;
+  }
+  .img-fluid-logo {
+  padding-left: 0px;
+  }
+  .lead {
+  font-size: 12px;
+  }
+  .btn-lg {
+    padding: .4rem;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: .4rem;
+    margin-right: 220px;
+    font-weight: 600;
+    font-family: Poppins;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* .btn-lg {
+    margin-right: 460px;
+  } */
+  .px-md-5 {
+    padding-left: 200px!important;
+  }
+}
