@@ -143,11 +143,37 @@ if (!isset($_SESSION['name'])) {
 
 <!-- Post feeds start here -->
 <div class="feeds">
-  <div class="load-more" style="text-align: center">
-    <img src="assets/img/ziki.gif" alt="">
 
-  </div>
-            </div>
+<!-- test post for the feeds section -->
+<div class="row posts pb-3">
+                            <div class="col-md-1">
+                                <img class="blog-item-author-avatar" src="${card.author_image}">
+                            </div>
+                            <div class="col-md-11">
+                                <div class="row blog-item-main">
+                                    <div class="col-md-3">
+                                            <img src="${card.post_image}" class="img-fluid post-img" alt="Profile Image">
+                                    </div>
+
+                                    <div class="col-md-9">
+                                        <a href="/blog-detail.php">
+                                            <div class="markedcontent${i}"></div>
+                                        </a>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
+                                                    <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
+                                                </div>
+                                        </div>
+
+                                        <div class="row">
+                                                        <div class="col-md-12">
+                                                        <p class="post-date">${card.post_timestamp}</p>
+                                                        </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <!-- <div class="col-md-1"></div> -->
+                </div>
 <!-- test post -->
 
 </div>

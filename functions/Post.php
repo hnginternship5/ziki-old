@@ -22,7 +22,6 @@ class Post {
     public function setStoryBody($newstoryBody) {
         $this->storyBody = $newstoryBody;
     }
-
     public function setStoryTitle($newstoryTitle) {
         $this->storyTitle = $newstoryTitle;
     }
@@ -44,7 +43,6 @@ class Post {
     public function getStoryBody() {
         return $this->storyBody;
     }
-
     public function getStoryImage() {
         return $this->storyImage;
     }
@@ -53,9 +51,6 @@ class Post {
     }
     public function getAuthorPic(){
         return $this->authPic;
-    }
-    public function getPostDesc(){
-        return $this->postDesc;
     }
     public function getTimePosted() {
         return $this->postTimestamp;
@@ -70,7 +65,6 @@ class Post {
                 $post->userId = $row['user_id'];
                 $post->authPic = $row['auth_pic'];
                 $post->storyImage = $row['post_image'];
-                $post->postDesc = $row['postDesc'];
                 $post->fileUrl = $row['file_url'];
                 $post->postTimestamp = $row['post_timestamp'];
                 $result[] = $post;
@@ -80,7 +74,7 @@ class Post {
     }
     public function savePost($db, $name, $img, $dir) {
         if ($this->id == -1) {
-            //Saving new post
+            //Saving new post 
             $filename = $this->userId;
             $time = date("Y-m-d h:i:sa");
             $unix = strtotime($time);
@@ -96,9 +90,7 @@ class Post {
                 $id = $this->id = (mt_rand(100001,999999))."-".$unix;
                 $file = $md_path;
                 $post_img = $this->storyImage;
-                $Desc = trim($this->storyBody);
-                $Desc = substr($Desc,0,200);
-                $posts[] = array('id'=> $id, 'user_id'=>$name, 'file_url'=> $file, 'post_image' => $post_img, 'postDesc' => $Desc, 'auth_pic' => $img, 'post_timestamp' => $time);
+                $posts[] = array('id'=> $id, 'user_id'=>$name, 'file_url'=> $file, 'post_image' => $post_img, 'auth_pic' => $img, 'post_timestamp' => $time);
                 $json_db = "posts.json";
                 $prev_post = json_decode($db);
                 $new =array_merge($posts, $prev_post);

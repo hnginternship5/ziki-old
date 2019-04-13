@@ -10,7 +10,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //$title = isset($_POST['title']) ? trim($_POST['title']) : null;
     $default_img = $site_url.'/markdowns/post-images/blog-details.png';
     $body = isset($_POST['body']) ? trim($_POST['body']) : null;
-    $shortBody = substr($body, 200);
     $file = isset($_FILES['image']) ? $_FILES['image'] : $default_img;
     $user = $email;
     $new_file_name = date('dmYHis').str_replace(" ", "", basename($file['name']));
@@ -61,12 +60,10 @@ else {
             $markdownLink = $blog->getMarkdownUrl();
             $authPic = $blog->getAuthorPic();
             $postTimestamp = $blog->getTimePosted();
-            $postDesc = $blog->getPostDesc();
             $post['id'] = $postId;
             $post['author_image'] = $authPic;
             $post['markdown_url'] = $markdownLink;
             $post['post_image'] = $postPic;
-            $post['postDesc'] = $postDesc;
             $post['post_timestamp'] = date("jS F, Y h:i:s A", strtotime($postTimestamp));
             array_push($posts, $post);
         }

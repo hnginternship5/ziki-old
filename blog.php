@@ -11,7 +11,7 @@ require_once "config.php";
           <a href="#" data-toggle="modal"
               data-target="#exampleModalCenter"><img class="" src="assets/img/zikilogo.png" id="logoImage"></a>
 
-
+          
       <?php  }else {?>
 
         <a href="./timeline.php"><img class="" src="assets/img/zikilogo.png" id="logoImage"></a>
@@ -20,12 +20,7 @@ require_once "config.php";
       </div>
       <div class="blog-details">
         <div class="blog-details">
-          <div class="blog">
-            <div class="load-more" style="text-align: center">
-              <img src="assets/img/ziki.gif" alt="">
-
-            </div>
-          </div>
+          <div class="blog"></div>
 
           <div class="blog-tools px-5 d-flex justify-content-between">
             <div class="fav-comment ml-5 px-5">

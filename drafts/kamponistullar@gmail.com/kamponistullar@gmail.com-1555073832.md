@@ -1,1 +1,0 @@
-<h2></h2><p><h2>Testing Image Upload</h2><p>click the attachment icon on the right</p><p>Also time published now working</p></p>
