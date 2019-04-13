@@ -69,7 +69,7 @@ if (!isset($_SESSION['name'])) {
                             //echo 'Web | Software Developer';
                         ?>
             </h4>
-            <p class="profile-motto">Software Engineer at AWS design enthusiast and music lover</p>
+            
         </div>
 
         <!-- social media links
