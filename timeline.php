@@ -159,18 +159,6 @@ if (!isset($_SESSION['name'])) {
                                         <a href="/blog-detail.php">
                                             <div class="markedcontent${i}"></div>
                                         </a>
-                                        <div class="row post-footer mt-1">
-                                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                                <a href="#">
-                                                <span class="badge badge-primary">Tech</span>
-                                                    </a>
-                                                    <a href="#">
-                                                <span class="badge badge-primary">AI</span>
-                                                    </a>
-                                                    <a href="#">
-                                                <span class="badge badge-primary">Academic</span>
-					                            	</a>   
-                                            </div>
                                                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-end">
                                                     <a href="/blog-detail.php"><i class="far fa-comment-alt post-icon chat-icon"></i></i></a>
                                                 </div>
