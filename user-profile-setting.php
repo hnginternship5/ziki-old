@@ -241,17 +241,7 @@ input:checked + .slider:before {
             </section>
             <section class="theme">
                 
-                <div>
-                    <p>
-                        Theme
-                    </p>
-                    <button class="drop user-profile-button">
-                        DragonBlade Slicer Supreme 2000
-                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 12L0.0717973 -6.02284e-07L13.9282 -1.81365e-06L7 12Z" fill="#9A9A9A"/>
-                        </svg>
-                    </button>
-                </div>
+                
                 <div class="togg">
                     <p>
                         Mode
@@ -268,9 +258,9 @@ input:checked + .slider:before {
                         </p>
                     </div>
                 </div>
-                <button class="co.red fl-r">
-                    Delete account
-                </button>
+                <a role = "button" href = "delete_user.php" class="btn mb-3 user-profile-button co-red">
+                        Delete account
+                    </a>
             </section>
             <button  class="capitalize lang user-profile-button">
                 Save changes
