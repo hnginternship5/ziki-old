@@ -56,7 +56,7 @@ require_once './Authentication/auth/fbook.php';
                               </svg>
                                Facebook
                           </button>
-                          
+
                       </div>
                   </div>
               </div>
