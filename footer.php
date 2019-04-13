@@ -54,7 +54,6 @@
                   `;
                   $('.blog').innerHTML += post_card;
                   readTextFile(card.markdown_url, i);
-                  $('.load-more').remove();
               }
           })
           .catch(function(error) {
@@ -107,7 +106,7 @@ const $ = document.querySelector.bind(document)
                                     </div>
                                     <div class="col-md-8 col-10">
                                     <a href="/blog.php?id=${card.id}">
-                                        <div class="">${card.postDesc}</div>
+                                        <div class="markedcontent${i}"></div>
                                     </a>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
@@ -140,7 +139,6 @@ const $ = document.querySelector.bind(document)
                 `;
                 $('.feeds').innerHTML += post_card;
                 readTextFile(card.markdown_url, i);
-                $('.load-more').remove();
             }
         })
         .catch(function(error) {
