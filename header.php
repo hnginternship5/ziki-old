@@ -2,8 +2,10 @@
 <?php include 'includes/config.php';
 //print_r($_SESSION);
 //if( $user->is_logged_in() ){ header('Location: timeline.php'); }
+include 'config.php';
+extract($_SESSION);
 
-extract($_SESSION);?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

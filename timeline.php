@@ -2,22 +2,12 @@
 $title = "Timeline";
 include 'header.php';
 require_once "config.php";
+//Print_r($_SESSION);
  ?>
 <?php
-$_SESSION['accesstoken'] = true;
-            if(isset($_SESSION['accesstoken'])){
-  try{
-
-        ?>
-<?php
-        }catch(Exception $e){
-            //echo "Google Auth Error:  ". $e->getMessage();
-         }
-            }
-
-            else{
-                header("Location: {$site_url}");
-            }
+if (!isset($_SESSION['name'])) {
+      header("Location: {$site_url}");
+}
         ?>
 
 

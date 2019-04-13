@@ -2,7 +2,7 @@
 $title ="Welcome";
 include 'header.php';
 
-require_once "config.php";
+//require_once "config.php";
 $link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://" . $_SERVER['HTTP_HOST'] .  $_SERVER['REQUEST_URI'];
 $site = (isset($site_url)) ? $site_url : die("please provide your site url in the config.php file.") ;
 $site_address = ($link == $site) ? $site : die("Your url is not the same as the url installed in the config.php file");
@@ -84,7 +84,7 @@ $site_address = ($link == $site) ? $site : die("Your url is not the same as the 
                                     </div>
 
                                     <div class="col-md-9">
-                                        <a href="/blog-detail.php">
+                                        <a href="/blog.php?id=${card.id}">
                                             <div class="markedcontent${i}"></div>
                                         </a>
                                         <div class="row post-footer mt-1">

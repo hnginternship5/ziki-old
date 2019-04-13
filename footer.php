@@ -153,5 +153,9 @@ const $ = document.querySelector.bind(document)
     document.getElementById("subscribeImage").src="assets/img/subscribeLight.png";
   }
 </script>
+<?php if (!isset($_SESSION['name'])) {
+ include 'auth.php';
+
+} ?>
 </body>
 </html>

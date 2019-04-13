@@ -1,6 +1,6 @@
 <?php
 //include 'includes/config.php';
-include 'config.php';
+//include 'config.php';
 //extract($_SESSION);
 $l="user";
 include 'header.php';
