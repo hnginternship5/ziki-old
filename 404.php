@@ -1,10 +1,13 @@
 <?php
+$title = "404 Page";
+include 'header.php';
+?>
 
-$check = http_response_code(404)  === 200;
-if (!$check){
-	include('404.html');
-	die();
-}
- 
+<!-- code BELOW this line -->
 
- ?>
+<p>404 Page</p> <!-- delete this -->
+
+<!-- code ABOVE this line -->
+
+<?php
+include 'footer.php';

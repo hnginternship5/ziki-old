@@ -2,3 +2,5 @@
 /Authentcation/auth/vendor
 posts.json
 /posts.json
+node_modules/
+build/

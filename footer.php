@@ -4,8 +4,6 @@
     let editor = new MediumEditor('.editable', {
         buttonLabels: 'fontawesome'
     });
-    const toggleThemeBtn = document.querySelector('.toggle-theme');
-    toggleThemeBtn.addEventListener('click', e => document.querySelector('body').classList.toggle('dark'));
 </script>
 <?php if (isset($_GET['id'])) {?>
   <script>
@@ -110,7 +108,7 @@ const $ = document.querySelector.bind(document)
                                     </a>
                                         <div class="row post-footer">
                                             <div class="col-md-8 col-7">
-                                                
+
 
 						</a>
                                                 <div class="col-md-12">
